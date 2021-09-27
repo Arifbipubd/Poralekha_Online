@@ -15,20 +15,24 @@ h1{
 
 }
 h2{
-
+  font-size: 40px;
+  font-weight: 500;
 }
 h3{
- font-size: 40px;
+  font-size: 30px;
+  font-weight: 600;
 }
 h4{
- font-size: 30px;
+ font-size: 24px;
+ font-weight: 500;
 }
 h5{
- /* font-size: 24px; */
+ font-size: 16px;
+ font-weight: 500;
 }
 h6{
-  font-size: 15px;
-  font-weight: 500;
+  /* font-size: 15px;
+  font-weight: 500; */
 }
 
 small{
@@ -36,6 +40,12 @@ small{
 }
 
 /* Color Code */ 
+.cl-pm{
+  color: #380E86;
+}
+.bg-cl-pm{
+  background-color: #380E86;
+}
 .color-yellow {
   color: #FBC56D;
 }
@@ -62,7 +72,6 @@ small{
 **************************/
 
 .topHeader {
-  background-color: #380E86;
   color: white;
   height: 50px;
   display: flex;
@@ -185,16 +194,13 @@ input.check-toggle-round-flat:checked+label:after {
 
 .middleHeader-content .btn1 {
   background-color: #F2F2F2;
-  color: #380E86;
 }
 
 .middleHeader-content .btn2 {
   background-color: white;
-  color: #380E86;
 }
 
 .btn3 {
-  background-color: #380E86;
   color: white;
 }
 .btn3:hover{
@@ -214,7 +220,6 @@ input.check-toggle-round-flat:checked+label:after {
   /* width: 100%; */
   /* position: absolute; */
   font-size: 20px;
-  color: #380E86 !important;
   padding: 9.5% 14%;
   background-color: rgb(255, 255, 255);
 }
@@ -313,13 +318,9 @@ input.check-toggle-round-flat:checked+label:after {
 /***************************************
 =========Home Popular Catagory=========
 ***************************************/
-.homePopularCatagoryHeading h4{
-  color: #380E86;
-  font-weight: bold;
-}
+
 .homePopularCatagoryHeading a{
   text-decoration: none;
-  color: #380E86;
 }
 .homePopularCatagoryContent{
   height: 97px;
@@ -334,9 +335,6 @@ input.check-toggle-round-flat:checked+label:after {
   outline: 0.5px solid #8DB3DF;
   box-sizing: border-box;
   /* transition: 7.5s ease; */
-}
-.homePopularCatagoryContentText h6{
-  color: #380E86;
 }
 
 /* 25/09 */
@@ -410,7 +408,6 @@ input.check-toggle-round-flat:checked+label:after {
 
 .homeFeaturedBooksHeadingRight a{
   text-decoration: none;
-  color: #380E86;
 }
 .homeFeaturedCardTag a{
   text-decoration: none;
@@ -423,7 +420,6 @@ input.check-toggle-round-flat:checked+label:after {
 }
 .homeFeaturedCard p{
   font-size: 10px;
-  color: #380E86;
   font-weight: 600;
   line-height: 25px;
 }
@@ -431,7 +427,6 @@ input.check-toggle-round-flat:checked+label:after {
 .homeFeaturedCardButtonLeft{
   width: 153px;
   height: 35px;
-  background-color: #380E86;
   border-radius: 5px;
 }
 .homeFeaturedCardButtonLeft a{
@@ -448,11 +443,12 @@ input.check-toggle-round-flat:checked+label:after {
   font-weight: 400;
 }
 .homeFeaturedCardButtonRight strike{
+  display: flex;
+  justify-content: end;
   color: #FE3745;
 }
 .homeFeaturedCardButtonRight h6{
   font-size: 16px;
-  color: #380E86;
   font-weight: 500;
 }
 
@@ -524,8 +520,9 @@ input.check-toggle-round-flat:checked+label:after {
    border: 0 !important;
  }
  .nav-tabs .nav-link.active  {
-   background-color: #380E86 !important;
+   background-color: #380E86;
    color: white !important;
+   border-radius: 7px;
  }
  .topics-img-height{
   height:153px;
@@ -540,7 +537,6 @@ input.check-toggle-round-flat:checked+label:after {
 .topics-body-height a{
   font-size: 10px;
   font-weight: 600;
-  color: #380E86;
   text-decoration: none;
 }
 
@@ -560,8 +556,7 @@ input.check-toggle-round-flat:checked+label:after {
   top: 40%;
   right: 5%;
 }
-.homeRegisterTodayContent h3{
-  font-size: 36px;
+.homeRegisterTodayContent h2{
   color: #FFFF;
   font-weight: 600;
 }
@@ -620,12 +615,18 @@ input.check-toggle-round-flat:checked+label:after {
   top: 57% !important;
   right: 9px !important;
 }
+.topRatedTeacherSlider button{
+  border-radius: 7px;
+}
+.topRatedTeacherSlider button:hover{
+  background-color: #380E86;
+  color: white;
+}
 /****************************************
 =============Instructor=================
 ***************************************/
 
-.homeInstructorContent h5{
-  font-size: 24px;
+.homeInstructorContent h4{
   font-weight: 600;
 }
 .homeInstructorContent p{
@@ -636,7 +637,6 @@ input.check-toggle-round-flat:checked+label:after {
 .homeInstructorContent button{
   width: 195px;
   height: 45px;
-  background-color: #380E86;
   color: white;
   border: none;
   border-radius: 5px;
@@ -662,9 +662,8 @@ input.check-toggle-round-flat:checked+label:after {
   font-size: 16px;
   font-weight: 300;
 }
-.homeDownloadAppContent h3{
+.homeDownloadAppContent h2{
   color: #ffff;
-  font-size: 48px;
   font-weight: 600;
 }
 .homeDownloadAppContent p{
@@ -769,6 +768,10 @@ color: #858B9F;
 }
 .footerContentFiveApp i{
   color: #6C63FF;
+}
+.footerAppContent{
+  background-color: #252C41;
+  border: 0.5px solid #858B9F;
 }
 .CopyRight{
   background-color: #1B2132;

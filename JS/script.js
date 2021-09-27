@@ -26,7 +26,7 @@ $(".homeWhatsNewcarousel").owlCarousel({
 $('#carousel0').owlCarousel({
   // loop: true,
   margin: 15,
-  // autoplay: true,
+  autoplay: true,
   autoplayHoverPause: true,
   nav: true,
   navText: ["<span class='fas fa-arrow-circle-left' </span>", "<span class='fas fa-arrow-circle-right' </span>"
@@ -57,7 +57,7 @@ $('#carousel0').owlCarousel({
 $('#carousel1').owlCarousel({
   // loop: true,
   margin: 10,
-  // autoplay: true,
+  autoplay: true,
   autoplayHoverPause: true,
   nav: true,
   navText: ["<span class='fas fa-arrow-circle-left' </span>", "<span class='fas fa-arrow-circle-right' </span>"
@@ -88,7 +88,7 @@ $('#carousel1').owlCarousel({
 $('#carousel2').owlCarousel({
   // loop: true,
   margin: 10,
-  // autoplay: true,
+  autoplay: true,
   autoplayHoverPause: true,
   nav: true,
   navText: ["<span class='fas fa-arrow-circle-left' </span>", "<span class='fas fa-arrow-circle-right' </span>"
@@ -119,7 +119,7 @@ $('#carousel2').owlCarousel({
 $('#carousel3').owlCarousel({
   // loop: true,
   margin: 10,
-  // autoplay: true,
+  autoplay: true,
   autoplayHoverPause: true,
   nav: true,
   navText: ["<span class='fas fa-arrow-circle-left' </span>", "<span class='fas fa-arrow-circle-right' </span>"
@@ -150,7 +150,7 @@ $('#carousel3').owlCarousel({
 $('#carousel4').owlCarousel({
   // loop: true,
   margin: 10,
-  // autoplay: true,
+  autoplay: true,
   autoplayHoverPause: true,
   nav: true,
   navText: ["<span class='fas fa-arrow-circle-left' </span>", "<span class='fas fa-arrow-circle-right' </span>"
@@ -181,7 +181,7 @@ $('#carousel4').owlCarousel({
 $('#carousel5').owlCarousel({
   // loop: true,
   margin: 10,
-  // autoplay: true,
+  autoplay: true,
   autoplayHoverPause: true,
   nav: true,
   navText: ["<span class='fas fa-arrow-circle-left' </span>", "<span class='fas fa-arrow-circle-right' </span>"
@@ -212,7 +212,7 @@ $('#carousel5').owlCarousel({
 $('#carousel6').owlCarousel({
   // loop: true,
   margin: 10,
-  // autoplay: true,
+  autoplay: true,
   autoplayHoverPause: true,
   nav: true,
   navText: ["<span class='fas fa-arrow-circle-left' </span>", "<span class='fas fa-arrow-circle-right' </span>"
