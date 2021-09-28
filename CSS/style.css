@@ -788,30 +788,37 @@ color: #858B9F;
 
 
 /****************************************
-=============All Courses================
+=============Single Catagory================
 ***************************************/
 
-.allCoursesBreadCrumb{
-  height: 75px;
+.singleCtagoryBreadCrumb{
+  height: 70px;
+  padding: 22px 0;
   background-color: #E7E7E7;
+}
+.singleCtagoryBreadCrumb a{
+  text-decoration: none;
+}
+.singleCtagoryBreadCrumb a:hover{
+  color: #380E86;
 }
 
 
 
-.allCoursesRight1Catagory ul{
+.singleCtagoryRight1Catagory ul{
   width: 186px;
   background-color: #F5F5F5;
   border: 1px solid #95A0B0;
   border-radius: .25rem;
 }
 
-.allCoursesLeft1{
+.singleCtagoryLeft1{
   width: 270px;
   height: 90px;
   border: 0.5px solid #95A0B0;
   border-radius: 10px;
 }
-.allCoursesLeft1 input{
+.singleCtagoryLeft1 input{
   background: #F9FBFF;
   padding: 0 15px;
   border: 0.5px solid #95A0B0;
@@ -819,14 +826,14 @@ color: #858B9F;
   outline: none;
 }
 
-.allCoursesLeft2{
+.singleCtagoryLeft2{
   width: 270px;
   height: 159px;
   border: 0.5px solid #95A0B0;
   border-radius: 10px;
 }
 
-.allCoursesLeft2Inputrange {
+.singleCtagoryLeft2Inputrange {
   width:200px;
   height:10px;
   border-radius: 4px;
@@ -834,7 +841,7 @@ color: #858B9F;
   position: relative;
 }
 
-.allCoursesLeft2Inputrange__button_1, .allCoursesLeft2Inputrange__button_2 {
+.singleCtagoryLeft2Inputrange__button_1, .singleCtagoryLeft2Inputrange__button_2 {
   position: absolute;
   top: 50%;
   width: 20px;
@@ -845,7 +852,7 @@ color: #858B9F;
   border-radius: 50%;
   background-color: #380E86;
 }
-.allCoursesLeft2Inputrange__between
+.singleCtagoryLeft2Inputrange__between
 {
   height: 5px;
   width:0px;
@@ -853,7 +860,7 @@ color: #858B9F;
   border: none;
   background-color: #380E86;
 }
-.allCoursesLeft2Inputrange_inpt1, .allCoursesLeft2Inputrange_inpt2
+.singleCtagoryLeft2Inputrange_inpt1, .singleCtagoryLeft2Inputrange_inpt2
 {
   width: 108px;
   height: 45px;
@@ -862,7 +869,7 @@ color: #858B9F;
 }
 
 
-.allCoursesLeft3{
+.singleCtagoryLeft3{
   width: 270px;
   height: 251px;
   border: 0.5px solid #95A0B0;
