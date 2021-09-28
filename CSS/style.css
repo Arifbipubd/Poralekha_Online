@@ -338,9 +338,9 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 /* 25/09 */
-/*************
+/*****
 =========Home Popular Courses=========
-*************/
+*****/
 .popularCourses {
   background-color: #E6F3FF;
 }
@@ -371,32 +371,12 @@ input.check-toggle-round-flat:checked+label:after {
   width: 100%;
 }
 .card-body-height {
-  height: 167px;
+  /* height: 167px; */
   border: 1px solid rgba(0,0,0,.125);
 }
 
-@media (min-width:365px) and (max-width:700px){ 
-  .card-height {
-    height : 100% !important;
-    width: 100% !important;
-  }
-  .card-body-height {
-    height: 100% !important;
-  }
-}
-@media (min-width:701px) and (max-width:1300px){ 
-  .card-height {
-    width : 350px;
-  }
-}
-@media (min-width:1301px) and (max-width:3000px){ 
-  .card-height {
-    height : 380px;
-    width: 390px;
-  }
-}
- /* Home Popular Courses End  */
 
+/* Home Popular Courses End  */
 /**********************************************
 ================Home Featured Books===========
 **********************************************/
@@ -468,7 +448,7 @@ input.check-toggle-round-flat:checked+label:after {
 }
 .homeFeaturedCard-img {
   height: 203px;
-  width: 270px;
+  /* width: 270px; */
 }
 .homeFeaturedCard-img img {
   height: 100%;
@@ -698,11 +678,12 @@ input.check-toggle-round-flat:checked+label:after {
 .homeSubscribe{
   background-color: #F8F8FF;
   padding: 80px 0;
+  position: relative;
 }
 .homeSubscribeImg{
   position: relative;
 }
-.homeSubscribeImg img{
+.homeSubscribeBanner{
   width: 100%;
 }
 .homeSubscribeContent{
@@ -740,9 +721,24 @@ input.check-toggle-round-flat:checked+label:after {
   padding: .5em 3.5em .5em .5em;
 }
 ::-webkit-input-placeholder{
-  color: white;
+  color: rgb(201, 201, 201);
   font-weight: 200;
 }
+
+/***********Polygon************/
+.homeSubscribePolygonImg {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin: -5% 0 10% -3%;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 
 
 /****************************************
@@ -783,3 +779,147 @@ color: #858B9F;
 .copyRightContentRight a{
   color: #858B9F;
 }
+
+
+
+.toggle-pressed {
+  color:red !important;
+}
+
+
+/****************************************
+=============All Courses================
+***************************************/
+
+.allCoursesBreadCrumb{
+  height: 75px;
+  background-color: #E7E7E7;
+}
+
+
+
+.allCoursesRight1Catagory ul{
+  width: 186px;
+  background-color: #F5F5F5;
+  border: 1px solid #95A0B0;
+  border-radius: .25rem;
+}
+
+.allCoursesLeft1{
+  width: 270px;
+  height: 90px;
+  border: 0.5px solid #95A0B0;
+  border-radius: 10px;
+}
+.allCoursesLeft1 input{
+  background: #F9FBFF;
+  padding: 0 15px;
+  border: 0.5px solid #95A0B0;
+  border-radius: 7px;
+  outline: none;
+}
+
+.allCoursesLeft2{
+  width: 270px;
+  height: 159px;
+  border: 0.5px solid #95A0B0;
+  border-radius: 10px;
+}
+
+.allCoursesLeft2Inputrange {
+  width:200px;
+  height:10px;
+  border-radius: 4px;
+  background-color: #ddd;
+  position: relative;
+}
+
+.allCoursesLeft2Inputrange__button_1, .allCoursesLeft2Inputrange__button_2 {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: move;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  background-color: #380E86;
+}
+.allCoursesLeft2Inputrange__between
+{
+  height: 5px;
+  width:0px;
+  margin-top:3px;
+  border: none;
+  background-color: #380E86;
+}
+.allCoursesLeft2Inputrange_inpt1, .allCoursesLeft2Inputrange_inpt2
+{
+  width: 108px;
+  height: 45px;
+  border: 0.5px solid #95A0B0;
+  border-radius: 7px;
+}
+
+
+.allCoursesLeft3{
+  width: 270px;
+  height: 251px;
+  border: 0.5px solid #95A0B0;
+  border-radius: 10px;
+}
+
+
+/*Pagination*/
+
+.pagination ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 8px;
+  
+  }
+  .pagination ul li {
+      color: #000;
+      list-style: none;
+      line-height: 45px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.3s ease;
+  }
+  .pagination ul li.numb{
+      list-style: none;
+      height: 45px;
+      width: 45px;
+      margin: 0 3px;
+      line-height: 45px;
+      border-radius: 10%;
+  }
+  .pagination ul li.numb.first {
+      margin: 0px 3px 0 -5px;
+  }
+  .pagination ul li.numb.last{
+      margin: 0px -5px 0 3px;
+  }
+  .pagination ul li.dots {
+      font-size: 22px;
+      cursor: default;
+  }
+  .pagination ul li.btn{
+      padding: 0 20px;
+      /* border-radius: 10px; */
+  }
+  .pagination li.active,
+  .pagination ul li.numb:hover,
+  .pagination li:first-child:hover,
+  .pagination ul li:last-child:hover{
+      color: #fff;
+      background: #380E86;
+  }
+
+
