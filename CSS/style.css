@@ -1078,3 +1078,58 @@ color: #858B9F;
   border-radius: 50%;
 }
 /* Single Courses end*/
+
+
+/**************Card Overlay****************/
+.booksCard{
+  position: relative;
+  transition: 0.5s;
+}
+.cardOverlay{
+  /* width: 189px; */
+  height: 45px;
+  color: #380E86;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.booksCard:hover .cardOverlay{
+  opacity: 1;
+  transform: translateY(-70px);
+  transition: 0.5s;
+}
+
+
+/***************Author*************/
+.authorCard{
+  border: none;
+  box-shadow: 0px 0px 8px #DADFE7;
+  border-radius: 20px;
+}
+
+.authorCardContent p{
+  line-height: 35px;
+}
+.authorIcon i{
+  color: grey;
+}
+
+.authorBottom .nav-tabs{
+  border: 0 !important;
+}
+.authorBottom .nav-link{
+  background-color: #EDF0F5;
+  color: #95A0B0;
+  border-radius: 7px;
+}
+.authorBottom .nav-tabs .nav-link.active  {
+  background-color: #380E86;
+  color: white !important;
+  border-radius: 7px;
+}
