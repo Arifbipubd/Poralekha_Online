@@ -251,7 +251,190 @@ toggleBtns.forEach((btn) => {
   });
 })
 
+// Otp-Verification
+function clickEvent(first, last) {
+  if (first.value.length) {
+    document.getElementById(last).focus();
+  }
+}
 
+
+//hide toggle
+$(".toggle-password").click(function () {
+  $(this).toggleClass("fa fa-eye-slash");
+  input = $(this).parent().find("input");
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+// Active
+
+var selector = '.accordion .cursor';
+
+$(selector).on('click', function () {
+  $(selector).removeClass('active');
+  $(this).addClass('active');
+});
+
+//Course Playlist Accordian button click change
+
+function btnCheck(check) {
+  if (check == "fileUpload") {
+    document.querySelector('.video').style.display = "none";
+    document.querySelector('.mcq').style.display = "none";
+    document.querySelector('.demo').style.display = "none";
+    document.querySelector('.fileUpload').style.display = "block";
+  }
+  else if (check == "video") {
+    document.querySelector('.video').style.display = "block";
+    document.querySelector('.mcq').style.display = "none";
+    document.querySelector('.demo').style.display = "none";
+    document.querySelector('.fileUpload').style.display = "none";
+  }
+  else if (check = "mcq") {
+    document.querySelector('.video').style.display = "none";
+    document.querySelector('.mcq').style.display = "block";
+    document.querySelector('.fileUpload').style.display = "none";
+    document.querySelector('.demo').style.display = "none";
+  }
+}
+
+//Student profile Replace Div
+
+function toggleChange(change, name) {
+  if (change == "change") {
+    document.querySelector(".none-" + name).style.display = "none";
+    document.querySelector(".block-" + name).style.display = "block";
+  }
+  else if (change == "unchange") {
+    document.querySelector(".none-" + name).style.display = "block";
+    document.querySelector(".block-" + name).style.display = "none";
+  }
+
+}
+
+
+//Image Upload
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+  $('.image-upload-wrap').addClass('image-dropping');
+});
+$('.image-upload-wrap').bind('dragleave', function () {
+  $('.image-upload-wrap').removeClass('image-dropping');
+});
+
+
+
+//Reply And Comment
+
+function submit_comment() {
+  var comment = $('.commentar').val();
+  el = document.createElement('li');
+  el.className = "box_result row";
+  el.innerHTML =
+    '<div class=\"col-md-1\">' +
+    // user image link
+    '<div class=\"avatar_comment\">' +
+    '<img src=\"Assets/Images/SingleCourse/2authorLogo.png\" alt=\"avatar\"/>' +
+    '</div>' +
+    '</div>' +
+    '<div class=\"result_comment col-md-11\">' +
+    '<h4 class=\"tools_comment\">Anonimous <span aria-hidden=\"true\"> · </span><span>1m</span></h4>' +
+    '<p>' + comment + '</p>' +
+    '<div class=\"tools_comment\">' +
+    '<a class=\"replay\" href=\"#\">Reply</a>' +
+    '</div>' +
+    '<ul class="child_replay"></ul>' +
+    '</div>';
+  document.getElementById('list_comment').prepend(el);
+  $('.commentar').val('');
+}
+
+$(document).ready(function () {
+
+  // $('#list_comment').on('click', '.replay', function (e) {
+  //     cancel_reply();
+  //     $current = $(this);
+  //     el = document.createElement('li');
+  //     el.className = "box_reply row";
+  //     el.innerHTML =
+  //     '<div class=\"col-md-12 reply_comment\">' +
+  //        '<div class=\"row\">' +
+  //             '<div class=\"col-md-1\">' + 
+
+  //                '<div class=\"avatar_comment\">'+
+  //                   '<img src=\"https://images.unsplash.com/photo-1592492152545-9695d3f473f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80\" alt=\"avatar\"/>' +
+  //                '</div>' +
+  //             '</div>' +
+  //             '<div class=\" d-flex gx-0 col-md-10\">' +
+  //                  '<textarea class=\"box_comment comment_replay w-50\" placeholder=\"Add a comment...\"></textarea>' +
+  //                 '<div class=\"box_post\">' +
+  //                    '<button class=\"cancel btn btn3 bg-cl-pm mx-1 px-1\" onclick=\"cancel_reply()\" type=\"button\">Cancel</button>' +
+  //                    '<button class=\"btn btn3 bg-cl-pm  px-1" onclick=\"submit_reply()\" type=\"button\" value=\"1\">Reply</button>' +
+  //                '</div>' +
+  //            '</div>' +
+  //         '</div>' +
+  //     '</div>';
+  //     $current.closest('li').find('.child_replay').prepend(el);
+  // });
+});
+
+function submit_reply() {
+  var comment_replay = $('.comment_replay').val();
+  el = document.createElement('li');
+  el.className = "box_reply row";
+  el.innerHTML =
+    '<div class=\"col-md-1\">' +
+    '<div class=\"avatar_comment\">' +
+    '<img src=\"https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg\" alt=\"avatar\"/>' +
+    '</div>' +
+    '</div>' +
+    '<div class=\"result_comment col-md-11\">' +
+    '<h4 class=\"tools_comment\">Anonimous <span aria-hidden=\"true\"> · </span><span>1m</span></h4>' +
+    '<p>' + comment_replay + '</p>' +
+    '<div class=\"tools_comment\">' +
+    '<a class=\"replay\" href=\"#\">Reply</a>' +
+    '</div>' +
+    '<ul class="child_replay"></ul>' +
+    '</div>';
+  $current.closest('li').find('.child_replay').prepend(el);
+  $('.comment_replay').val('');
+  cancel_reply();
+}
+
+function cancel_reply() {
+  $('.reply_comment').remove();
+}
 
 //Paginations
 
