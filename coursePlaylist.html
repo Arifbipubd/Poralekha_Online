@@ -42,6 +42,10 @@
     <!-- Slick Slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <!-- file upload filepond -->
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -165,42 +169,24 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-8">
-                    <div class="col-lg-12">
-                        <div class="demo ">
-                            Main page
+                    <div class="col-lg-12 cplist-showcase mb-3">
+                        <div class="demo">
+                            <video src="Assets/Video/test.mkv" autoplay controls width="100%" height="100%" class="rounded-3"></video>
                         </div>
-                        <div class="video dnone">
-                            <input type="file">
+                        <div class="video demo dnone">
+                            <video src="Assets/Video/test.mkv" autoplay controls width="100%" height="100%" class="rounded-3"></video>
                         </div>
                         <div class="fileUpload dnone">
-                            <div class="file-upload">
-                                <div class="image-upload-wrap">
-                                    <input class="file-upload-input" type='file' onchange="readURL(this);"
-                                        accept="image/*" />
-                                    <div class="drag-text">
-                                        <p class="color-grey">
-                                            <i class="fas fa-photo-video"></i>
-                                            <br>
-                                            Drop your image here , or <span class="fw-bold cl-pm">Browse</span> <br>
-                                            Support JPG, JPEG & PNG
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="file-upload-content">
-                                    <img class="file-upload-image" src="#" alt="your image" />
-                                    <div class="image-title-wrap">
-                                        <button type="button" onclick="removeUpload()" class="remove-image">Remove
-                                            <span class="image-title">Uploaded Image</span></button>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- We'll transform this input into a pond -->
+                            <input type="file" class="filepond" name="filepond" multiple data-max-file-size="3MB"
+                                data-max-files="5" />
                         </div>
                         <div class="mcq dnone">
                             mcq
                         </div>
 
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 mt-5">
                         <div>
                             <nav class="px-0">
                                 <div class="nav nav-tabs mt-5" id="nav-tab" role="tablist">
@@ -668,42 +654,42 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                    1. Introduction of CCNA
-                                </button>
+                                    <button class="accordion-button coursePlaylistAccordionBtn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                       <span class="bg-cl-pm px-2 py-1 rounded-3 text-white me-2">L1</span> <small class="color-span">Up And Running With AWS</small>
+                                    </button>
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="d-flex justify-content-between cursor" onclick="btnCheck('video')">
+                                    <div class="d-flex justify-content-between cursor color-span mb-3" onclick="btnCheck('video')">
 
                                         <div>
-                                            <p>1. Welcome to CCNA</p>
+                                           <small><i class="far fa-play-circle me-2"></i> Up And Running With AWS</small>
                                         </div>
                                         <div>
-                                            <p>09:30</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex justify-content-between cursor" onclick="btnCheck('fileUpload')">
-
-                                        <div>
-                                            <p>2. Tips & Tricks</p>
-                                        </div>
-                                        <div>
-                                            <p>10:00</p>
+                                            <small>10 Mins</small>
                                         </div>
 
                                     </div>
-                                    <div class="d-flex justify-content-between cursor" onclick="btnCheck('mcq')">
+                                    <div class="d-flex justify-content-between cursor color-span mb-3" onclick="btnCheck('fileUpload')">
 
                                         <div>
-                                            <p>3. Packet Tracer</p>
-                                        </div>
+                                            <small><i class="far fa-file-alt me-2"></i> Assignment</small>
+                                         </div>
+                                         <div>
+                                             <small>Subnet Mask</small>
+                                         </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between cursor  color-span mb-3" onclick="btnCheck('mcq')">
+
+
                                         <div>
-                                            <p>06:00</p>
-                                        </div>
+                                            <small><i class="far fa-file me-2"></i> Quiz</small>
+                                         </div>
+                                         <div>
+                                             <small>20 Mcq</small>
+                                         </div>
 
                                     </div>
                                 </div>
@@ -711,42 +697,42 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed coursePlaylistAccordionBtn" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                    2. Downloading Packages
+                                    <span class="bg-cl-pm px-2 py-1 rounded-3 text-white me-2">L2</span> <small class="color-span">Up And Running With AWS</small>
                                 </button>
                             </h2>
                             <div id="faq2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="d-flex justify-content-between cursor">
+                                    <div class="d-flex justify-content-between cursor color-span mb-3" onclick="btnCheck('video')">
 
                                         <div>
-                                            <p>2.1. Welcome to CCNA</p>
+                                           <small><i class="far fa-play-circle me-2"></i> Up And Running With AWS</small>
                                         </div>
                                         <div>
-                                            <p>09:30</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex justify-content-between cursor" onclick="btnCheck('video')">
-
-                                        <div>
-                                            <p>2.2. Tips & Tricks</p>
-                                        </div>
-                                        <div>
-                                            <p>10:00</p>
+                                            <small>10 Mins</small>
                                         </div>
 
                                     </div>
-                                    <div class="d-flex justify-content-between cursor">
+                                    <div class="d-flex justify-content-between cursor color-span mb-3" onclick="btnCheck('fileUpload')">
 
                                         <div>
-                                            <p>2.3. Packet Tracer</p>
-                                        </div>
+                                            <small><i class="far fa-file-alt me-2"></i> Assignment</small>
+                                         </div>
+                                         <div>
+                                             <small>Subnet Mask</small>
+                                         </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between cursor  color-span mb-3" onclick="btnCheck('mcq')">
+
+
                                         <div>
-                                            <p>06:00</p>
-                                        </div>
+                                            <small><i class="far fa-file me-2"></i> Quiz</small>
+                                         </div>
+                                         <div>
+                                             <small>20 Mcq</small>
+                                         </div>
 
                                     </div>
                                 </div>
@@ -754,42 +740,42 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed coursePlaylistAccordionBtn" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                    3. TCP/IP Model
+                                    <span class="bg-cl-pm px-2 py-1 rounded-3 text-white me-2">L3</span> <small class="color-span">Up And Running With AWS</small>
                                 </button>
                             </h2>
                             <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="d-flex justify-content-between cursor">
+                                    <div class="d-flex justify-content-between cursor color-span mb-3" onclick="btnCheck('video')">
 
                                         <div>
-                                            <p>3.1. Welcome to CCNA</p>
+                                           <small><i class="far fa-play-circle me-2"></i> Up And Running With AWS</small>
                                         </div>
                                         <div>
-                                            <p>09:30</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex justify-content-between cursor">
-
-                                        <div>
-                                            <p>3.2. Tips & Tricks</p>
-                                        </div>
-                                        <div>
-                                            <p>10:00</p>
+                                            <small>10 Mins</small>
                                         </div>
 
                                     </div>
-                                    <div class="d-flex justify-content-between cursor">
+                                    <div class="d-flex justify-content-between cursor color-span mb-3" onclick="btnCheck('fileUpload')">
 
                                         <div>
-                                            <p>3.3. Packet Tracer</p>
-                                        </div>
+                                            <small><i class="far fa-file-alt me-2"></i> Assignment</small>
+                                         </div>
+                                         <div>
+                                             <small>Subnet Mask</small>
+                                         </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between cursor  color-span mb-3" onclick="btnCheck('mcq')">
+
+
                                         <div>
-                                            <p>06:00</p>
-                                        </div>
+                                            <small><i class="far fa-file me-2"></i> Quiz</small>
+                                         </div>
+                                         <div>
+                                             <small>20 Mcq</small>
+                                         </div>
 
                                     </div>
                                 </div>
@@ -797,128 +783,42 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed coursePlaylistAccordionBtn" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                                    4. Subnet Mask
+                                    <span class="bg-cl-pm px-2 py-1 rounded-3 text-white me-2">L4</span> <small class="color-span">Up And Running With AWS</small>
                                 </button>
                             </h2>
                             <div id="faq4" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="d-flex justify-content-between cursor">
+                                    <div class="d-flex justify-content-between cursor color-span mb-3" onclick="btnCheck('video')">
 
                                         <div>
-                                            <p>4.1. Welcome to CCNA</p>
+                                           <small><i class="far fa-play-circle me-2"></i> Up And Running With AWS</small>
                                         </div>
                                         <div>
-                                            <p>09:30</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex justify-content-between cursor">
-
-                                        <div>
-                                            <p>4.2. Tips & Tricks</p>
-                                        </div>
-                                        <div>
-                                            <p>10:00</p>
+                                            <small>10 Mins</small>
                                         </div>
 
                                     </div>
-                                    <div class="d-flex justify-content-between cursor">
+                                    <div class="d-flex justify-content-between cursor color-span mb-3" onclick="btnCheck('fileUpload')">
 
                                         <div>
-                                            <p>4.3. Packet Tracer</p>
-                                        </div>
-                                        <div>
-                                            <p>06:00</p>
-                                        </div>
-
+                                            <small><i class="far fa-file-alt me-2"></i> Assignment</small>
+                                         </div>
+                                         <div>
+                                             <small>Subnet Mask</small>
+                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
-                                    5. IP Addressing
-                                </button>
-                            </h2>
-                            <div id="faq5" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="d-flex justify-content-between cursor">
+                                    <div class="d-flex justify-content-between cursor  color-span mb-3" onclick="btnCheck('mcq')">
+
 
                                         <div>
-                                            <p>4.1. Welcome to CCNA</p>
-                                        </div>
-                                        <div>
-                                            <p>09:30</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex justify-content-between cursor">
-
-                                        <div>
-                                            <p>4.2. Tips & Tricks</p>
-                                        </div>
-                                        <div>
-                                            <p>10:00</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex justify-content-between cursor">
-
-                                        <div>
-                                            <p>4.3. Packet Tracer</p>
-                                        </div>
-                                        <div>
-                                            <p>06:00</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
-                                    6. Configuring CISCO
-                                </button>
-                            </h2>
-                            <div id="faq6" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="d-flex justify-content-between cursor">
-
-                                        <div>
-                                            <p>5.1. Welcome to CCNA</p>
-                                        </div>
-                                        <div>
-                                            <p>09:30</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex justify-content-between cursor">
-
-                                        <div>
-                                            <p>5.2. Tips & Tricks</p>
-                                        </div>
-                                        <div>
-                                            <p>10:00</p>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex justify-content-between cursor">
-
-                                        <div>
-                                            <p>5.3. Packet Tracer</p>
-                                        </div>
-                                        <div>
-                                            <p>06:00</p>
-                                        </div>
+                                            <small><i class="far fa-file me-2"></i> Quiz</small>
+                                         </div>
+                                         <div>
+                                             <small>20 Mcq</small>
+                                         </div>
 
                                     </div>
                                 </div>
@@ -1073,7 +973,8 @@
         </div>
     </footer>
 
-
+    <!-- Load FilePond library -->
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
     <!-----Owl Carousal-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!----------------Js--------->
