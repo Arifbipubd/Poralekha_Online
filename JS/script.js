@@ -276,7 +276,8 @@ $(".toggle-password").click(function () {
 });
 
 // Accordian Active
-var selector = '.accordion .cursor';
+// .accordion .cursor
+var selector = '.cursor';
 
 $(selector).on('click', function () {
   $(selector).removeClass('active');
@@ -446,6 +447,247 @@ function submit_reply() {
 function cancel_reply() {
   $('.reply_comment').remove();
 }
+// course playlist mcq start
+document.querySelector('.appear1').style.display = "none";
+document.querySelector('.disappear2').style.display = "none";
+function startMcq() {
+  // disappear1.innerHTML = "";
+  document.querySelector('.disappear1').style.display = "none";
+  document.querySelector('.appear1').style.display = "block";
+
+  var questions = [{
+    question: "1. You're 3rd place right now in a race. What place are you in when you pass the person in 2nd place ?",
+    choices: ["1st", "2nd", "3rd", "None of the above"],
+    correctAnswer: 0
+  }, {
+    question: "2. How many months have 28 days?",
+    choices: ["2", "1", "All of them.", "Depends if there's a leap year or not."],
+    correctAnswer: 2
+  }, {
+    question: "3. How many 0.5cm slices of bread can you cut from a whole bread that's 25cm long?",
+    choices: ["1", "25", "39", "None of the above"],
+    correctAnswer: 0
+  }, {
+    question: "4.The answer is really big.",
+    choices: ["THE ANSWER.", "Really big.", "An elephant.", "The data given is insufficient."],
+    correctAnswer: 0
+  }, {
+    question: "5. Divide 30 by half and add ten.",
+    choices: ["40.5", "50", "70", "I know this is a trick question, so NONE. Ha!"],
+    correctAnswer: 2
+  },
+    // {
+    // 	question: "6. Which software company developed JavaScript?",
+    //     choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
+    //     correctAnswer: 1
+    // },{
+    // 	question: "7. What would be the result of 3+2+'7'?",
+    //     choices: ["327", "12", "14", "57"],
+    //     correctAnswer: 3
+    // },{
+    // 	question: "8. Look at the following selector: $('div'). What does it select?",
+    //     choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
+    //     correctAnswer: 2
+    // },{
+    // 	question: "9. How can a value be appended to an array?",
+    //     choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
+    //     correctAnswer: 1
+    // },{
+    // 	question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
+    //     choices: ["'32'", "'122'", "'13'", "'14'"],
+    //     correctAnswer: 0
+    // }
+  ];
+
+
+  var currentQuestion = 0;
+  var viewingAns = 0;
+  var correctAnswers = 0;
+  var quizOver = false;
+  var iSelectedAnswer = [];
+  var mcqTime = 20;
+  var c = mcqTime;
+  var t;
+  $(document).ready(function () {
+    // Display the first question
+    displayCurrentQuestion();
+    $(this).find(".quizMessage").hide();
+    $(this).find(".preButton").attr('disabled', 'disabled');
+
+    timedCount();
+
+    $(this).find(".preButton").on("click", function () {
+
+      if (!quizOver) {
+        if (currentQuestion == 0) { return false; }
+
+        if (currentQuestion == 1) {
+          $(".preButton").attr('disabled', 'disabled');
+        }
+
+        currentQuestion--; // Since we have already displayed the first question on DOM ready
+        if (currentQuestion < questions.length) {
+          displayCurrentQuestion();
+
+        }
+      } else {
+        if (viewingAns == 3) { return false; }
+        currentQuestion = 0; viewingAns = 3;
+        viewResults();
+      }
+    });
+
+
+    // On clicking next, display the next question
+    $(this).find(".nextButton").on("click", function () {
+      if (!quizOver) {
+
+        var val = $("input[type='radio']:checked").val();
+
+        if (val == undefined) {
+          $(document).find(".quizMessage").text("Please select an answer");
+          $(document).find(".quizMessage").show();
+        }
+        else {
+          // TODO: Remove any message -> not sure if this is efficient to call this each time....
+          $(document).find(".quizMessage").hide();
+          if (val == questions[currentQuestion].correctAnswer) {
+            correctAnswers++;
+          }
+          iSelectedAnswer[currentQuestion] = val;
+
+          currentQuestion++; // Since we have already displayed the first question on DOM ready
+          if (currentQuestion >= 1) {
+            $('.preButton').prop("disabled", false);
+          }
+          if (currentQuestion < questions.length) {
+            displayCurrentQuestion();
+
+          }
+          else {
+            displayScore();
+            $('#iTimeShow').html('Quiz Time Completed!');
+            // $('#timer').html("You scored: " + correctAnswers + " out of: " + questions.length);
+            c = 185;
+            $(document).find(".preButton").text("Previous Question").attr('disabled', 'disabled');
+            $(document).find(".nextButton").text("Submit");
+            quizOver = true;
+            return false;
+          }
+        }
+
+      }
+      else {
+
+        if (viewingAns == 3) {
+          return false;
+        }
+        currentQuestion = 0;
+        viewingAns = 3;
+        viewResults();
+
+      }
+    });
+  });
+
+
+
+  function timedCount() {
+    if (c == 185) {
+      return false;
+    }
+
+    var hours = parseInt(c / 3600) % 24;
+    var minutes = parseInt(c / 60) % 60;
+    var seconds = c % 60;
+    var result = (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+    $('#timer').html(result);
+
+    if (c == 0) {
+      displayScore();
+      $('#iTimeShow').html('Quiz Time Completed!');
+      // $('#timer').html("You scored: " + correctAnswers + " out of: " + questions.length);
+      c = 185;
+      $(document).find(".preButton").text("Previous Question").attr('disabled', 'disabled');
+      $(document).find(".nextButton").text("Submit");
+      quizOver = true;
+      return false;
+
+    }
+
+
+    c = c - 1;
+    t = setTimeout(function () {
+      timedCount()
+    }, 1000);
+  }
+
+
+  // This displays the current question AND the choices
+  function displayCurrentQuestion() {
+
+    if (c == 185) {
+      c = mcqTime;
+      timedCount();
+    }
+    var question = questions[currentQuestion].question;
+    var questionClass = $(document).find(".quizJScontainer > .question");
+    var choiceList = $(document).find(".quizJScontainer > .choiceList");
+    var numChoices = questions[currentQuestion].choices.length;
+    // Set the questionClass text to the current question
+    $(questionClass).text(question);
+    // Remove all current <li> elements (if any)
+    $(choiceList).find("li").remove();
+    var choice;
+
+
+    for (i = 0; i < numChoices; i++) {
+      choice = questions[currentQuestion].choices[i];
+
+      if (iSelectedAnswer[currentQuestion] == i) {
+        $('<li><input type="radio" class="radio-inline" checked="checked"  value=' + i + ' name="dynradio" />' + ' ' + choice + '</li>').appendTo(choiceList);
+      } else {
+        $('<li><input type="radio" class="radio-inline" value=' + i + ' name="dynradio" />' + ' ' + choice + '</li>').appendTo(choiceList);
+      }
+    }
+  }
+
+  function displayScore() {
+    $(document).find(".quizJScontainer > .result").text("You scored: " + correctAnswers + " out of: " + questions.length);
+    $(document).find(".quizJScontainer > .result").show();
+    // Answer for backend
+    console.log(correctAnswers);
+  }
+
+  // function hideScore() {
+  //   $(document).find(".result").hide();
+  // }
+
+  // Result option redirect another page
+  function viewResults() {
+    document.getElementById('correctAnswer').innerText = correctAnswers;
+    document.querySelector('.disappear2').style.display = "block";
+    document.querySelector('.appear1').style.display = "none";
+    document.querySelector('.disappear1').style.display = "none";
+  }
+}
+
+// course playlist mcq end
+
+//teacher help and support
+
+function tchBtnCheck(check) {
+  if (check == "tchFaq") {
+    document.querySelector('.searchTopic-footer').style.display = "none";
+    document.querySelector('.tchFaq').style.display = "block";
+  }
+  else if (check == "tchResource") {
+    document.querySelector('.searchTopic-footer').style.display = "block";
+    document.querySelector('.tchFaq').style.display = "none";
+  }
+}
+
+//Teacher Active
 
 
 //Paginations

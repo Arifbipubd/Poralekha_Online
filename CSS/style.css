@@ -48,6 +48,13 @@ small{
 .fs10{
   font-size: 10px;
 }
+
+.w-65 {
+  width: 65%;
+}
+.w-35 {
+  width: 35%;
+}
 /* display */
 
 .dnone {
@@ -92,6 +99,9 @@ small{
 }
 .bg-cl-ash{
   background-color: #98A6C0;
+}
+.bg-light-pink{
+  background-color: #F9F9F9;
 }
 .color-red{
   color: #CA222E;
@@ -1541,10 +1551,6 @@ color: #858B9F;
   line-height: 30px;
 }
 
-
-
-
-
 .paymentHistoryInput input{
   padding: 0 20px;
   height: 35px;
@@ -1555,14 +1561,10 @@ color: #858B9F;
 .paymentHistoryInput .input1{
   width: 149px;
 }
-/* .paymentHistoryInput .input2{
-  width: 100px;
-} */
 
 .paymentHistoryList .table>:not(caption)>*>* {
   padding: 10px 0px 15px 0px !important;
 }
-
 
 .pass-hU {
   position: relative;
@@ -1688,7 +1690,7 @@ color: #858B9F;
 }
 
 
-/*****************Course Playlist*********************/
+/*****************Course Playlist Start*********************/
 
 .courseProgressDiv{
   background: #F3F8FF;
@@ -1731,8 +1733,6 @@ color: #858B9F;
   font-weight: 600;
   line-height: 30px;
 }
-
-
 .pull-right{
   float:right;
 }
@@ -1880,19 +1880,19 @@ color: #858B9F;
   color: #90949c;
 }
 
-/* Active */
+/*Tab Active */
 
 .cursor.active {
   color: #380E86;
-  font-weight: 800;
+  /* font-weight: 800; */
 }
 
-/*** FilePond Custom Styles */
+/* FilePond Custom Styles */
 .cplist-showcase {
-  height: 300px;
+  height: 400px;
 }
 .filepond--root {
-  height: 300px;
+  height: 400px;
 }
 .filepond--panel {
   height: 100%;
@@ -1914,9 +1914,87 @@ color: #858B9F;
 }
 
 
+/*Start of Quiz Classes */
+.mcqMainDivBg {
+  background-color: #E9EDF3;
+  border-radius: 10px;
+}
 
-/********************Course Playlist **************/
+.mcqMainDiv {
+  padding: 5% 5% 5% 5%;
+}
+.mcqMainDiv p {
+  color: #a3adc0;
+  font-size: 14px;
+}
 
+.quizJScontainer  ul{
+  list-style: none;
+}
+.quizJScontainer li {
+  font-size: 1.5em;
+}
+.choiceList input[type=radio] {
+  border: 0px;
+  width: 20px;
+}
+
+.quizContainer {
+  background-color: #E9EDF3;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-top: 5px;
+  position: relative;
+}
+.quizcontainer #quiz1
+{
+  text-shadow:1px 1px 2px #380E86;
+}
+.nextButton {
+  position: relative;
+}
+.preButton {
+  position: relative;
+}
+.question {
+  font-size: 1.5em;
+  font-weight:bold;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 6px;
+  background-color: #f3dc45;
+  text-align: center;
+}
+#timer {
+  background-color: #c8cacd;
+  border-radius: 6px;
+  width: 25%;
+  text-align: center;
+  padding: 0px 5px;
+  font-weight: bold;
+}
+.quizMessage {
+  background-color: #c8cacd;
+  border-radius: 6px;
+  width: 28%;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  position: absolute;
+  top: 80%;
+}
+.choiceList {
+  color: #380E86;
+font-weight:550;
+}
+/* End of Quiz Classes */
+
+
+/* Accordian  */
 .coursePlaylistAccordionBtn{
   position: relative;
 }
@@ -1931,29 +2009,42 @@ color: #858B9F;
 .coursePlaylistAccordionBtn:not(.collapsed) {
   background-color: #E9EDF3;
 }
+
+/* Video Width */
+.video{
+  height: 100% !important;
+  width: 100% !important;
+}
 .demo{
   height: 100% !important;
   width: 100% !important;
 }
+/*****************Course Playlist End*********************/
 
 
-/**********Teacher SignUp***********/
+
+
+/*************Teacher Profile Start*********/
+
+/* leftbar */
 
 .tchFileUpload{
   width: 100%;
 }
-
-/*************Teacher Profile*********/
-
 .tchLeft{
   flex-basis: 18%;
-  height: 80vh;
 }
+
+/* rightBar */
+
 .tchRight{
-  flex-basis: 82%;
-  height: 80vh;
+  flex-basis: 79%;
+  height: 100vh;
   overflow-y: scroll;
+  margin: auto;
 }
+
+/* Dashbord Start*/
 
 .tchNavHeadingImg{
   height: 100px;
@@ -2024,3 +2115,136 @@ color: #858B9F;
 .tchDashReviewCardContent2 i{
   font-size: 12px;
 }
+
+.tchDashTable .table>:not(caption)>*>* {
+  border-bottom-width: 0;
+}
+
+/* my students start */
+
+.myStds .table>:not(caption)>*>* {
+  padding: 2rem .5rem;
+}
+.myStds tbody, td, tfoot, th, thead, tr {
+  text-align: center;
+}
+.myStds thead {
+  background-color: #E9EDF3;
+}
+.myStds tbody th {
+  padding: 1.3% 8px !important;
+}
+.myStds tbody .icon{
+  padding: 1.5% 1% !important;
+}
+.myStds tbody tr{
+  background-color: #F9F9F9;
+  border-bottom: 5px solid white;
+  border-radius: 10px;
+}
+
+.myStds-image {
+ height: 44px;
+ width: 44px;
+ margin: auto;
+}
+.myStds-image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.myStds-tbl .list-inline{
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+.myStds-tbl .list-inline-item {
+  display: inline-block;
+}
+.myStds-tbl a{
+  display: block;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  color: #380E86;
+  background: white;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.myStds-tbl a:hover{
+  background: #380E86;
+  color: white;
+}
+.myStds-tbl i{
+  font-size: 14px;
+  line-height: 38px;
+}
+.myStds-tbl .cl-pm .bdr1 {
+  border-radius: 10px 0px 0px 0px;
+}
+.myStds-tbl .cl-pm .bdr2 {
+  border-radius: 0px 10px 0px 0px;
+}
+
+/* my students end */
+
+/* Help & Support start*/
+
+.searchTopic-header {
+  position: relative;
+  background-image: url("../Assets/Images/TeacherProfile/Hlp & Sprt/Group 560.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 260px;
+  border-radius: 15px;
+  
+}
+.searchTopic-header-content {
+  position: absolute;
+  top: 33%;
+  left: 25%;
+}
+.searchTopic-header-content h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.searchTopic-body .box {
+  background-color: #F9F9F9;
+  height: 200px;
+  border-radius: 15px;
+}
+.searchTopic-footer ul{
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+.searchTopic-footer li{
+  line-height: 215%;
+  color: #858B9F;
+}
+.searchTopic-footer .card {
+  background-color: #F9F9F9;
+  border: 0 !important;
+}
+
+/* Help & Support end*/
+
+
+/*Teacher Profile Guideline*/
+.tchAccordionButton::before{
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 1%;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../Assets/Images/TeacherProfile/Polygon\ 17.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
