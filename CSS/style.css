@@ -55,6 +55,15 @@ small{
 .w-35 {
   width: 35%;
 }
+.w-50 {
+  width: 50%;
+}
+.w-15{
+  width: 15%;
+}
+.w-10{
+  width: 10%;
+}
 /* display */
 
 .dnone {
@@ -82,8 +91,14 @@ small{
 .bg-cl-grey2{
   background-color:#F3F8FF;
 }
+.bg-cl-grey3{
+  background-color: #F2F2F2;
+}
 .bg-cl-green{
   background-color: #78C2A4;
+}
+.bg-cl-green2{
+  background-color: #78c2a42c;
 }
 .bg-cl-parrot{
   background-color: #ECF5EC;
@@ -120,6 +135,12 @@ small{
 }
 .color-span{
   color: #95A0B0;
+}
+
+
+/***Border***/
+.bd-pm{
+  border: 0.5px solid #380E86;
 }
 
 
@@ -493,6 +514,45 @@ input.check-toggle-round-flat:checked+label:after {
   border-radius: 50%;
 }
 /* Bottom Header End */
+
+/***************************************
+============2nd Header Start=============
+***************************************/
+.middleHeader-contentIcon .Icon{
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.middleHeader-contentIcon .Icon::after{
+    content: '7';
+    position: absolute;
+    bottom:70%;
+    left: 70%;
+    font-size: 7px;
+    background-color: #FF543E;
+    color: #FFF;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+.middleHeader-contentDropImg{
+  height: 35px;
+  width: 35px;
+}
+.middleHeader-contentDropImg img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.middleHeaderDropdown:focus{
+  border: none;
+  outline: none;
+}
+.middleHeaderDropdownMenu{
+  box-shadow: 0px 4px 4px rgba(226, 226, 226, 0.25);
+}
+
+
 
 /***************************************
 ============Home Top Banner=============
@@ -2162,7 +2222,7 @@ font-weight:550;
 .myStds-tbl .list-inline-item {
   display: inline-block;
 }
-.myStds-tbl a{
+.list-inline-item a{
   display: block;
   height: 36px;
   width: 36px;
@@ -2172,11 +2232,11 @@ font-weight:550;
   border-radius: 50%;
   text-decoration: none;
 }
-.myStds-tbl a:hover{
+.list-inline-item a:hover{
   background: #380E86;
   color: white;
 }
-.myStds-tbl i{
+.list-inline-item i{
   font-size: 14px;
   line-height: 38px;
 }
@@ -2248,3 +2308,28 @@ font-weight:550;
 }
 
 
+/******Teacher Submission**************/
+.tchTableAssignmentIcon{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.tchSubTableAct a{
+  border: 0.5px solid #380E86;
+}
+
+.tchSubFormDate input{
+  border: 0.5px solid #98A6C0;
+}
+
+.tchModalImg{
+  height: 44px;
+  width: 44px;
+  
+}
+.tchModalImg img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}

@@ -92,60 +92,6 @@
             </div>
         </div>
     </section>
-    <!-- Bottom Header -->
-    <section class="bottomHeader">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light  ">
-                <div class="container-fluid p-0">
-                    <div class="">
-
-                        <a class="navbar-brand tex dot" href="#"> <i class="fas fa-align-center cl-pm "><span
-                                    class="ms-3 cl-pm">Category</span></i></a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="mr ">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item ">
-                                <form class="d-flex ">
-                                    <input style="font-family:'Font Awesome 5 Free'; "
-                                        class="form-control border-0 me-1" type="search"
-                                        placeholder="&#61442 Search Subject" aria-label="Search">
-                                    <select id="inputState" class="form-select me-2 border-0">
-                                        <option selected>Category</option>
-                                        <option>Lorem ipsum dolor sit amet.</option>
-                                        <option>Lorem ipsum dolor sit amet.</option>
-                                        <option>Lorem ipsum dolor sit amet.</option>
-                                    </select>
-                                    <button class="btn  btn3 bg-cl-pm" type="submit">Search</button>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0 ">
-                            <li class="nav-item mx-3">
-                                <a class="nav-link " href="#">About</a>
-                            </li>
-                            <li class="nav-item mx-3 ">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#">FAQ</a>
-                            </li>
-                            <li class="nav-item nav-cart ">
-                                <a class="nav-link pb-1" href="#"><img class="pb-1" src="Assets/Images/Header/cart.png"
-                                        alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
     <!-- Middle Section -->
 
     <!-- Student Profile Start -->
@@ -215,8 +161,7 @@
 
             <div class="tab-content " id="nav-tabContent">
                 <!-- Dashboard -->
-                <div class="tab-pane fade show active" id="nav-dashbord" role="tabpanel"
-                    aria-labelledby="nav-dashbord-tab">
+                <div class="tab-pane fade" id="nav-dashbord" role="tabpanel" aria-labelledby="nav-dashbord-tab">
 
                     <div class="">
                         <div class="mt-3 mb-5">
@@ -807,9 +752,244 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="row">
-                        <h4 class="color-span mb-3">profile</h4>
+                <div class="tab-pane fade show active" id="nav-profile" role="tabpanel"
+                    aria-labelledby="nav-profile-tab">
+                    <div class="tchSubmission">
+                        <div class="sc-breadcrump d-flex align-items-center bg-white">
+                            <div class="mt-2">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a class="cl-pm text-decoration-none"
+                                                href="index.html">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active fw-bold" aria-current="page">Submission All
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <form action="index.html">
+                            <div class="tchSubForm d-flex align-items-center">
+                                <div class="tchSubFormDate d-flex align-items-center">
+                                    <h6 class="cl-pm fw-bold me-4 mt-1">Date</h6>
+                                    <input class="w-75 py-1 px-2 me-5 rounded-3" type="date" required>
+                                </div>
+                                <div class="form-check tchSubFormCheckbox d-flex align-items-center">
+                                    <input class="form-check-input me-4" type="checkbox" value="" id="flexCheckDefault"
+                                        required>
+                                    <label class="form-check-label cl-pm fw-bold mt-1 me-5" for="flexCheckDefault">
+                                        All Students
+                                    </label>
+                                </div>
+                                <div class="tchSubFormClass d-flex align-items-center">
+                                    <div class="">
+                                        <h6 class="cl-pm fw-bold me-4 mt-1">Select Class</h6>
+                                    </div>
+                                    <div class=" me-5 py-2">
+                                        <select class="form-select w-100 py-2 px-5" aria-label="Default select example">
+                                            <option selected>Class 09</option>
+                                            <option value="1">Class 08</option>
+                                            <option value="2">Class 07</option>
+                                            <option value="3">class 05</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tchSubFormDepartment d-flex align-items-center">
+                                    <div class="">
+                                        <h6 class="cl-pm fw-bold me-4 mt-1">Select Department</h6>
+                                    </div>
+                                    <div class="me-4">
+                                        <select class="form-select py-2 px-5" aria-label="Default select example">
+                                            <option selected>Science</option>
+                                            <option value="1">Business</option>
+                                            <option value="2">General</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                    <input class="btn btn3 bg-cl-pm" type="submit" value="Let's Go">
+                            </div>
+                        </form>
+                        <!-- Submission Body Start -->
+                        <div class="myStds mt-5">
+                            <div class="d-flex ">
+                                <div class="cl-pm w-65 d-flex">
+                                    <div class="tchSubMidClass">
+                                        <small class="fw-bold me-2">Submission of</small>
+                                        <small class="bg-cl-grey2 py-2 px-3 rounded-3 me-4">class-09</small>
+                                    </div>
+                                    <div class="tchSubMidDept">
+                                        <small class="fw-bold me-2">Department</small>
+                                        <small class="bg-cl-grey2 py-2 px-3 rounded-3 me-4">Science</small>
+                                    </div>
+                                    <div class="tchSubMidDate">
+                                        <small class="fw-bold me-2">Date</small>
+                                        <small class="bg-cl-grey2 py-2 px-3 rounded-3 me-4">13 jan 2021</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-35">
+                                    <select class="form-select mx-3 w-25" aria-label="Default select example">
+                                        <option selected>Sort by</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="Search here ....">
+                                </div>
+                            </div>
+                            <div class="table-responsive myStds-tbl mt-3">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr class="cl-pm">
+                                            <th scope="col" class="bdr1">#SL</th>
+                                            <th scope="col">Avatar</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Subject Name</th>
+                                            <th scope="col">Submitted File</th>
+                                            <th scope="col">Submitted Date</th>
+                                            <th scope="col">Obtained Marks</th>
+                                            <th scope="col">Remarks</th>
+                                            <th scope="col" class="bdr2">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="color-span">
+                                        <tr>
+                                            <td>01</td>
+                                            <td scope="row">
+                                                <div class="myStds-image">
+                                                    <img src="Assets/Images/TeacherProfile/Group 538.png" alt="">
+                                                </div>
+                                            </td>
+                                            <td>Shamitra Datta</td>
+                                            <td>AWS Manipulation</td>
+                                            <td>
+                                                <div class="tchSubTableAssignment d-flex">
+                                                    <div class="tchTableAssignmentCont me-2">
+                                                        assignmrnt.pdf
+                                                    </div>
+                                                    <div
+                                                        class="tchTableAssignmentIcon bg-cl-pm d-flex justify-content-center align-items-center">
+                                                        <a href="" class=""><i
+                                                                class="fas fa-download color-white"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>4.25pm, 13 jan 2021</td>
+                                            <td>
+                                                <span class="cl-green">50</span> out of <span class="cl-pm">100</span>
+                                            </td>
+                                            <td>
+                                                <span class="bg-cl-light-yellow color-yellow px-3 rounded-3">Average</span>
+                                            </td>
+                                            <td class="tchSubTableAct">
+                                                <a href="" class="px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#popUp">
+                                                    <i class="far fa-edit cl-pm"></i> Edit
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td scope="row">
+                                                <div class="myStds-image">
+                                                    <img src="Assets/Images/TeacherProfile/Group 538.png" alt="">
+                                                </div>
+                                            </td>
+                                            <td>Shamitra Datta</td>
+                                            <td>AWS Manipulation</td>
+                                            <td>
+                                                <div class="tchSubTableAssignment d-flex">
+                                                    <div class="tchTableAssignmentCont me-2">
+                                                        assignmrnt.pdf
+                                                    </div>
+                                                    <div
+                                                        class="tchTableAssignmentIcon bg-cl-pm d-flex justify-content-center align-items-center">
+                                                        <a href="" class=""><i
+                                                                class="fas fa-download color-white"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>4.25pm, 13 jan 2021</td>
+                                            <td>
+                                                <span class="cl-green">50</span> out of <span class="cl-pm">100</span>
+                                            </td>
+                                            <td>
+                                                <span class="bg-cl-green2 color-green px-3 rounded-3">Good</span>
+                                            </td>
+                                            <td class="tchSubTableAct">
+                                                <a href="" class="px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#popUp">
+                                                    <i class="far fa-edit cl-pm"></i> Edit
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td scope="row">
+                                                <div class="myStds-image">
+                                                    <img src="Assets/Images/TeacherProfile/Group 538.png" alt="">
+                                                </div>
+                                            </td>
+                                            <td>Shamitra Datta</td>
+                                            <td>AWS Manipulation</td>
+                                            <td>
+                                                <div class="tchSubTableAssignment d-flex">
+                                                    <div class="tchTableAssignmentCont me-2">
+                                                        assignmrnt.pdf
+                                                    </div>
+                                                    <div
+                                                        class="tchTableAssignmentIcon bg-cl-pm d-flex justify-content-center align-items-center">
+                                                        <a href="" class=""><i
+                                                                class="fas fa-download color-white"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>4.25pm, 13 jan 2021</td>
+                                            <td>
+                                                <span class="cl-green">50</span> out of <span class="cl-pm">100</span>
+                                            </td>
+                                            <td>
+                                                <span class="bg-cl-light-yellow color-yellow px-3 rounded-3">Average</span>
+                                            </td>
+                                            <td class="tchSubTableAct">
+                                                <a href="" class="px-3 rounded-3" data-bs-toggle="modal" data-bs-target="#popUp">
+                                                    <i class="far fa-edit cl-pm"></i> Edit
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+<!-------------------------Modal--------------------------->
+                                <div class="modal fade" id="popUp" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content py-4 w-75">
+                                        <div class="modal-body tchModalBody d-flex flex-column justify-content-start">
+                                            <div class="tchModalHeading d-flex align-items-center mb-3">
+                                                <div class="tchModalImg me-3">
+                                                    <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                                                </div>
+                                                <div class="tchModalName color-span">
+                                                    Arif Bipu
+                                                </div>
+                                            </div>
+                                            <form action="">
+                                                <div class="d-flex flex-column">
+                                                    <label class="mb-2">Total Mark</label>
+                                                    <input class="bd-pm rounded-3 mb-2 py-1 px-2" type="Number">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <label class="mb-2">Obtained Mark</label>
+                                                    <input class="bd-pm rounded-3 mb-3 py-1 px-2" type="Number">
+                                                </div>
+                                                <input class="btn btn3 bg-cl-pm w-100" type="submit" value="Save"   data-bs-dismiss="modal">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Submission Body End -->
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-course" role="tabpanel" aria-labelledby="nav-course-tab">
@@ -1752,19 +1932,21 @@
                                         </div>
                                     </div>
                                     <div class="col-xl-2 col-md-4">
-                                        <div class="box tchResource d-flex justify-content-center align-items-center cursor" onclick="tchBtnCheck('tchResource')">
-                                                <div class="mt-3 ">
-                                                    <img src="Assets/Images/TeacherProfile/Hlp & Sprt/mail.png" alt="">
-                                                    <h5 class="fw-bold   text-center mt-3">Mail</h5>
-                                                </div>
+                                        <div class="box tchResource d-flex justify-content-center align-items-center cursor"
+                                            onclick="tchBtnCheck('tchResource')">
+                                            <div class="mt-3 ">
+                                                <img src="Assets/Images/TeacherProfile/Hlp & Sprt/mail.png" alt="">
+                                                <h5 class="fw-bold   text-center mt-3">Mail</h5>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-2 col-md-4">
-                                        <div class="box d-flex justify-content-center align-items-center cursor" onclick="tchBtnCheck('tchFaq')">
-                                                <div class="mt-3 ">
-                                                    <img src="Assets/Images/TeacherProfile/Hlp & Sprt/faq.png" alt="">
-                                                    <h5 class="fw-bold   text-center mt-3">FAQ</h5>
-                                                </div>
+                                        <div class="box d-flex justify-content-center align-items-center cursor"
+                                            onclick="tchBtnCheck('tchFaq')">
+                                            <div class="mt-3 ">
+                                                <img src="Assets/Images/TeacherProfile/Hlp & Sprt/faq.png" alt="">
+                                                <h5 class="fw-bold   text-center mt-3">FAQ</h5>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1844,14 +2026,13 @@
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true"
-                                            aria-controls="faq1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
                                             <h5>How to improve teaching quality?</h5>
                                         </button>
                                     </h2>
-                                    <div id="faq1" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <p>
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
@@ -1872,9 +2053,9 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
-                                            aria-expanded="false" aria-controls="faq2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
+                                            aria-controls="faq2">
                                             <h5>How to improve teaching quality?</h5>
                                         </button>
                                     </h2>
@@ -1900,14 +2081,14 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
-                                            aria-expanded="false" aria-controls="faq3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
+                                            aria-controls="faq3">
                                             <h5>How to improve teaching quality?</h5>
                                         </button>
                                     </h2>
-                                    <div id="faq3" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <p>
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
@@ -1928,14 +2109,14 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed "
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
-                                            aria-expanded="false" aria-controls="faq4">
+                                        <button class="accordion-button collapsed " type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
+                                            aria-controls="faq4">
                                             <h5>How to improve teaching quality?</h5>
                                         </button>
                                     </h2>
-                                    <div id="faq4" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div id="faq4" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <p>
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
@@ -1973,113 +2154,6 @@
     <!-- Teacher Profile End -->
 
     <!-- Bottom Section -->
-    <!------------------------Footer------------------------------>
-    <footer class="footer">
-        <div class="container">
-            <div class="footerContent d-flex justify-content-between">
-                <div class="footerContentOne me-5">
-                    <div class="footerContentOneLogo mb-4 mt-1">
-                        <img src="Assets/Images/Footer/1Logo.png" alt="">
-                    </div>
-                    <div class="footerContentOneContent footerContent">
-                        <p>House 15,Block-E,Road-07. <br>
-                            Sector-01,Uttara,Dhaka-1230.
-                        </p>
-                        <p>
-                            <a href="tellto:">+8801652563545</a>
-                        </p>
-                        <p>
-                            <a href="mailto:">info@livetechltd.com</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footerContentTwo  me-5 mt-3">
-                    <div class="footerContentTwoHeading footerHeading mb-4">
-                        <h5>Navigations</h5>
-                    </div>
-                    <div class="footerContentTwoContent footerContent">
-                        <p>
-                            <a href="">About Us</a>
-                        </p>
-                        <p>
-                            <a href=""> Checkout</a>
-
-                        </p>
-                        <p>
-                            <a href=""> Wishlist</a>
-                        </p>
-                        <p>
-                            <a href="">Contact</a>
-                        </p>
-                        <p>
-                            <a href=""> FAQ</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footerContenttdree me-5 mt-3">
-                    <div class="footerContenttdreeHeading footerHeading mb-4">
-                        <h5>Catagory Courses</h5>
-                    </div>
-                    <div class="footerContenttdreeContent footerContent">
-                        <p>
-                            <a href=""> Education</a>
-                        </p>
-                        <p>
-                            <a href="">Art & Music</a>
-                        </p>
-                        <p>
-                            <a href="">Homeconomics</a>
-                        </p>
-                        <p>
-                            <a href="">It & Software</a>
-                        </p>
-                        <p>
-                            <a href="">Business And Accounting</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footerContentFour me-5 mt-3">
-                    <div class="footerContentFourHeading footerHeading mb-4">
-                        <h5>Help & Support</h5>
-                    </div>
-                    <div class="footerContentFourContent footerContent">
-                        <p>
-                            <a href="">Account</a>
-                        </p>
-                        <p>
-                            <a href="">Privacy & policy</a>
-                        </p>
-                        <p>
-                            <a href="">Terms & Conditions</a>
-                        </p>
-                        <p>
-                            <a href="">Live Chat</a>
-                        </p>
-                        <p>
-                            <a href="">Documentation</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footerContentFive mt-3">
-                    <div class="footerContentFiveHeading footerHeading mb-4">
-                        <h5>Download App</h5>
-                    </div>
-                    <div class="footerContentFiveApp">
-                        <div class="downloadAppContentIcon footerAppContent d-flex">
-                            <a href="#" class="d-flex align-items-center ms-3"><i class="fas fa-play me-2"></i>
-                                <p class="mt-3">Google Play <br> <span>get it now</span></p>
-                            </a>
-                        </div>
-                        <div class="downloadAppContentIcon footerAppContent d-flex mt-2">
-                            <a href="#" class="d-flex align-items-center ms-3"><i class="fab fa-app-store-ios me-2"></i>
-                                <p class="mt-3">App store <br> <span>get it now</span></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     <!----------Copy Right------------------->
     <footer class="CopyRight ">
         <div class="container d-flex justify-content-between align-items-center">
