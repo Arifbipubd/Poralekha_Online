@@ -55,24 +55,34 @@
                     place.</small>
             </div>
         </div>
-        <div class="signUpCongratulationRight d-flex justify-content-center align-items-center">
+        <div class="signUpCongratulationRight  d-flex justify-content-center align-items-center w-100">
             <div class="container">
-                <div class="signUpBack d-flex flex-column">
-                    <a href="" class="cl-pm">
-                        <i class="fa fa-arrow-left me-3"></i>
-                        Back
-                    </a>
-                    <a href="" class="cl-pm">
-                        <i class="fa fa-arrow-left me-3"></i>
-                        Back To Home
-                    </a>
+                <div class="signUpBack d-flex justify-content-between w-75">
+                    <div>
+                        <a href="" class="cl-pm">
+                            <i class="fa fa-arrow-left me-2"></i>
+                            Back
+                        </a>
+                    </div>
+                    <div>
+                        <a href="index.html" class="cl-pm">
+                            Home
+                            <i class="fas fa-home ms-2"></i>
+                        </a>
+                    </div>
                 </div>
                 <div
-                    class="signUpcongratulationRightContent forgetPassContent d-flex flex-column justify-content-center align-items-start">
+                    class="signUpcongratulationRightContent forgetPassContent d-flex flex-column justify-content-center align-items-start px-4">
                     <h4 class="cl-pm fw-bold">Forget your Password</h4>
-                    <small class="color-span mb-4">We have sent a verification code to your registered email <br> <a href="mailto:" class="cl-pm"> “shamitra@gmail.com”</a>. Kindly type the code we’ve sent.</small>
-                    <input class="ps-4 mb-3" type="text" placeholder="Enter The code">
-                   <button class="bg-cl-pm color-white btn1"  onclick="location.href='stdCreatePass.html'">Verify</button>
+                    <small class="color-span mb-4">We have sent a verification code to your registered email <br> <a
+                            href="mailto:" class="cl-pm"> “shamitra@gmail.com”</a>. Kindly type the code we’ve
+                        sent.</small>
+                    <form action="">
+                        <div class="d-flex flex-column">
+                            <input class="ps-4 mb-3" type="text" placeholder="Enter The code" required>
+                            <button type="submit" class="bg-cl-pm color-white btn1">Verify</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

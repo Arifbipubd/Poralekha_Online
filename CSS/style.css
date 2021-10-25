@@ -336,6 +336,62 @@ small{
   background: #EF4536;
 }
 
+/*****************************
+      Sign In Up Responsive 
+******************************/
+@media(max-width:768px){
+  .signUpCongratulation{
+    display: flex;
+    flex-direction: column;
+  }
+  .signUpcongratulationsLeft{
+    width: 100%;
+    height: 15vh;
+  }
+  .signUpcongratulationLeftContent{
+    margin: 0 auto;
+  }
+  .signUpBack{
+    top: 3%;
+  }
+  .signInContent input{
+    width: 100%;
+  }
+  .forgetPassContent input{
+    width: 100%;
+  }
+  .signInContent{
+    width: 100%;
+    left: 0;
+  }
+  .forgetPassContent{
+    width: 100%;
+    left: 0;
+    top: 20%;
+  }
+  .signUpcongratulationLeftContent h4,  .signUpcongratulationLeftContent small{
+    display: none;
+  }
+  .signInOutConnect{
+    text-align: center;
+  }
+  .signInOutLast{
+    text-align: center;
+  }
+  .otpContentInput{
+    display: flex;
+  }
+  .SignInUpSocialBtn{
+    justify-content: center;
+  }
+
+  .form-check input{
+    width: 18px;
+  }
+
+}
+
+
 /*************************
       Top Header Start 
 **************************/
@@ -590,8 +646,14 @@ input.check-toggle-round-flat:checked+label:after {
 .homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1:hover small{
   color: white;
 }
-.homeTopBannerImage img{
+.homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1:hover i{
+  color: white;
+}
+.homeTopBannerImage{
   width: 100%;
+}
+.homeTopBannerContentBottom1img i{
+  font-size: 30px;
 }
 
 /***************************************
