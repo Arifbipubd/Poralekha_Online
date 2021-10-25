@@ -17,6 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!----------------Icon---------->
+    <link rel="stylesheet" type="text/css" href="CSS/icon/flaticon.css">
     <!-- Animated CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Google Font -->
@@ -47,8 +49,11 @@
 <body>
     <section class="signUpCongratulation otpVn d-flex">
         <div class="signUpcongratulationsLeft otpVnLeft d-flex align-items-center">
-            <div class="signUpcongratulationLeftContent d-flex flex-column justify-content-center align-items-center color-white">
-                <img src="Assets/Images/signUp/logo.png" alt="">
+            <div
+                class="signUpcongratulationLeftContent d-flex flex-column justify-content-center align-items-center color-white">
+                <div class="signInUpLeftImg">
+                    <img src="Assets/Images/signUp/logo.png" alt="">
+                </div>
                 <h4 class="fw-bold text-center px-2">One platform for Learning</h4>
                 <small class="text-center px-5 mx-5">Gether Knowledge and your educational Guidline from just in one
                     place.
@@ -59,7 +64,7 @@
             <div class="container">
                 <div class="signUpBack d-flex justify-content-between w-75">
                     <div>
-                        <a href="" class="cl-pm">
+                        <a href="stdSignUp.html" class="cl-pm">
                             <i class="fa fa-arrow-left me-2"></i>
                             Back
                         </a>
@@ -74,7 +79,8 @@
                 <div class="forgetPassContent otpContent align-items-center px-5">
                     <div class="otpContent-header mb-4">
                         <h4 class="cl-pm fw-bold">Phone Verification</h4>
-                        <small class="color-grey">A verification code is sent to your number provided <span class="mx-1 cl-pm fw-bold">+880-1676
+                        <small class="color-grey">A verification code is sent to your number provided <span
+                                class="mx-1 cl-pm fw-bold">+880-1676
                                 044462</span></small>
                     </div>
                     <div class="mb-3">
@@ -82,22 +88,22 @@
                             <div class="otpContentInput mb-4">
                                 <input type="text" id="irst" maxlength="1" onkeyup="clickEvent(this,'sec')"
                                     onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
-                                    name="itemConsumption" placeholder="C" required/>
+                                    name="itemConsumption" placeholder="C" required />
                                 <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')"
                                     onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
-                                    name="itemConsumption" placeholder="O"/>
+                                    name="itemConsumption" placeholder="O" />
                                 <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')"
                                     onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
-                                    name="itemConsumption" placeholder="D"/>
+                                    name="itemConsumption" placeholder="D" />
                                 <input type="text" id="fourth" maxlength="1"
                                     onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
-                                    name="itemConsumption" placeholder="E"/>
+                                    name="itemConsumption" placeholder="E" />
                             </div>
-                           <button type="submit" class="btn btn3 bg-cl-pm btn1">Verify Number</button>
+                            <button type="submit" class="btn btn3 bg-cl-pm btn1">Verify Number</button>
                         </form>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <a class="btn-anchor cl-pm" href="#" role="button" style="outline: none;">Resend Code</a> 
+                        <a class="btn-anchor cl-pm" href="#" role="button" style="outline: none;">Resend Code</a>
                         <small class="color-grey">00:38</small>
                     </div>
                 </div>

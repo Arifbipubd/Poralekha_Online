@@ -82,6 +82,9 @@ small{
 .cl-pm{
   color: #380E86;
 }
+.cl-light-blue{
+  color: #6C63FF;
+}
 .bg-cl-pm{
   background-color: #380E86;
 }
@@ -117,6 +120,9 @@ small{
 }
 .bg-light-pink{
   background-color: #F9F9F9;
+}
+.bg-light-pink2{
+  background-color: #FAFAFA;
 }
 .color-red{
   color: #CA222E;
@@ -392,9 +398,11 @@ small{
 }
 
 
-/*************************
-      Top Header Start 
-**************************/
+/******************************
+      index/homepage start
+******************************/
+/* header start */
+/*Top Header Start*/
 
 .topHeader {
   color: white;
@@ -417,13 +425,14 @@ small{
   background: #7236E2;
 }
 
-/* Language Button toggle start */
 
-.switch {
+/* Language Button toggle start desktop*/
+
+.languageChange .change {
   position: relative;
 }
 
-.switch>span {
+.languageChange .change>span {
   position: absolute;
   top: 2px;
   pointer-events: none;
@@ -434,30 +443,30 @@ small{
   text-align: center;
 }
 
-input.check-toggle-round-flat:checked~.off {
+.languageChange input.engtoggle-round-flat:checked~.off {
   color: #fff;
 }
 
-input.check-toggle-round-flat:checked~.on {
+.languageChange input.engtoggle-round-flat:checked~.on {
   color: #380E86;
 }
 
-.switch>span.on {
+.languageChange .change>span.on {
   left: 0;
   color: #fff;
 }
 
-.switch>span.off {
+.languageChange .change>span.off {
   right: 0;
   color: #380E86;
 }
 
-.check-toggle {
+.languageChange .engtoggle {
   position: absolute;
   visibility: hidden;
 }
 
-.check-toggle+label {
+.languageChange .engtoggle+label {
   display: block;
   position: relative;
   cursor: pointer;
@@ -468,7 +477,7 @@ input.check-toggle-round-flat:checked~.on {
   user-select: none;
 }
 
-input.check-toggle-round-flat+label {
+.languageChange input.engtoggle-round-flat+label {
   width: 61px;
   height: 22px;
   background-color: white;
@@ -479,14 +488,14 @@ input.check-toggle-round-flat+label {
   border-radius: 60px;
 }
 
-input.check-toggle-round-flat+label:before,
-input.check-toggle-round-flat+label:after {
+.languageChange input.engtoggle-round-flat+label:before,
+input.engtoggle-round-flat+label:after {
   display: block;
   position: absolute;
   content: "";
 }
 
-input.check-toggle-round-flat+label:after {
+.languageChange input.engtoggle-round-flat+label:after {
   top: 0px;
   bottom: 0px;
   width: 32px;
@@ -502,14 +511,106 @@ input.check-toggle-round-flat+label:after {
   transition: margin 0.2s;
 }
 
-input.check-toggle-round-flat:checked+label:after {
+.languageChange input.engtoggle-round-flat:checked+label:after {
   margin-left: 30px;
 }
 
-/* Language Button toggle end */
+/* Language Button toggle end  desktop*/
 
+/* Language Button toggle start mobile*/
+
+.switch2 .switch {
+  position: relative;
+}
+
+.switch2 .switch>span {
+  position: absolute;
+  top: 2px;
+  pointer-events: none;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 6%);
+  width: 50%;
+  text-align: center;
+}
+
+.switch2 input.check-toggle-round-flat:checked~.off {
+  color: #fff;
+}
+
+.switch2 input.check-toggle-round-flat:checked~.on {
+  color: #380E86;
+}
+
+.switch2 .switch>span.on {
+  left: 0;
+  color: #fff;
+}
+
+.switch2 .switch>span.off {
+  right: 0;
+  color: #380E86;
+}
+
+.switch2 .check-toggle {
+  position: absolute;
+  visibility: hidden;
+}
+
+.switch2 .check-toggle+label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.switch2 input.check-toggle-round-flat+label {
+  width: 61px;
+  height: 22px;
+  background-color: white;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  border: 1px solid black;
+}
+
+.switch2 input.check-toggle-round-flat+label:before,
+input.check-toggle-round-flat+label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.switch2 input.check-toggle-round-flat+label:after {
+  top: 0px;
+  bottom: 0px;
+  width: 29px;
+  background-color: #6C63FF;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 50px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+.switch2 input.check-toggle-round-flat:checked+label:after {
+  margin-left: 30px;
+}
+
+/* Language Button toggle end mobile*/
 
 /* Top Header End */
+
 /* Middle Header Start*/
 .middleHeader {
   height: 76px;
@@ -533,6 +634,7 @@ input.check-toggle-round-flat:checked+label:after {
   color: white;
 }
 /* Middle Header End*/
+
 /* Bottom Header Start */
 .bottomHeader {
   background-color: #F2F2F2;
@@ -542,8 +644,6 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 .tex {
-  /* width: 100%; */
-  /* position: absolute; */
   font-size: 20px;
   padding: 9.5% 14%;
   background-color: rgb(255, 255, 255);
@@ -569,55 +669,43 @@ input.check-toggle-round-flat:checked+label:after {
   padding: 2px 5px;
   border-radius: 50%;
 }
-/* Bottom Header End */
 
-/***************************************
-============2nd Header Start=============
-***************************************/
-.middleHeader-contentIcon .Icon{
-  height: 24px;
-  width: 24px;
-  position: relative;
+.uldesk-font a{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 10px;
 }
-.middleHeader-contentIcon .Icon::after{
-    content: '7';
-    position: absolute;
-    bottom:70%;
-    left: 70%;
-    font-size: 7px;
-    background-color: #FF543E;
-    color: #FFF;
-    padding: 2px 5px;
-    border-radius: 50%;
+.ulmobile-font a{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #404656;
 }
-.middleHeader-contentDropImg{
+.ulmobile-font .grey-gorib {
+  color: #98A6C0;
+}
+
+.header-image {
   height: 35px;
   width: 35px;
 }
-.middleHeader-contentDropImg img{
+.header-image img {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
 }
 
-.middleHeaderDropdown:focus{
-  border: none;
-  outline: none;
-}
-.middleHeaderDropdownMenu{
-  box-shadow: 0px 4px 4px rgba(226, 226, 226, 0.25);
-}
+/* header end */
 
 
+/**********************************************
+============Home Top Banner Start=============
+**********************************************/
 
-/***************************************
-============Home Top Banner=============
-***************************************/
 .homeTopBanner{
   background-image: url(../Assets/Images/HomeBody/1HomeTopBg.png);
   background-size: cover;
   background-position: center;
-  max-height: 637px;
+  /* max-height: 637px; */
   width: 100%;
 }
 .homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom .active{
@@ -629,12 +717,13 @@ input.check-toggle-round-flat:checked+label:after {
 
 
 .homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1{
-    background-color: white;
-    width: 121px;
-    height: 125px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s ease-out;
+  background-color: white;
+  width: 121px;
+  height: 125px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 14px 7px #D9EDFF;
+  cursor: pointer;
+  transition: 0.5s ease-out;
 }
 .homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1:hover{
   background-color: #380E86;
@@ -649,11 +738,12 @@ input.check-toggle-round-flat:checked+label:after {
 .homeTopBanner .homeTopBannerContent .homeTopBannerContentBottom1:hover i{
   color: white;
 }
-.homeTopBannerImage{
+.homeTopBannerImage img{
   width: 100%;
 }
+
 .homeTopBannerContentBottom1img i{
-  font-size: 30px;
+  font-size: 35px;
 }
 
 /***************************************
@@ -666,7 +756,6 @@ input.check-toggle-round-flat:checked+label:after {
 
 
 .homeTopBannerBottom{
-  height: 162px;
   box-shadow: 0px 13px 12px 4px #FBFCFF;
 }
 
@@ -685,9 +774,7 @@ input.check-toggle-round-flat:checked+label:after {
 ***************************************/
 
 
-/***************************************
-=========Home Popular Catagory=========
-***************************************/
+/* Popular Catagory start */
 
 .homePopularCatagoryHeading a{
   text-decoration: none;
@@ -704,17 +791,17 @@ input.check-toggle-round-flat:checked+label:after {
 .homePopularCatagoryContent:hover{
   outline: 0.5px solid #8DB3DF;
   box-sizing: border-box;
-  /* transition: 7.5s ease; */
 }
 
-/* 25/09 */
-/*****
-=========Home Popular Courses=========
-*****/
+/* Popular Catagory end */
+
+/* Popular Courses Start */
+
 .popularCourses {
   background-color: #E6F3FF;
 }
-/* Owl Carousel */
+
+/* Owl Carousel Start*/
 
 .owl-nav {
   position: absolute;
@@ -724,28 +811,23 @@ input.check-toggle-round-flat:checked+label:after {
   font-size: 26px !important;
 }
 
-
 .card-height .card{
   border: 0 !important;
 }
 .card-height .card-img{
   height:213px;
-  /* width: 390px; */
 }
 .card-height img{
   height: 100%;
   width: 100%;
 }
 .card-body-height {
-  /* height: 167px; */
   border: 1px solid rgba(0,0,0,.125);
 }
 
+/* Popular Courses End  */
 
-/* Home Popular Courses End  */
-/**********************************************
-================Home Featured Books===========
-**********************************************/
+/* Featured Books start*/
 
 .homeFeaturedCard{
   border-top-left-radius: 15px;
@@ -814,7 +896,6 @@ input.check-toggle-round-flat:checked+label:after {
 }
 .homeFeaturedCard-img {
   height: 203px;
-  /* width: 270px; */
 }
 .homeFeaturedCard-img img {
   height: 100%;
@@ -822,18 +903,16 @@ input.check-toggle-round-flat:checked+label:after {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-/****************************************
-==============Whats New=================
-***************************************/
+
+/* Featured Books end*/
+
+/* Whats new Start */
+
 .homeWhatsNew{
   width: 100%;
 
 }
-.homeWhatsNewcarousel-lm{
-  /* max-width: 1200px; */
-  /* margin: auto; */
-  left: 16%;
-}
+
 .owl-dots{
   margin-left: 500px;
   margin-top: 40px;
@@ -852,7 +931,10 @@ input.check-toggle-round-flat:checked+label:after {
   border: 2px solid #380E86!important;
 }
 
-/* Home Featured topics by category start*/
+/* Whats new end */
+
+/*Featured topics by category start*/
+
 .featuredTopics{
   background-color: #E6F3FF;
  }
@@ -884,21 +966,15 @@ input.check-toggle-round-flat:checked+label:after {
   text-decoration: none;
 }
 
-/****************************************
-=========Register Today=================
-***************************************/
+/*Featured topics by category end*/
+
+/* Register today start*/
+
 .homeRegisterToday{
-  height: 70vh; 
-  background-image: url(../Assets/Images/HomeBody/10Banner.png);
   background-color: #E6F3FF;
   background-size: cover;
   background-position: center;
   position: relative;
-}
-.homeRegisterTodayContent {
-  position: absolute;
-  top: 40%;
-  right: 5%;
 }
 .homeRegisterTodayContent h2{
   color: #FFFF;
@@ -921,7 +997,11 @@ input.check-toggle-round-flat:checked+label:after {
   border: none;
   border-radius: 5px;
 }
+
+/* Register today end*/
+
 /* Top rated teacher start*/
+
 .topRatedTeacher .nav-tabs{
   border: 0 !important;
 }
@@ -978,9 +1058,32 @@ input.check-toggle-round-flat:checked+label:after {
   background-color: #380E86;
   color: white;
 }
-/****************************************
-=============Instructor=================
-***************************************/
+
+.topRatedTeacher .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -10px 28px !important;
+  font-size: 26px !important;
+}
+
+
+
+/* Top rated teacher end*/
+
+/* Instructor start */
+.homeInstructor{
+  background-image: url(../Assets/Images/HomeBody/instructorBg.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+.homeInstructorImg {
+  height: 210px;
+}
+.homeInstructorImg img{
+  height: 100%;
+}
 
 .homeInstructorContent h4{
   font-weight: 600;
@@ -998,19 +1101,16 @@ input.check-toggle-round-flat:checked+label:after {
   border-radius: 5px;
 }
 
-/****************************************
-=============Download App================
-***************************************/
+/* Instructor end */
+
+/* Download start */
+
 .homeDownloadApp{
   height: 80vh;
   background-image: url(../Assets/Images/HomeBody/12logo3.png);
   background-size: cover;
   background-position: center;
   position: relative;
-}
-.homeDownloadAppContent{
-  position: absolute;
-  top: 25%;
 }
 
 .homeDownloadAppContent span{
@@ -1030,7 +1130,7 @@ input.check-toggle-round-flat:checked+label:after {
 .downloadAppContentIcon{
   height: 54px;
   width: 178px;
-  background-color: #000;
+  background: #252C41;
   border-radius: 5px;
 }
 .downloadAppContentIcon a{
@@ -1048,10 +1148,10 @@ input.check-toggle-round-flat:checked+label:after {
   font-weight: 300;
 }
 
+/* Download end */
 
-/****************************************
-=============Subscribe================
-***************************************/
+/* Subscriber start */
+
 .homeSubscribe{
   background-color: #F8F8FF;
   padding: 80px 0;
@@ -1062,11 +1162,6 @@ input.check-toggle-round-flat:checked+label:after {
 }
 .homeSubscribeBanner{
   width: 100%;
-}
-.homeSubscribeContent{
-  position: absolute;
-  top: 30%;
-  left: 35%;
 }
 
 .homeSubscribeContentButton {
@@ -1098,11 +1193,41 @@ input.check-toggle-round-flat:checked+label:after {
   padding: .5em 3.5em .5em .5em;
 }
 ::-webkit-input-placeholder{
-  color: rgb(201, 201, 201);
+  color: rgb(201, 201, 201) !important;
+  font-weight: 200;
+}
+input:focus{
+  box-shadow: none !important;
+}
+
+.homeSubscribeContentButton2 input::-webkit-input-placeholder{
+  color: #000 !important;
   font-weight: 200;
 }
 
-/***********Polygon************/
+
+.homeSubscribeContentButton2 button {
+  background-color: #7C6DE4;
+  color: #ffff;
+  font-weight: 500;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100px;
+  height: 45px;
+}
+.homeSubscribeContentButton2 input {
+  width: 462px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background-color: #ffff;
+  border-radius: 10px;
+  color: #ffff;
+  padding: .5em 3.5em .5em .5em;
+}
+
+/* Polygon start */
 .homeSubscribePolygonImg {
   width: 150px;
   height: 150px;
@@ -1119,12 +1244,11 @@ input.check-toggle-round-flat:checked+label:after {
 .polygon2Img{
   margin: -8% 0% 0% 92%;
 }
+/* Polygon end */
+/* Subscriber end */
 
+/* Footer start */
 
-
-/****************************************
-===============Footer==================
-***************************************/
 .footer{
   background-color: #252C41;
   padding: 50px 0;
@@ -1160,6 +1284,157 @@ color: #858B9F;
 .copyRightContentRight a{
   color: #858B9F;
 }
+
+
+
+/******************** 
+            home page mobile version start==========>>>>> 
+*********************/
+@media (min-width:1000px) and (max-width:3500px){
+  .mobileVersion {
+    display: none;
+  }
+  .homeWhatsNewcarousel-lm{
+    left: 16% ;
+  }
+  .homeRegisterToday{
+    height: 70vh;
+    background-image: url(../Assets/Images/HomeBody/10Banner.png);
+  }
+  .homeRegisterTodayContent {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+  .homeDownloadAppContent{
+    position: absolute;
+    top: 25%;
+  }
+  .homeSubscribeContent{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+  }
+  .homeSubscribeContentButton2 {
+    display: none;
+  }
+  
+}
+@media (min-width:300px) and (max-width:999px){
+  .desktopVersion {
+    display: none;
+  }
+  .homeTopBanner h2{
+    margin-top: 30px;
+  }
+  .homeTopBannerContentBottom {
+    justify-content: center !important;
+  }
+  .homeWhatsNewcarousel-lm{
+    margin: 5px;
+    width: 97% !important;
+  }
+  .homeRegisterToday{
+    height: 70vh;
+    background-image: url("https://images.unsplash.com/photo-1634983264334-307f14122e07?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
+    background-attachment: fixed;
+  }
+  .homeRegisterTodayContent {
+    position: absolute;
+    top: 31%;
+    right: 0%;
+  }
+  .homeDownloadAppContent{
+    padding: 50% 10px;
+  }
+  
+  /* Font size reset start*/
+  .homeDownloadAppContent h2 {
+    font-size: 24px;
+  }
+  .homeTopBannerContent  h2 {
+    font-size: 30px;
+  }
+  /* Font size reset end*/
+
+  /*Subscribe field start*/
+  .homeSubscribeBanner {
+    display: none;
+  }
+  .homeSubscribeContent-text {
+    color: black !important;
+  }
+  .homeSubscribeContentButton {
+    display: none;
+  }
+  .homeSubscribeContentButton input {
+    width: 340px;
+    background-color: white !important;
+  }
+  /* polygon  */
+  .homeSubscribe-hide{
+    display: none;
+  }
+  /*Subscribe field end*/
+
+  /* footer part start */
+  .footerContent{
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  /* footer part end */ 
+
+  /* Feature topics center start */
+
+  .justify-center{
+    justify-content: center;
+  }
+  
+  /* Feature topics center end*/
+
+
+  /*******Owl*****************/
+  .owl-dots{
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .owl-dot{
+    width: 20px;
+  }
+  
+}
+.mainHeader .navbar-light .navbar-toggler {
+  color: #380E86;
+}
+.mainHeader .navbar-light .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.footer-icon a{
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  color: black;
+  /* background: #E9EDF3; */
+  border: 1px solid #380E86;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.footer-icon  i{
+  font-size: 10px;
+  line-height: 31px;
+}
+
+
+/******************** 
+       home page mobile version end==========>>>>> 
+*********************/
+
+
+/******************************
+      index/homepage end
+******************************/
 
 
 /****************************************
@@ -2242,9 +2517,9 @@ font-weight:550;
   border-bottom-width: 0;
 }
 
-/* my students start */
+//* my students start */
 
-.myStds .table>:not(caption)>*>* {
+.myStds .table>:not(caption)>> {
   padding: 2rem .5rem;
 }
 .myStds tbody, td, tfoot, th, thead, tr {
@@ -2284,7 +2559,7 @@ font-weight:550;
 .myStds-tbl .list-inline-item {
   display: inline-block;
 }
-.list-inline-item a{
+.myStds-tbl a{
   display: block;
   height: 36px;
   width: 36px;
@@ -2294,11 +2569,11 @@ font-weight:550;
   border-radius: 50%;
   text-decoration: none;
 }
-.list-inline-item a:hover{
+.myStds-tbl a:hover{
   background: #380E86;
   color: white;
 }
-.list-inline-item i{
+.myStds-tbl i{
   font-size: 14px;
   line-height: 38px;
 }

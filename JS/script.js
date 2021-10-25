@@ -8,11 +8,13 @@ $(".homeWhatsNewcarousel").owlCarousel({
   responsive: {
     0: {
       items: 1,
-      nav: false
+      nav: false,
+      // dots: false
     },
     600: {
       items: 2,
-      nav: false
+      nav: false,
+      // dots: false
     },
     1000: {
       items: 4,
@@ -34,27 +36,27 @@ $('#carousel0').owlCarousel({
     0: {
       items: 1,
       dots: false,
-      nav: false
+      // nav: false
     },
     600: {
       items: 2,
       dots: false,
-      nav: false
+      // nav: false
     },
     1000: {
       items: 2,
       dots: false,
-      nav: true
+      // nav: true
     },
     1100: {
       items: 3,
       dots: false,
-      nav: true
+      // nav: true
     },
     1700: {
       items: 4,
       dots: false,
-      nav: true
+      // nav: true
     }
   }
 })
@@ -73,22 +75,22 @@ $('#carousel1').owlCarousel({
     0: {
       items: 1,
       dots: false,
-      nav: false
+      // nav: false
     },
     600: {
       items: 2,
       dots: false,
-      nav: false
+      // nav: false
     },
     1000: {
       items: 2,
       dots: false,
-      nav: true
+      // nav: true
     },
     1100: {
       items: 4,
       dots: false,
-      nav: true
+      // nav: true
     }
   }
 })
@@ -104,22 +106,22 @@ $('#carousel2').owlCarousel({
     0: {
       items: 1,
       dots: false,
-      nav: false
+      // nav: false
     },
     600: {
       items: 2,
       dots: false,
-      nav: false
+      // nav: false
     },
     1000: {
       items: 2,
       dots: false,
-      nav: true
+      // nav: true
     },
     1100: {
       items: 4,
       dots: false,
-      nav: true
+      // nav: true
     }
   }
 })
@@ -135,22 +137,22 @@ $('#carousel3').owlCarousel({
     0: {
       items: 1,
       dots: false,
-      nav: false
+      // nav: false
     },
     600: {
       items: 2,
       dots: false,
-      nav: false
+      // nav: false
     },
     1000: {
       items: 2,
       dots: false,
-      nav: true
+      // nav: true
     },
     1100: {
       items: 4,
       dots: false,
-      nav: true
+      // nav: true
     }
   }
 })
@@ -166,22 +168,22 @@ $('#carousel4').owlCarousel({
     0: {
       items: 1,
       dots: false,
-      nav: false
+      // nav: false
     },
     600: {
       items: 2,
       dots: false,
-      nav: false
+      // nav: false
     },
     1000: {
       items: 2,
       dots: false,
-      nav: true
+      // nav: true
     },
     1100: {
       items: 4,
       dots: false,
-      nav: true
+      // nav: true
     }
   }
 })
@@ -197,22 +199,22 @@ $('#carousel5').owlCarousel({
     0: {
       items: 1,
       dots: false,
-      nav: false
+      // nav: false
     },
     600: {
       items: 2,
       dots: false,
-      nav: false
+      // nav: false
     },
     1000: {
       items: 2,
       dots: false,
-      nav: true
+      // nav: true
     },
     1100: {
       items: 4,
       dots: false,
-      nav: true
+      // nav: true
     }
   }
 })
@@ -228,22 +230,22 @@ $('#carousel6').owlCarousel({
     0: {
       items: 1,
       dots: false,
-      nav: false
+      // nav: false
     },
     600: {
       items: 2,
       dots: false,
-      nav: false
+      // nav: false
     },
     1000: {
       items: 2,
       dots: false,
-      nav: true
+      // nav: true
     },
     1100: {
       items: 4,
       dots: false,
-      nav: true
+      // nav: true
     }
   }
 })
@@ -324,6 +326,11 @@ function toggleChange(change, name) {
   else if (change == "unchange") {
     document.querySelector(".none-" + name).style.display = "block";
     document.querySelector(".block-" + name).style.display = "none";
+  }
+  // its only for teacher profile payment3 or where 3 divs need to toggle
+  else if (change == "tchProfile") {
+    document.querySelector(".none-" + name).style.display = "none";
+    document.querySelector(".block2-" + name).style.display = "block";
   }
 
 }
@@ -447,6 +454,7 @@ function submit_reply() {
 function cancel_reply() {
   $('.reply_comment').remove();
 }
+
 // course playlist mcq start
 document.querySelector('.appear1').style.display = "none";
 document.querySelector('.disappear2').style.display = "none";
@@ -673,22 +681,6 @@ function startMcq() {
 }
 
 // course playlist mcq end
-
-//teacher help and support
-
-function tchBtnCheck(check) {
-  if (check == "tchFaq") {
-    document.querySelector('.searchTopic-footer').style.display = "none";
-    document.querySelector('.tchFaq').style.display = "block";
-  }
-  else if (check == "tchResource") {
-    document.querySelector('.searchTopic-footer').style.display = "block";
-    document.querySelector('.tchFaq').style.display = "none";
-  }
-}
-
-//Teacher Active
-
 
 //Paginations
 
