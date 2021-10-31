@@ -38,8 +38,8 @@ h5{
  font-weight: 500;
 }
 h6{
-  /* font-size: 15px;
-  font-weight: 500; */
+  font-size: 14px;
+  font-weight: 500;
 }
 
 small{
@@ -49,6 +49,13 @@ small{
   font-size: 10px;
 }
 
+
+.w-80{
+  width: 80%;
+}
+.w-90{
+  width: 90%;
+}
 .w-65 {
   width: 65%;
 }
@@ -96,6 +103,9 @@ small{
 }
 .bg-cl-grey3{
   background-color: #F2F2F2;
+}
+.bg-cl-grey4{
+  background-color: #E9EDF3;
 }
 .bg-cl-green{
   background-color: #78C2A4;
@@ -398,6 +408,138 @@ small{
 }
 
 
+/************************************
+=======Teacher Sign up In===========
+************************************/
+
+.signUpcongratulationRightContent .file-upload {
+  background-color: #F6F7F9;
+  border-radius: 10px;
+  width: 288px;
+  margin: 0 auto;
+  padding: 7px;
+  position: relative;
+}
+.signUpcongratulationRightContent .file-upload i {
+  font-size: 40px;
+}
+.signUpcongratulationRightContent .file-upload-content {
+  display: none;
+  text-align: center;
+}
+.signUpcongratulationRightContent .file-upload-content2 {
+  display: none;
+  text-align: center;
+}
+
+.signUpcongratulationRightContent .file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.signUpcongratulationRightContent .file-upload-input2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.signUpcongratulationRightContent .image-upload-wrap {
+  margin: 20px;
+  border: 2px dashed #98A6C0;
+  position: relative;
+}
+
+.signUpcongratulationRightContent .image-upload-wrap2 {
+  margin: 20px;
+  border: 2px dashed #98A6C0;
+  position: relative;
+}
+
+.signUpcongratulationRightContent .drag-text {
+  text-align: center;
+  margin: 5%;
+}
+
+.signUpcongratulationRightContent .file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+.signUpcongratulationRightContent .file-upload-image2 {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.signUpcongratulationRightContent .remove-image {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #cccbd7;
+  border: none;
+  border-radius: 5px;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+
+
+
+.selectorFiltering .selector {
+  width: 288px !important;
+  cursor: pointer;
+  position: relative;
+}
+.selectorFiltering .selector .form-select {
+  font-size: 16px;
+  border-radius: 10px; 
+  background-color: #F6F7F9;
+  color: #999999;
+  border: none;
+  height: 45px;
+}
+.selectorFiltering  select:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.bootstrap-select .btn:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.w-90 {
+  width: 90%;
+}
+.selectorFiltering .selector .dropdown-menu {
+  background-color: #E9EDF3;
+}
+.selectorFiltering .bootstrap-select .dropdown-toggle .filter-option {
+  display: contents !important;
+}
+.subjectChoose p{
+  font-size:  14px;
+  font-weight: 500;
+}
+
+
+
+
 /******************************
       index/homepage start
 ******************************/
@@ -696,6 +838,39 @@ input.check-toggle-round-flat+label:after {
 
 /* header end */
 
+/***********Second header************/
+.middleHeader-contentDropImg{
+  height: 35px;
+  width: 35px;
+}
+.middleHeader-contentDropImg img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.middleHeader-contentIcon i{
+  font-size: 14px;
+}
+.middleHeader-contentIcon{
+  position: relative;
+}
+.middleHeader-contentIcon .Icon::after{
+  content: '7';
+  position: absolute;
+  background-color: #FF543E;
+  font-size: 7px;
+  border-radius: 50%;
+  padding: 2px 5px;
+  color: white;
+  bottom: 70%;
+}
+.hdDot::after{
+left: 30%;
+}
+.hdDot1::after{
+  right: -10%;
+  }
+
 
 /**********************************************
 ============Home Top Banner Start=============
@@ -914,7 +1089,9 @@ input.check-toggle-round-flat+label:after {
 }
 
 .owl-dots{
-  margin-left: 500px;
+  /* margin-left: 500px; */
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
 }
 .owl-dot{
@@ -1021,7 +1198,7 @@ input.check-toggle-round-flat+label:after {
 .topRatedTeacherSlider .card-body{
   border: 1px solid rgb(139, 168, 221);
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 20%;
   background-color: #F9F9F9;
 }
 .topRatedTeacherSlider .card-body .margin-top-minus{
@@ -1294,9 +1471,6 @@ color: #858B9F;
   .mobileVersion {
     display: none;
   }
-  .homeWhatsNewcarousel-lm{
-    left: 16% ;
-  }
   .homeRegisterToday{
     height: 70vh;
     background-image: url(../Assets/Images/HomeBody/10Banner.png);
@@ -1320,6 +1494,17 @@ color: #858B9F;
   }
   
 }
+
+@media (min-width:1400px) and (max-width:3500px){
+  .homeWhatsNewcarousel-lm{
+    left: 16%;
+  }
+  .owl-dots{
+    justify-content: start;
+    margin-left: 30%;
+  }
+}
+
 @media (min-width:300px) and (max-width:999px){
   .desktopVersion {
     display: none;
@@ -1394,11 +1579,11 @@ color: #858B9F;
 
 
   /*******Owl*****************/
-  .owl-dots{
+  /* .owl-dots{
     margin-left: 0px;
     display: flex;
     justify-content: center;
-  }
+  } */
   .owl-dot{
     width: 20px;
   }
@@ -1447,6 +1632,10 @@ color: #858B9F;
   border: 1px solid #95A0B0;
   border-radius: .25rem;
 }
+
+/* .singleCtagoryRight1Catagory #inputState{
+  width: 100%;
+} */
 
 .singleCtagoryLeft1{
   width: 270px;
@@ -1514,9 +1703,84 @@ color: #858B9F;
 }
 
 
+.multiHandleRange{
+  position: relative;
+  width: 270px;
+  background-color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  border: 0.5px solid #95A0B0;
+  margin: 0 auto;
+}
+.multiHandleInput{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+}
+.multiHandleInput input[type="range"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.RangeSlider-track{
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+.multiHandleInput input[type="range"]::-webkit-slider-runnable-track{
+  -webkit-appearance: none;
+  height: 5px;
+}
+
+.multiHandleInput input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 1.3em;
+  width: 1.3em;
+  background-color: #380e86;
+  cursor: pointer;
+  margin-top: -9px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+
+.multiHandleInput input[type="range"]:active::-webkit-slider-thumb{
+  background-color: #ffffff;
+  border: 3px solid #3264fe;
+}
+.multiHandleValues{
+  width: 100%;
+  border: 0.5px solid #95A0B0;
+  position: relative;
+  margin: auto;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #95A0B0;
+}
+
+.singleCtagoryLeft4{
+  width: 270px;
+}
+
+
 /*Pagination*/
 
-.pagination ul {
+/* .pagination ul {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1557,14 +1821,14 @@ color: #858B9F;
   .pagination ul li.btn{
       padding: 0 20px;
       /* border-radius: 10px; */
-  }
+  /* }
   .pagination li.active,
   .pagination ul li.numb:hover,
   .pagination li:first-child:hover,
   .pagination ul li:last-child:hover{
       color: #fff;
       background: #380E86;
-  }
+  } */ 
 
 
 
@@ -1575,6 +1839,33 @@ color: #858B9F;
     border: 0.5px solid #95A0B0;
     box-sizing: border-box;
     border-radius: 10px;
+  }
+
+
+  /*****Responsive All Course*****/
+  @media (min-width:300px) and (max-width:999px){
+    .singleCtagory .row{
+      margin-top: 10px !important;
+    }
+    .singleCtagoryRight1Catagory ul{
+      width: 120px;
+    }
+    .sc-breadcrump{
+      display: none !important;
+    }
+    .filter{
+      display: none !important;
+    }
+    .singleCatWeb{
+      display: none !important;
+    }
+    .filterTabToggle{
+      height: 40px;
+      width: 40px;
+    }
+    .filterTabToggle:focus{
+      box-shadow: none;
+    }
   }
 
 
@@ -1677,7 +1968,44 @@ color: #858B9F;
   height: 100%;
   border-radius: 50%;
 }
+
+.courseReviewImg{
+  height: 50px;
+  width: 50px;
+}
+.courseReviewImg img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
 /* Single Courses end*/
+
+
+/************************************************
+==========Single Course Responsive start=========
+************************************************/
+@media (min-width:300px) and (max-width:999px){
+  .singleCourseBtnSec1{
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .singleCourseBtnSec1 h3{
+    font-size: 20px;
+  }
+  .singleCourseCard2{
+    flex-direction: column;
+  }
+  .singleCourseTopHead h4{
+    text-align: center;
+  }
+  .singleCourseTopHeadRating{
+    justify-content: center;
+  }
+}
+/************************************************
+==========Single Course Responsive End=========
+************************************************/
 
 
 /**************Card Overlay****************/
@@ -2517,9 +2845,9 @@ font-weight:550;
   border-bottom-width: 0;
 }
 
-//* my students start */
+/* my students start */
 
-.myStds .table>:not(caption)>> {
+.myStds .table>:not(caption)> {
   padding: 2rem .5rem;
 }
 .myStds tbody, td, tfoot, th, thead, tr {

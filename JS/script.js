@@ -17,6 +17,10 @@ $(".homeWhatsNewcarousel").owlCarousel({
       // dots: false
     },
     1000: {
+      items: 3,
+      nav: false
+    },
+    1100: {
       items: 4,
       nav: false
     }
@@ -44,7 +48,7 @@ $('#carousel0').owlCarousel({
       // nav: false
     },
     1000: {
-      items: 2,
+      items: 3,
       dots: false,
       // nav: true
     },
@@ -349,7 +353,7 @@ function readURL(input) {
       $('.file-upload-image').attr('src', e.target.result);
       $('.file-upload-content').show();
 
-      $('.image-title').html(input.files[0].name);
+      // $('.image-title').html(input.files[0].name);
     };
 
     reader.readAsDataURL(input.files[0]);
@@ -359,19 +363,51 @@ function readURL(input) {
   }
 }
 
-
 function removeUpload() {
   $('.file-upload-input').replaceWith($('.file-upload-input').clone());
   $('.file-upload-content').hide();
   $('.image-upload-wrap').show();
 }
 $('.image-upload-wrap').bind('dragover', function () {
-  $('.image-upload-wrap').addClass('image-dropping');
+  $('.image-upload-wrap').addClass('image-dropping1');
 });
 $('.image-upload-wrap').bind('dragleave', function () {
-  $('.image-upload-wrap').removeClass('image-dropping');
+  $('.image-upload-wrap').removeClass('image-dropping1');
 });
 
+function read2(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $('.image-upload-wrap2').hide();
+
+      $('.file-upload-image2').attr('src', e.target.result);
+      $('.file-upload-content2').show();
+
+      // $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload2();
+  }
+}
+
+
+function removeUpload2() {
+  $('.file-upload-input2').replaceWith($('.file-upload-input2').clone());
+  $('.file-upload-content2').hide();
+  $('.image-upload-wrap2').show();
+}
+$('.image-upload-wrap2').bind('dragover', function () {
+  $('.image-upload-wrap2').addClass('image-dropping2');
+});
+$('.image-upload-wrap2').bind('dragleave', function () {
+  $('.image-upload-wrap2').removeClass('image-dropping2');
+});
 
 
 //Reply And Comment
@@ -682,73 +718,20 @@ function startMcq() {
 
 // course playlist mcq end
 
-//Paginations
 
-// selecting required element
-const element = document.querySelector(".pagination ul");
-let totalPages = 20;
-let page = 10;
 
-//calling function with passing parameters and adding inside element which is ul tag
-element.innerHTML = createPagination(totalPages, page);
-function createPagination(totalPages, page) {
-  let liTag = '';
-  let active;
-  let beforePage = page - 1;
-  let afterPage = page + 1;
-  if (page > 1) { //show the next button if the page value is greater than 1
-    liTag += `<li class="btn prev" onclick="createPagination(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i> Prev</span></li>`;
+//Teacher Profile help And Support FAQ
+
+function tchBtnCheck(check) {
+  if (check == "tchFaq") {
+    document.querySelector('.searchTopic-footer').style.display = "none";
+    document.querySelector('.tchFaq').style.display = "block";
+  }
+  else if (check == "tchResource") {
+    document.querySelector('.searchTopic-footer').style.display = "block";
+    document.querySelector('.tchFaq').style.display = "none";
   }
 
-  if (page > 2) { //if page value is less than 2 then add 1 after the previous button
-    liTag += `<li class="first numb" onclick="createPagination(totalPages, 1)"><span>1</span></li>`;
-    if (page > 3) { //if page value is greater than 3 then add this (...) after the first li or page
-      liTag += `<li class="dots"><span>...</span></li>`;
-    }
-  }
-
-  // how many pages or li show before the current li
-  if (page == totalPages) {
-    beforePage = beforePage - 2;
-  } else if (page == totalPages - 1) {
-    beforePage = beforePage - 1;
-  }
-  // how many pages or li show after the current li
-  if (page == 1) {
-    afterPage = afterPage + 2;
-  } else if (page == 2) {
-    afterPage = afterPage + 1;
-  }
-
-  for (var plength = beforePage; plength <= afterPage; plength++) {
-    if (plength > totalPages) { //if plength is greater than totalPage length then continue
-      continue;
-    }
-    if (plength == 0) { //if plength is 0 than add +1 in plength value
-      plength = plength + 1;
-    }
-    if (page == plength) { //if page is equal to plength than assign active string in the active variable
-      active = "active";
-    } else { //else leave empty to the active variable
-      active = "";
-    }
-    liTag += `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span>${plength}</span></li>`;
-  }
-
-  if (page < totalPages - 1) { //if page value is less than totalPage value by -1 then show the last li or page
-    if (page < totalPages - 2) { //if page value is less than totalPage value by -2 then add this (...) before the last li or page
-      liTag += `<li class="dots"><span>...</span></li>`;
-    }
-    liTag += `<li class="last numb" onclick="createPagination(totalPages, ${totalPages})"><span>${totalPages}</span></li>`;
-  }
-
-  if (page < totalPages) { //show the next button if the page value is less than totalPage(20)
-    liTag += `<li class="btn next" onclick="createPagination(totalPages, ${page + 1})"><span>Next <i class="fas fa-angle-right"></i></span></li>`;
-  }
-  element.innerHTML = liTag; //add li tag inside ul tag
-  return liTag; //reurn the li tag
 }
-
-
 
 
