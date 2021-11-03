@@ -17,6 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!----------ICON----------------->
+    <link rel="stylesheet" type="text/css" href="CSS/icon/flaticon.css">
     <!-- Animated CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Google Font -->
@@ -84,7 +86,7 @@
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div class="middleHeader-img">
-                        <img src="Assets/Images/Header/logo.png" alt="">
+                        <img src="Assets/Images/Header/logo.png" alt="" onclick="window.location.href='index.html'">
                     </div>
                     <div class="middleHeader-content">
                         <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
@@ -369,22 +371,24 @@
             </nav>
         </div>
     </div>
+
+
     <div class="singleCourse mt-5 mb-5">
         <div class="container">
             <!-- Single Book top  -->
-            <div class="row single-course-top mb-5">
+            <div class="row single-course-top mb-5 d-flex justify-content-center">
                 <!-- img -->
-                <div class="col-lg-3 col-md-4 col-12 sCtop-img">
+                <div class="col-lg-3 col-md-6 col-12 sCtop-img mb-3">
                     <img src="Assets/Images/SingleBook/1book.png" alt="">
                 </div>
                 <!-- description -->
-                <div class="col-lg-9 col-md-8 col-12">
+                <div class="col-lg-9 col-md-10 col-12">
                     <!-- top heading -->
                     <div class="row top-heading">
                         <!-- top heading text-->
-                        <div class="col-lg-7 col-md-7 col-6">
+                        <div class="col-lg-7 col-md-12 col-12 mb-3 singleCourseTopHead">
                             <h4>The Complete Financial Analyst Course 2020</h4>
-                            <div class="d-flex align-items-center mt-3">
+                            <div class="singleCourseTopHeadRating d-flex align-items-center mt-3">
                                 <small class="me-2 color-yellow">
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star"></i>
@@ -396,7 +400,7 @@
                             </div>
                         </div>
                         <!-- top heading social btn-->
-                        <div class="col-lg-5 col-md-5 col-6 d-flex social-btn">
+                        <div class="col-lg-5 col-md-12 col-12 d-flex social-btn mb-3">
                             <div class="d-flex align-items-center">
                                 <small>Share</small>
                             </div>
@@ -424,7 +428,7 @@
                                 McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
                                 the more obscure Latin words, consectetur
                             </small>
-                            <div class="middle-heading-border d-flex justify-content-between align-items-center">
+                            <div class="middle-heading-border d-flex flex-wrap justify-content-between align-items-center">
                                 <div class="d-flex align-items-center mt-3 mb-3">
                                     <div class="mh-img">
                                         <img src="Assets/Images/SingleCourse/2authorLogo.png" alt="">
@@ -442,23 +446,26 @@
                                         <p class="m-0">English</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <span class="badge d-flex align-items-center ">
-                                        <i class="far fa-check-circle mx-2"></i>
-                                        <span>In Stock</span>
+                                <div class="bookInStock mb-2">
+                                    <span class="badge bg-cl-green3 d-flex justify-content-end align-items-center py-2 rounded-3 mb-1">
+                                        <i class="flaticon-check me-1 cl-green2 fw-bold"></i>
+                                        <span class="me-2 cl-green2">In Stock <span class="px-2 cl-green2" style="border-left: 2px solid #c0e2d4;">250</span></span>
+                                    </span>
+                                    <span class="badge bg-cl-pink d-flex justify-content-center align-items-center py-2 rounded-3">
+                                        <span class="cl-lpink">Out Of Stock</span>
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-12 col-md-12 col-12 mt-3 mb-3">
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex align-items-center ">
+                            <div class="singleCourseBtnSec d-flex justify-content-between">
+                                <div class="singleCourseBtnSec1 d-flex align-items-center ">
                                     <h3 class="color-yellow">800 Tk</h3>
                                     <strike class="color-grey mx-3">600Tk </strike>
                                     <small class="color-green mx-1 fw-bolder">50%</small>
                                 </div>
-                                <div class="d-flex align-items-center">
-                                    <div class="button-inDecrement">
+                                <div class="bookWish d-flex align-items-center">
+                                    <div class="button-inDecrement mb-2">
                                         <div>
                                             <button id="sub">-</button>
                                             <input type="text" id="qtyBox" value="0">
@@ -483,10 +490,12 @@
                                             });
                                         </script>
                                     </div>
-                                    <button type="button" class="btn  btn3 bg-cl-pm mx-3">Add to Cart</button>
-                                    <li class="bookmark">
-                                        <p> <i class="fas fa-heart toggle-box"></i>
-                                    </li>
+                                    <div class="d-flex mb-2">
+                                        <button type="button" class="btn  btn3 bg-cl-pm mx-3">Add to Cart</button>
+                                        <li class="bookmark">
+                                            <p> <i class="fas fa-heart toggle-box"></i>
+                                        </li>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -521,6 +530,10 @@
                                             <td class="fs12" colspan="2">John Anthony</td>
                                         </tr>
                                         <tr class="table-setup">
+                                            <td class="fs14 fw-bold">Publisher</td>
+                                            <td class="fs12" colspan="2">Penguine Publications</td>
+                                        </tr>
+                                        <tr class="table-setup">
                                             <td class="fs14 fw-bold">ISBN</td>
                                             <td class="fs12" colspan="2">Lorem ipsum dolor sit.</td>
                                         </tr>
@@ -531,10 +544,10 @@
                                         <tr class="table-setup">
                                             <td class="fs14 fw-bold">Tags</td>
                                             <td class="fs12" colspan="2">
-                                                <span class="badge rounded-pill cl-pm table-badge-bg">Biology</span>
-                                                <span class="badge rounded-pill cl-pm table-badge-bg">World</span>
-                                                <span class="badge rounded-pill cl-pm table-badge-bg">Nature</span>
-                                                <span class="badge rounded-pill cl-pm table-badge-bg">Humanity</span>
+                                                <span class="badge rounded-pill cl-pm table-badge-bg mb-2">Biology</span>
+                                                <span class="badge rounded-pill cl-pm table-badge-bg mb-2">World</span>
+                                                <span class="badge rounded-pill cl-pm table-badge-bg mb-2">Nature</span>
+                                                <span class="badge rounded-pill cl-pm table-badge-bg mb-2">Humanity</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -542,49 +555,103 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <div class="content">
-                                <p class="fw-bold">Description2</p>
-                                <p>
-                                    Welcome to the Complete Network Fundamentals Course! In this course, you will learn
-                                    the technologies that keep the world as you know today connected and running. We
-                                    cover both the fundamentals of networking as well as the topics in the new Cisco
-                                    CCNA 200-301 exam.
-                                </p>
-                                <p class="fw-bold">
-                                    Start your journey today learning about networking.
-                                </p>
-                                <p>
-                                    I want to welcome you to this Complete Networking Fundamentals course! I'm David
-                                    Bombal, and I have been teaching networking courses for over 15 years. I qualified
-                                    as a Cisco Certified Network Engineer (CCIE) in 2003 and hold with numerous other
-                                    networking certifications. I'm also a Cisco and HPE certified instructor where I
-                                    have trained thousands of networking engineers in many of the largest companies in
-                                    the world including Fortune 100 companies.
-                                </p>
-                                <p>
-                                    At the end of this course, you will be able to confidently discuss networking
-                                    topics; and be able to start configuring real networking devices such as routers and
-                                    switches. In this an introductory course, but contains a lot of information that can
-                                    be directly applied to the CCNA certification.
-                                </p>
-                                <p>
-                                <ul>
-                                    <li>Network basics</li>
-                                    <li>Network architectures (OSI Model)</li>
-                                    <li>What are hubs, switches, routers?</li>
-                                    <li>How is data forwarded through a network?</li>
-                                    <li>IP addresses</li>
-                                    <li>IP subnetting</li>
-                                    <li>Cabling and network topologies</li>
-                                    <li>Ethernet basics</li>
-                                </ul>
-                                </p>
-                                <p>
-                                    At the end of this course, you will be able to confidently discuss networking
-                                    topics; and be able to start configuring real networking devices such as routers and
-                                    switches. In this an introductory course, but contains a lot of information that can
-                                    be directly applied to the CCNA certification.
-                                </p>
+                            <div class="courseReview">
+                                <div class="courseReviewSec bg-light-pink rounded-3 py-4 px-3 mb-2">
+                                    <div class="courseReviewTop d-flex justify-content-between">
+                                        <div class="courseReviewTopleft d-flex align-items-center">
+                                            <div class="courseReviewImg me-3">
+                                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                                            </div>
+                                            <div class="courseReviewName">
+                                                <h6 class="fw-bold">Arif Bipu</h6>
+                                                <small class="color-grey">07 Aug 2021</small>
+                                            </div>
+                                        </div>
+                                        <div class="courseReviewTopRight">
+                                            <div class="courseReviewRate d-flex justify-content-en me-3 mb-2">
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <small class="color-grey ms-2">5.00</small>
+                                            </div>
+                                            <div class="courseReviewChatIcon d-flex justify-content-end px-3">
+                                                <i class="flaticon-chat-1 cl-pm"></i>
+                                                <small class="color-grey ms-2">8</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="courseReviewbottom mt-3">
+                                        <p>
+                                            Welcome to the Complete Network Fundamentals Course! In this course, you will learn the technologies that keep the world as you know today connected and running. We cover both the fundamentals of networking as well as the topics in the new Cisco CCNA 200-301 exam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="courseReviewSec bg-light-pink rounded-3 py-4 px-3 mb-2">
+                                    <div class="courseReviewTop d-flex justify-content-between">
+                                        <div class="courseReviewTopleft d-flex align-items-center">
+                                            <div class="courseReviewImg me-3">
+                                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                                            </div>
+                                            <div class="courseReviewName">
+                                                <h6 class="fw-bold">Arif Bipu</h6>
+                                                <small class="color-grey">07 Aug 2021</small>
+                                            </div>
+                                        </div>
+                                        <div class="courseReviewTopRight">
+                                            <div class="courseReviewRate d-flex justify-content-en me-3 mb-2">
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <small class="color-grey ms-2">5.00</small>
+                                            </div>
+                                            <div class="courseReviewChatIcon d-flex justify-content-end px-3">
+                                                <i class="flaticon-chat-1 cl-pm"></i>
+                                                <small class="color-grey ms-2">8</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="courseReviewbottom mt-3">
+                                        <p>
+                                            Welcome to the Complete Network Fundamentals Course! In this course, you will learn the technologies that keep the world as you know today connected and running. We cover both the fundamentals of networking as well as the topics in the new Cisco CCNA 200-301 exam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="courseReviewSec bg-light-pink rounded-3 py-4 px-3 mb-2">
+                                    <div class="courseReviewTop d-flex justify-content-between">
+                                        <div class="courseReviewTopleft d-flex align-items-center">
+                                            <div class="courseReviewImg me-3">
+                                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                                            </div>
+                                            <div class="courseReviewName">
+                                                <h6 class="fw-bold">Arif Bipu</h6>
+                                                <small class="color-grey">07 Aug 2021</small>
+                                            </div>
+                                        </div>
+                                        <div class="courseReviewTopRight">
+                                            <div class="courseReviewRate d-flex justify-content-en me-3 mb-2">
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <i class="fas fa-star color-yellow"></i>
+                                                <small class="color-grey ms-2">5.00</small>
+                                            </div>
+                                            <div class="courseReviewChatIcon d-flex justify-content-end px-3">
+                                                <i class="flaticon-chat-1 cl-pm"></i>
+                                                <small class="color-grey ms-2">8</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="courseReviewbottom mt-3">
+                                        <p>
+                                            Welcome to the Complete Network Fundamentals Course! In this course, you will learn the technologies that keep the world as you know today connected and running. We cover both the fundamentals of networking as well as the topics in the new Cisco CCNA 200-301 exam.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -948,22 +1015,33 @@
     </div>
 
         <!------------------------Subscribe----------------->
-        <section class="homeSubscribe">
+        <section class="homeSubscribe ">
             <div class="container">
                 <div class="homeSubscribeImg">
-                    <div class="homeSubscribePolygon">
+                    <div class="homeSubscribePolygon homeSubscribe-hide">
                         <img class="homeSubscribePolygonImg" src="Assets/Images/HomeBody/Polygon1.png" alt="">
                     </div>
                     <img class="homeSubscribeBanner" src="Assets/Images/HomeBody/13footerBg.png" alt="">
                     <div class="homeSubscribeContent">
-                        <h5 class="text-center text-white mb-5">Subscribe our newsletter for newest <br> upcoming
+                        <h5 class="homeSubscribeContent-text text-center text-white mb-5">Subscribe our newsletter for
+                            newest <br> upcoming
                             courses
                         </h5>
+    
                         <div class="homeSubscribeContentButton">
                             <input class="input" type="text" placeholder="Tour your email here...">
                             <button class="button" type="submit">Subscribe</button>
                         </div>
+    
+                        <div class="input-group mb-3 homeSubscribeContentButton2">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="button" type="submit">Subscribe</button>
+                        </div>
                     </div>
+                    <!-- <div class="homeSubscribePolygon homeSubscribe-hide polygon2">
+                        <img class="homeSubscribePolygonImg polygon2Img" src="Assets/Images/HomeBody/Polygon1.png" alt="">
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -1079,7 +1157,7 @@
     <!----------Copy Right------------------->
     <footer class="CopyRight ">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class="copyRightContentLeft">
+            <div class="copyRightContentLeft w-50">
                 &copy; 2021 livetechltd. All rights Reserved
             </div>
             <div class="copyRightContentRight text-white">

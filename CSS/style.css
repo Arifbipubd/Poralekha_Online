@@ -86,6 +86,9 @@ small{
 .cl-green {
   color: #78C2A4;
 }
+.cl-green2{
+  color: #33C087;
+}
 .cl-pm{
   color: #380E86;
 }
@@ -94,6 +97,9 @@ small{
 }
 .bg-cl-pm{
   background-color: #380E86;
+}
+.bg-cl-pink {
+  background-color : #FEE0DD;
 }
 .bg-cl-grey{
   background-color: #95A0B0;
@@ -112,6 +118,9 @@ small{
 }
 .bg-cl-green2{
   background-color: #78c2a42c;
+}
+.bg-cl-green3{
+  background-color: #ECFFEF;
 }
 .bg-cl-parrot{
   background-color: #ECF5EC;
@@ -760,6 +769,10 @@ input.check-toggle-round-flat+label:after {
   align-items: center;
 }
 
+.middleHeader-img{
+  cursor: pointer;
+}
+
 .middleHeader-content .btn1 {
   background-color: #F2F2F2;
 }
@@ -1021,62 +1034,46 @@ left: 30%;
   padding: 2px 10px;
   border-radius: 10px;
 }
+.homeFeaturedCardTag small{
+  text-decoration: none;
+  color: #380E86;
+  background-color: #D4D1FF;
+  font-size: 9px;
+  font-weight: 300;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
 .homeFeaturedCard p{
   font-size: 10px;
   font-weight: 600;
   line-height: 25px;
 }
 
-.homeFeaturedCardButtonLeft{
-  width: 153px;
-  height: 35px;
-  border-radius: 5px;
-}
-.homeFeaturedCardButtonLeft a{
-  color: white;
-  font-size: 12px;
-}
-.homeFeaturedCardButtonLeft a:hover{
-  color: white;
-}
-
-.homeFeaturedCardButtonRight span{
+.homeFeaturedCardBottomLeft span{
   color: #BFBFBF;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
 }
-.homeFeaturedCardButtonRight strike{
+
+.homeFeaturedCardBottomLeft strike{
   display: flex;
   justify-content: end;
   color: #FE3745;
 }
-.homeFeaturedCardButtonRight h6{
-  font-size: 16px;
-  font-weight: 500;
+
+.homeFeaturedCardButton a:hover{
+  color: white;
 }
 
-.homeFeaturedCard::before{
-  content: '50%';
-  position: absolute;
-  top: 10%;
-  width: 61px;
-  height: 44px;
-  background-color: #380E86;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.homeFeaturedCard-img {
+.homeFeaturedCard .card-img {
   height: 203px;
 }
-.homeFeaturedCard-img img {
+.homeFeaturedCard .card-img img {
   height: 100%;
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  cursor: pointer;
 }
 
 /* Featured Books end*/
@@ -1499,7 +1496,7 @@ color: #858B9F;
   .homeWhatsNewcarousel-lm{
     left: 16%;
   }
-  .owl-dots{
+  .homeWhatsNewcarousel-lm .owl-dots{
     justify-content: start;
     margin-left: 30%;
   }
@@ -1644,7 +1641,8 @@ color: #858B9F;
   border-radius: 10px;
 }
 .singleCtagoryLeft1 input{
-  height: 45px;
+  width: 90%;
+  height: 50%;
   background: #F9FBFF;
   padding: 0 15px;
   border: 0.5px solid #95A0B0;
@@ -1776,61 +1774,6 @@ color: #858B9F;
 .singleCtagoryLeft4{
   width: 270px;
 }
-
-
-/*Pagination*/
-
-/* .pagination ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: #fff;
-  padding: 8px;
-  
-  }
-  .pagination ul li {
-      color: #000;
-      list-style: none;
-      line-height: 45px;
-      text-align: center;
-      font-size: 18px;
-      font-weight: 500;
-      cursor: pointer;
-      user-select: none;
-      transition: all 0.3s ease;
-  }
-  .pagination ul li.numb{
-      list-style: none;
-      height: 45px;
-      width: 45px;
-      margin: 0 3px;
-      line-height: 45px;
-      border-radius: 10%;
-  }
-  .pagination ul li.numb.first {
-      margin: 0px 3px 0 -5px;
-  }
-  .pagination ul li.numb.last{
-      margin: 0px -5px 0 3px;
-  }
-  .pagination ul li.dots {
-      font-size: 22px;
-      cursor: default;
-  }
-  .pagination ul li.btn{
-      padding: 0 20px;
-      /* border-radius: 10px; */
-  /* }
-  .pagination li.active,
-  .pagination ul li.numb:hover,
-  .pagination li:first-child:hover,
-  .pagination ul li:last-child:hover{
-      color: #fff;
-      background: #380E86;
-  } */ 
-
-
 
   /*************All Courses***********/
   .allCoursescheckbox{
@@ -2130,6 +2073,18 @@ color: #858B9F;
 }
 /* Single Book End*/
 
+
+/*Single Book responsive start*/
+@media(max-width:576px){
+  .bookWish{
+    flex-direction: column;
+  }
+  .bookInStock{
+    margin-left: 60%;
+  }
+}
+/*Single Book responsive end*/
+
 /* My course start */
 .mixItUpContent {
   display: flex;
@@ -2356,7 +2311,7 @@ color: #858B9F;
   display: none;
 }
 
-.file-upload {
+.block-profile .file-upload {
   background-color: #F6F7F9;
   border-radius: 10px;
   width: 60%;
@@ -2364,15 +2319,15 @@ color: #858B9F;
   padding: 7px;
   position: relative;
 }
-.file-upload i {
+.block-profile .file-upload i {
   font-size: 40px;
 }
-.file-upload-content {
+.block-profile .file-upload-content {
   display: none;
   text-align: center;
 }
 
-.file-upload-input {
+.block-profile .file-upload-input {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -2383,26 +2338,26 @@ color: #858B9F;
   cursor: pointer;
 }
 
-.image-upload-wrap {
+.block-profile .image-upload-wrap {
   margin: 20px;
   border: 2px dashed #98A6C0;
   position: relative;
 }
 
-.drag-text {
+.block-profile .drag-text {
   text-align: center;
   margin: 5%;
 }
 
-.file-upload-image {
+.block-profile .file-upload-image {
   max-height: 200px;
   max-width: 200px;
   margin: auto;
   padding: 20px;
 }
 
-.remove-image {
-  width: 230px;
+.block-profile .remove-image {
+  width: 100%;
   margin: 0;
   color: #fff;
   background: #cccbd7;
@@ -2413,6 +2368,34 @@ color: #858B9F;
   text-transform: uppercase;
   font-weight: 700;
 }
+
+
+/**************Student Profile Responsive Start*************/
+
+@media (min-width:1000px) and (max-width:3500px){
+  .mtResponsive {
+    margin-top: 48px;
+  }
+}
+@media (min-width:300px) and (max-width:999px){
+  .mtResponsive {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width:300px) and (max-width:699px){
+  .tableHide{
+    display: none;
+  }
+  .paymentHistoryInput{
+    flex-direction: column;
+  }
+  .paymentHistoryInput .input1,.paymentHistoryInput .input2{
+    width: 100%;
+  }
+}
+
+/**************Student Profile Responsive End*************/
 
 
 /*****************Course Playlist Start*********************/
@@ -2847,7 +2830,7 @@ font-weight:550;
 
 /* my students start */
 
-.myStds .table>:not(caption)> {
+.myStds .table>:not(caption)>*>* {
   padding: 2rem .5rem;
 }
 .myStds tbody, td, tfoot, th, thead, tr {
@@ -2914,6 +2897,21 @@ font-weight:550;
 
 /* my students end */
 
+/*Guideline start*/
+.tchAccordionButton::before{
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 1%;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../Assets/Images/TeacherProfile/Polygon\ 17.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*Guideline End*/
+
+
 /* Help & Support start*/
 
 .searchTopic-header {
@@ -2958,22 +2956,208 @@ font-weight:550;
 
 /* Help & Support end*/
 
-
-/*Teacher Profile Guideline*/
-.tchAccordionButton::before{
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 1%;
-  width: 1rem;
-  height: 1rem;
-  background-image: url(../Assets/Images/TeacherProfile/Polygon\ 17.png);
-  background-repeat: no-repeat;
-  background-position: center;
+/* Payment Start*/
+.tch-payment h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.tch-payment h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #554E56;
+}
+.tch-payment small {
+  font-size: 14px;
+  font-weight: 500;
+  /* color: #95A0B0; */
 }
 
+.saved-card1 {
+  background-color: #5463D4;
+  /* position: relative;
+  background-image: url("../Assets/Images/TeacherProfile/Payment/card-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  /* height: 117px; */
+  border-radius: 15px;
+}
+.saved-card2 {
+  background-color: #D9539A;
+  border-radius: 15px;
+}
+.saved-card3 {
+  background-color: #717171;
+  border-radius: 15px;
+}
 
-/******Teacher Submission**************/
+.tch-payment .list-inline{
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+.tch-payment .list-inline-item {
+  display: inline-block;
+}
+.card-box a{
+  display: block;
+  height: 61px;
+  width: 61px;
+  text-align: center;
+  color: black;
+  background: #E9EDF3;
+  border-radius: 15%;
+  text-decoration: none;
+}
+
+.tch-payment i{
+  font-size: 25px;
+    line-height: 66px;
+}
+.w-170px {
+  width: 170px;
+}
+.net-banking .box2 {
+  height: 92px;
+  width: 150px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 -6px 20px rgb(0 0 0 / 10%), 0 6px 6px rgb(0 0 0 / 10%);
+}
+.card-box2 a{
+  display: block;
+  height: 61px;
+  width: 61px;
+  text-align: center;
+  color: black;
+  background: #E9EDF3;
+  border-radius: 15%;
+  text-decoration: none;
+}
+
+/* Profile start */
+.tchProf-profile .profileContent h6{
+  font-size: 16px;
+  font-weight: 400;
+}
+.tchProf-profile .profileContent .profile-image {
+  height: 140px;
+  width: 150px;
+}
+.tchProf-profile .profileContent .profile-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.tchProf-profile .profileContent h5 {
+  font-size: 18px;
+}
+.tchProf-profile .profileContent small {
+  font-size: 14px;
+  font-weight: 400;
+}
+.profileContent-btn button{
+  height: 45px;
+  border-radius: 10px;
+}
+.overview p {
+  line-height: 2;
+}
+.expertise-btn button{
+  height: 31px;
+  border-radius: 7px;
+  border: 0;
+  padding: 0px 20px;
+  color: white;
+  background-color: #6C63FF;
+}
+.profileContent .overview input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.profileContent .overview button{
+  height: 45px;
+  border-radius: 7px;
+  padding: 0px 20px;
+}
+.profileContent .overview button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.profileContent .frm button{
+  height: 45px;
+  border-radius: 7px;
+  padding: 0px 20px;
+}
+.tchProfile-edit .file-upload {
+  background-color: #380E86;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 7px;
+  position: relative;
+}
+/* .tchProfile-edit .file-upload i {
+  font-size: 40px;
+} */
+.tchProfile-edit .file-upload-content {
+  display: none;
+  text-align: center;
+}
+.tchProfile-edit .file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.tchProfile-edit .drag-text {
+  text-align: center;
+  margin: 5%;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.tchProfile-edit .file-upload-image {
+  max-height: 162px;
+  max-width: 127px;
+  border-radius: 24px;
+  margin: auto;
+  padding: 20px;
+}
+/* remove image text */
+.tchProfile-edit .remove-image {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #cccbd7;
+  border: none;
+  border-radius: 5px;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.profileContent input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid #380E86;
+}
+.profileContent textarea:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid #380E86;
+}
+
+/* Profile End */
+
+/*************Teacher Profile End*********/
+
+
+
+/******Teacher Submission Start**************/
 .tchTableAssignmentIcon{
   height: 30px;
   width: 30px;
@@ -2998,3 +3182,11 @@ font-weight:550;
   width: 100%;
   border-radius: 50%;
 }
+
+/******Teacher Submission End**************/
+
+/*********Pagination Start***************/
+.pagination ul li{
+  list-style: none;
+}
+/*********Pagination End***************/
