@@ -468,41 +468,6 @@
                                         </span>
                                     </div>
                                 </div>
-                                <script>
-                                    window.onload = function () {
-                                        slideOne();
-                                        slideTwo();
-                                    }
-
-                                    let sliderOne = document.getElementById("slider-1");
-                                    let sliderTwo = document.getElementById("slider-2");
-                                    let displayValOne = document.getElementById("multiHandleRange1");
-                                    let displayValTwo = document.getElementById("multiHandleRange2");
-                                    let minGap = 0;
-                                    let sliderTrack = document.querySelector(".RangeSlider-track");
-                                    let sliderMaxValue = document.getElementById("slider-1").max;
-
-                                    function slideOne() {
-                                        if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-                                            sliderOne.value = parseInt(sliderTwo.value) - minGap;
-                                        }
-                                        displayValOne.textContent = sliderOne.value;
-                                        fillColor();
-                                    }
-                                    function slideTwo() {
-                                        if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-                                            sliderTwo.value = parseInt(sliderOne.value) + minGap;
-                                        }
-                                        displayValTwo.textContent = sliderTwo.value;
-                                        fillColor();
-                                    }
-                                    function fillColor() {
-                                        percent1 = (sliderOne.value / sliderMaxValue) * 100;
-                                        percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-                                        sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #380e86 ${percent1}% , #380e86 ${percent2}%, #dadae5 ${percent2}%)`;
-                                    }
-
-                                </script>
                                 <div class="singleCtagoryLeft3 mt-4 py-4 ps-3 ">
                                     <h6 class="fw-bold mb-3">Rating</h6>
                                     <div class="singleCtagoryLeft3Radio">
@@ -666,58 +631,25 @@
                             </div>
                         </div> -->
 
-                        <div class="multiHandleRange">
-                            <div class="multiHandleInput">
+                        <div class="multiHandleRangeb">
+                            <div class="multiHandleInputb">
                                 <h6 class="fw-bold ms-2">Price</h6>
-                                <div class="RangeSlider-track2"></div>
-                                <input type="range" min="0" max="5000" value="1000" id="slider-3" oninput="slideThree()">
-                                <input type="range" min="0" max="5000" value="4000" id="slider-4" oninput="slideFour()">
+                                <div class="RangeSliderb-track"></div>
+                                <input type="range" min="0" max="5000" value="2000" id="sliderb-1"
+                                    oninput="slideOne1()">
+                                <input type="range" min="0" max="5000" value="4000" id="sliderb-2"
+                                    oninput="slideTwo1()">
                             </div>
-                            <div class="multiHandleValues mb-4">
-                                <span id="multiHandleRange3">
-                                    0
+                            <div class="multiHandleValuesb mb-4">
+                                <span id="multiHandleRangeb1">
+                                    1000
                                 </span>
                                 <span> &dash; </span>
-                                <span id="multiHandleRange4">
+                                <span id="multiHandleRangeb2">
                                     5000
                                 </span>
                             </div>
-                        </div>
-                        <script>
-                            window.onload = function () {
-                                slideThree();
-                                slideFour();
-                            }
-
-                            let sliderThree = document.getElementById("slider-3");
-                            let sliderFour = document.getElementById("slider-4");
-                            let displayValThree = document.getElementById("multiHandleRange3");
-                            let displayValFour = document.getElementById("multiHandleRange4");
-                            let minGap2 = 0;
-                            let sliderTrack2 = document.querySelector(".RangeSlider-track2");
-                            let sliderMaxValue2 = document.getElementById("slider-3").max;
-
-                            function slideThree() {
-                                if (parseInt(sliderFour.value) - parseInt(sliderThree.value) <= minGap2) {
-                                    sliderThree.value = parseInt(sliderFour.value) - minGap2;
-                                }
-                                displayValThree.textContent = sliderThree.value;
-                                fillColor();
-                            }
-                            function slideFour() {
-                                if (parseInt(sliderThree.value) - parseInt(sliderThree.value) <= minGap2) {
-                                    sliderFour.value = parseInt(sliderThree.value) + minGap2;
-                                }
-                                displayValFour.textContent = sliderThree.value;
-                                fillColor();
-                            }
-                            function fillColor() {
-                                percent3 = (sliderThree.value / sliderMaxValue2) * 100;
-                                percent4 = (sliderFour.value / sliderMaxValue2) * 100;
-                                sliderTrack2.style.background = `linear-gradient(to right, #dadae5 ${percent3}% , #380e86 ${percent3}% , #380e86 ${percent4}%, #dadae5 ${percent4}%)`;
-                            }
-
-                        </script>
+                        </div> 
 
                         <div class="singleCtagoryLeft3 mt-4 py-4 ps-3 ">
                             <h6 class="fw-bold mb-3">Rating</h6>

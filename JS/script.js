@@ -731,7 +731,11 @@ function tchBtnCheck(check) {
     document.querySelector('.searchTopic-footer').style.display = "block";
     document.querySelector('.tchFaq').style.display = "none";
   }
-
+  //Cart Coupon
+  else if (check == "cartInput") {
+  document.querySelector('.cartCoupon').style.display = "none";
+  document.querySelector('.cartInput').style.display = "block";
+}
 }
 
 
