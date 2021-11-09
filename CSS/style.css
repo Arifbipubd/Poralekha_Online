@@ -3335,7 +3335,7 @@ font-weight:550;
 }
 @media (min-width:300px) and (max-width:999px){
   .cartLeft{
-    height: 58vh;
+    height: 53vh;
     overflow-y: scroll;
   }
   .cartRight{
