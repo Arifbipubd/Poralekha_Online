@@ -46,106 +46,311 @@
 
 <body>
     <!-- Top section -->
-    <!-- Top Header -->
-    <section class="topHeader bg-cl-pm">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="d-flex">
-                    <div class="mx-2 ">
-                        <img class="iconSize test" src="Assets/Images/Header/headphone.png" alt=""> Support
+    <!-- header start -->
+    <!-- Desktop version start -->
+    <section class="desktopVersion">
+        <div class="topHeader bg-cl-pm">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <div class="mx-2 ">
+                            <img class="iconSize test" src="Assets/Images/Header/headphone.png" alt=""> Support
+                        </div>
+                        <div class="mx-2">
+                            <img class="iconSize" src="Assets/Images/Header/mail.png" alt=""> support@gmail.com
+                        </div>
                     </div>
-                    <div class="mx-2">
-                        <img class="iconSize" src="Assets/Images/Header/mail.png" alt=""> support@gmail.com
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <div class="mx-2 br">
-                        Social:
-                        <i class="fab fa-facebook-f iconSize mx-2"></i>
-                        <i class="fab fa-twitter iconSize mx-2"></i>
-                        <i class="fab fa-youtube iconSize me-5 "></i>
-                    </div>
-                    <div class="mx-2">
-                        <div class="switch">
-                            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                            <label for="language-toggle"></label>
-                            <span class="off">En</span>
-                            <span class="on">Bn</span>
+                    <div class="d-flex">
+                        <div class="mx-2 br">
+                            Social:
+                            <a href=""><i class="fab fa-facebook-f iconSize mx-2 color-white"></i></a>
+                            <a href=""><i class="fab fa-twitter iconSize mx-2 color-white"></i></a>
+                            <a href=""><i class="fab fa-youtube iconSize me-5 color-white"></i></a>
+                        </div>
+                        <div class="mx-2 languageChange">
+                            <div class="change">
+                                <input id="engtoggle" class="engtoggle engtoggle-round-flat" type="checkbox">
+                                <label for="engtoggle"></label>
+                                <span class="off">En</span>
+                                <span class="on">Bn</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Middle Header -->
-    <section class="middleHeader">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="middleHeader-img">
-                    <img src="Assets/Images/Header/logo.png" alt="">
-                </div>
-                <div class="middleHeader-content">
-                    <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
-                    <button type="button" class="btn  btn2 mx-2 cl-pm">Sign in</button>
-                    <button type="button" class="btn  btn3 bg-cl-pm">Sign up</button>
+        <!-- Middle Header -->
+        <div class="middleHeader">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="middleHeader-img">
+                        <img src="Assets/Images/Header/logo.png" alt="" onclick="window.location.href='index.html'">
+                    </div>
+                    <div class="middleHeader-content">
+                        <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
+                        <button type="button" class="btn  btn2 mx-2 cl-pm" onclick="location.href='stdSignIn.html'">Sign
+                            in</button>
+                        <button type="button" class="btn  btn3 bg-cl-pm" onclick="location.href='stdSignUp.html'">Sign
+                            up</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-----------User Middle Header-->
+        <!-- <section class="middleHeader">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="middleHeader-img">
+                        <img src="Assets/Images/Header/logo.png" alt="">
+                    </div>
+                    <div class="middleHeader-content d-flex align-items-center">
+                        <div class="middleHeader-contentBtn me-4">
+                            <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
+                        </div>
+                        <div class="middleHeader-contentIcon d-flex" >
+                            
+                            <div class="Icon hdDot bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3">
+                                <i class="fas fa-sms"></i>
+                            </div>
+                            <div class="Icon hdDot1 bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="middleHeader-contentDropdown d-flex ms-4">
+                            <div class="middleHeader-contentDropImg">
+                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                            </div>
+                            <div class="dropdown middleHeaderDropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Arif Bipu
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My Account</a></li>
+                                  <hr class="dropdown-divider color-span">
+                                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log Out</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Bottom Header -->
+        <div class="bottomHeader">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light  ">
+                    <div class="container-fluid p-0">
+                        <div class="">
+                            <a class="navbar-brand tex dot" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">
+                                <i class="fas fa-align-center cl-pm "><span class="ms-3 cl-pm">Category</span>
+                                </i>
+                            </a>
+                            <ul class="dropdown-menu shadow uldesk-font">
+                                <li><a class="dropdown-item color-grey" href="blog.html">Category-1</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropstart">
+                                    <a href="#" class="dropdown-item dropdown-toggle color-grey"
+                                        data-bs-toggle="dropdown">Category-2</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item color-grey" href=""> Sub Cat-2</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item color-grey" href="">Sub Cat-3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropend">
+                                    <a href="#" class="dropdown-item dropdown-toggle color-grey"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">Category-3</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
+                                        <li class="dropend">
+                                            <a href="#" class="dropdown-item dropdown-toggle color-grey"
+                                                data-bs-toggle="dropdown" data-bs-auto-close="outside">Sub Cat-2</a>
+                                            <ul class="dropdown-menu dropdown-submenu shadow">
+                                                <li><a class="dropdown-item color-grey" href="">Sub sub Cat-1</a></li>
+                                                <li><a class="dropdown-item color-grey" href="">Sub sub Cat-2</a></li>
+                                                <li><a class="dropdown-item color-grey" href="">Sub sub Cat-3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item color-grey" href=""> Sub Cat-3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="mr ">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item ">
+                                    <form class="d-flex ">
+                                        <input style="font-family:'Poppins'; " class="form-control border-0 me-1"
+                                            type="search" placeholder="Search Subject" aria-label="Search">
+                                        <select id="inputState" class="form-select me-2 border-0">
+                                            <option selected>Category</option>
+                                            <option>Lorem ipsum dolor sit amet.</option>
+                                            <option>Lorem ipsum dolor sit amet.</option>
+                                            <option>Lorem ipsum dolor sit amet.</option>
+                                        </select>
+                                        <button class="btn  btn3 bg-cl-pm" type="submit">Search</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link " href="#">About</a>
+                                </li>
+                                <li class="nav-item mx-3 ">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link" href="#">FAQ</a>
+                                </li>
+                                <li class="nav-item nav-cart ">
+                                    <a class="nav-link pb-1" href="shoppingCart.html"><img class="pb-1"
+                                            src="Assets/Images/Header/cart.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Middle Section -->
     </section>
-    <!-- Bottom Header -->
-    <section class="bottomHeader">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light  ">
-                <div class="container-fluid p-0">
-                    <div class="">
+    <!-- Desktop version end -->
 
-                        <a class="navbar-brand tex dot" href="#"> <i class="fas fa-align-center cl-pm "><span
-                                    class="ms-3 cl-pm">Category</span></i></a>
+
+    <!-- mobile version start -->
+    <section class="mobileVersion">
+
+        <!-- main Header -->
+        <div class="mainHeader ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <div class="middleHeader-img">
+                            <img src="Assets/Images/Header/logo.png" alt="">
+                        </div>
+                    </a>
+                    <div class="d-flex align-items-center">
+
+                        <div class="header-image me-2">
+                            <img src="Assets/Images/Header/header-img.png" alt="">
+                        </div>
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-align-center cl-pm "></i>
+                        </button>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="mr ">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item ">
-                                <form class="d-flex ">
-                                    <input style="font-family:'Font Awesome 5 Free'; "
-                                        class="form-control border-0 me-1" type="search"
-                                        placeholder="&#61442 Search Subject" aria-label="Search">
-                                    <select id="inputState" class="form-select me-2 border-0">
-                                        <option selected>Category</option>
-                                        <option>Lorem ipsum dolor sit amet.</option>
-                                        <option>Lorem ipsum dolor sit amet.</option>
-                                        <option>Lorem ipsum dolor sit amet.</option>
-                                    </select>
-                                    <button class="btn  btn3 bg-cl-pm" type="submit">Search</button>
-                                </form>
+                    <div class="collapse navbar-collapse mt-5 px-4" id="navbarSupportedContent">
+
+                        <form class="mb-3">
+                            <input class="form-control  mb-2 bg-cl-grey3" type="search" placeholder=" Search Subject"
+                                aria-label="Search">
+                            <button class="btn  btn3 bg-cl-pm w-100 " type="submit">Search Subject</button>
+                        </form>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulmobile-font">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false"
+                                    style="color: #380E86;">
+                                    Category
+                                </a>
+                                <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item grey-gorib" href="#">Cat 1</a></li>
+                                    <li><a class="dropdown-item grey-gorib" href="#">Cat 2</a></li>
+                                    <li>
+                                        <a class="dropdown-item dropdown-toggle grey-gorib" id="navbarDropdown"
+                                            role="button" data-bs-auto-close="outside" data-bs-toggle="dropdown"
+                                            aria-expanded="false" href="#">
+                                            Cat 3
+                                        </a>
+                                        <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item grey-gorib" href="#">Sub Cat 1</a></li>
+                                            <li><a class="dropdown-item grey-gorib" href="#">Sub Cat 2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
-                        </ul>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0 ">
-                            <li class="nav-item mx-3">
+                            <li class="nav-item ">
                                 <a class="nav-link " href="#">About</a>
                             </li>
-                            <li class="nav-item mx-3 ">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
-                            <li class="nav-item mx-3">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">FAQ</a>
                             </li>
-                            <li class="nav-item nav-cart ">
-                                <a class="nav-link pb-1" href="#"><img class="pb-1" src="Assets/Images/Header/cart.png"
-                                        alt=""></a>
+                            <!-- nav cart is used for new notification in red color(method after) -->
+                            <li class="nav-item nav-cart" style="position: relative;">
+                                <a class="nav-link  d-flex justify-content-between  align-items-center" href="shoppingCart.html">
+                                    <p class="mt-1">My Cart</p>
+                                    <img class="px-2" src="Assets/Images/Header/cart.png" alt="" onclick="window.location.href='shoppingCart.html'">
+                                </a>
                             </li>
                         </ul>
+                        <div class="login-hide justify-content-center w-100 mb-4">
+                            <button type="button" class="btn  btn1 cl-pm w-100 mb-2 bg-cl-grey3">Join as
+                                Tutor</button>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn  btn2 mx-2 cl-pm"
+                                    onclick="location.href='stdSignIn.html'">Sign in</button>
+                                <button type="button" class="btn  btn3 bg-cl-pm"
+                                    onclick="location.href='stdSignUp.html'">Sign up</button>
+                            </div>
+                        </div>
+                        <div class="nav-footer">
+                            <small class="color-grey">Social :</small>
+                            <div class="footer-icon mt-2">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item ">
+                                            <a href="#"><i class="fab fa-facebook-f cl-pm"></i></a>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <a href="#"><i class="fab fa-twitter cl-pm"></i></a>
+                                        </li>
+                                        <li class="list-inline-item ">
+                                            <a href="#"><i class="fab fa-youtube cl-pm"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="switch2">
+                                        <div class="switch">
+                                            <input id="language-toggle" class="check-toggle check-toggle-round-flat"
+                                                type="checkbox">
+                                            <label for="language-toggle"></label>
+                                            <span class="off">En</span>
+                                            <span class="on">Bn</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
     </section>
+    <!-- mobile version end -->
+    <!-- header end -->
 
     <!------------Breadcrumb-------------------->
     <div class="sc-breadcrump d-flex align-items-center">
@@ -166,10 +371,10 @@
     <section class="authorTop my-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="homeWhatsNewImg">
-                        <div class="card card-height authorCard">
-                            <div class="d-flex  justify-content-end">
+                <div class="col-xl-3 col-lg-4 col-md-5 col-12">
+                    <div class="homeWhatsNewImg authorCard">
+                        <div class="card">
+                            <div class="authorCardImg d-flex align-items-center justify-content-center">
                                 <img class="card-img-top" src="Assets/Images/Author/1Author.jpeg" alt="Card image cap">
                             </div>
                             <div class="card-body text-center">
@@ -181,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9 pt-3 ps-4 pe-5 authorCardContent">
+                <div class="col-xl-9 col-lg-8 col-md-7 pt-3 ps-4 pe-5 authorCardContent">
                     <h4 class="fw-bolder mb-4">About Author</h4>
                     <p class="color-span">
                         I want to welcome you to this Complete Networking Fundamentals course! I'm David Bombal, and I
@@ -191,24 +396,24 @@
                         many of the largest companies in the world including Fortune 100 companies.
                     </p>
                     <div class="authorContact">
-                        <div class="col-lg-4">
+                        <div class="col-lg-10">
                             <table class="table table-borderless gx-0">
                                 <tbody>
                                     <tr class="color-span">
-                                        <th scope="row">Email</th>
-                                        <td>authorname@gmail.com</td>
+                                        <th class="text-start w-15" scope="row">Email</th>
+                                        <td class="text-start">authorname@gmail.com</td>
                                     </tr>
                                     <tr class="color-span">
-                                        <th scope="row">Contact</th>
-                                        <td>+880-1676044462</td>
+                                        <th class="text-start w-15" scope="row">Contact</th>
+                                        <td class="text-start">+880-1676044462</td>
                                     </tr>
                                     <tr class="color-span">
-                                        <th scope="row">Residence</th>
-                                        <td>Dhaka, Bangladesh</td>
+                                        <th class="text-start w-15" scope="row">Residence</th>
+                                        <td class="text-start">Dhaka, Bangladesh</td>
                                     </tr>
                                     <tr class="color-span">
-                                        <th scope="row">Social</th>
-                                        <td>
+                                        <th class="text-start w-15" scope="row">Social</th>
+                                        <td class="text-start">
                                             <div class="authorIcon">
                                                 <a href=""><i class="fab fa-facebook-f me-3"></i></a>
                                                 <a href=""><i class="fab fa-twitter me-3"></i></a>
@@ -237,7 +442,7 @@
             <div class="tab-content mt-5" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="row">
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg booksCard">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -255,20 +460,12 @@
                                         <div class="card-body card-body-height">
                                             <h5 class="fw-bold">The Henry</h5>
                                             <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
+                                                <div class="">
+                                                    <div class="d-flex justify-content-between">
                                                         <div>
                                                             <small>Don Anthony</small>
                                                         </div>
-                                                        <div class="d-flex align-items-center mt-2">
-                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
-                                                            <strike class="color-grey  mx-2"><small>600Tk</small>
-                                                            </strike>
-                                                            <small class="color-green">50%</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fs10">
-                                                        <div class="d-flex align-items-center mt-1">
+                                                        <div class="bookStar d-flex align-items-center mt-1">
                                                             <small class="me-1 color-yellow">
                                                                 <i class="fas fa-star "></i>
                                                                 <i class="fas fa-star"></i>
@@ -277,6 +474,14 @@
                                                                 <i class="fas fa-star"></i>
                                                             </small>
                                                             <small class="color-grey">5.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mt-2">
+                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
+                                                            <strike class="color-grey mx-2"><small>600Tk</small>
+                                                            </strike>
+                                                            <small class="color-green">50%</small>
                                                         </div>
                                                         <div class="text-end mt-2">
                                                             <small class="color-grey">290 Sales</small>
@@ -289,7 +494,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg booksCard">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -307,20 +512,12 @@
                                         <div class="card-body card-body-height">
                                             <h5 class="fw-bold">The Henry</h5>
                                             <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
+                                                <div class="">
+                                                    <div class="d-flex justify-content-between">
                                                         <div>
                                                             <small>Don Anthony</small>
                                                         </div>
-                                                        <div class="d-flex align-items-center mt-2">
-                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
-                                                            <strike class="color-grey  mx-2"><small>600Tk</small>
-                                                            </strike>
-                                                            <small class="color-green">50%</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fs10">
-                                                        <div class="d-flex align-items-center mt-1">
+                                                        <div class="bookStar d-flex align-items-center mt-1">
                                                             <small class="me-1 color-yellow">
                                                                 <i class="fas fa-star "></i>
                                                                 <i class="fas fa-star"></i>
@@ -329,6 +526,14 @@
                                                                 <i class="fas fa-star"></i>
                                                             </small>
                                                             <small class="color-grey">5.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mt-2">
+                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
+                                                            <strike class="color-grey mx-2"><small>600Tk</small>
+                                                            </strike>
+                                                            <small class="color-green">50%</small>
                                                         </div>
                                                         <div class="text-end mt-2">
                                                             <small class="color-grey">290 Sales</small>
@@ -341,7 +546,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg booksCard">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -359,20 +564,12 @@
                                         <div class="card-body card-body-height">
                                             <h5 class="fw-bold">The Henry</h5>
                                             <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
+                                                <div class="">
+                                                    <div class="d-flex justify-content-between">
                                                         <div>
                                                             <small>Don Anthony</small>
                                                         </div>
-                                                        <div class="d-flex align-items-center mt-2">
-                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
-                                                            <strike class="color-grey  mx-2"><small>600Tk</small>
-                                                            </strike>
-                                                            <small class="color-green">50%</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fs10">
-                                                        <div class="d-flex align-items-center mt-1">
+                                                        <div class="bookStar d-flex align-items-center mt-1">
                                                             <small class="me-1 color-yellow">
                                                                 <i class="fas fa-star "></i>
                                                                 <i class="fas fa-star"></i>
@@ -381,6 +578,14 @@
                                                                 <i class="fas fa-star"></i>
                                                             </small>
                                                             <small class="color-grey">5.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mt-2">
+                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
+                                                            <strike class="color-grey mx-2"><small>600Tk</small>
+                                                            </strike>
+                                                            <small class="color-green">50%</small>
                                                         </div>
                                                         <div class="text-end mt-2">
                                                             <small class="color-grey">290 Sales</small>
@@ -393,7 +598,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg booksCard">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -411,20 +616,12 @@
                                         <div class="card-body card-body-height">
                                             <h5 class="fw-bold">The Henry</h5>
                                             <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
+                                                <div class="">
+                                                    <div class="d-flex justify-content-between">
                                                         <div>
                                                             <small>Don Anthony</small>
                                                         </div>
-                                                        <div class="d-flex align-items-center mt-2">
-                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
-                                                            <strike class="color-grey  mx-2"><small>600Tk</small>
-                                                            </strike>
-                                                            <small class="color-green">50%</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fs10">
-                                                        <div class="d-flex align-items-center mt-1">
+                                                        <div class="bookStar d-flex align-items-center mt-1">
                                                             <small class="me-1 color-yellow">
                                                                 <i class="fas fa-star "></i>
                                                                 <i class="fas fa-star"></i>
@@ -433,6 +630,14 @@
                                                                 <i class="fas fa-star"></i>
                                                             </small>
                                                             <small class="color-grey">5.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mt-2">
+                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
+                                                            <strike class="color-grey mx-2"><small>600Tk</small>
+                                                            </strike>
+                                                            <small class="color-green">50%</small>
                                                         </div>
                                                         <div class="text-end mt-2">
                                                             <small class="color-grey">290 Sales</small>
@@ -445,7 +650,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg booksCard">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -463,20 +668,12 @@
                                         <div class="card-body card-body-height">
                                             <h5 class="fw-bold">The Henry</h5>
                                             <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
+                                                <div class="">
+                                                    <div class="d-flex justify-content-between">
                                                         <div>
                                                             <small>Don Anthony</small>
                                                         </div>
-                                                        <div class="d-flex align-items-center mt-2">
-                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
-                                                            <strike class="color-grey  mx-2"><small>600Tk</small>
-                                                            </strike>
-                                                            <small class="color-green">50%</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fs10">
-                                                        <div class="d-flex align-items-center mt-1">
+                                                        <div class="bookStar d-flex align-items-center mt-1">
                                                             <small class="me-1 color-yellow">
                                                                 <i class="fas fa-star "></i>
                                                                 <i class="fas fa-star"></i>
@@ -485,6 +682,14 @@
                                                                 <i class="fas fa-star"></i>
                                                             </small>
                                                             <small class="color-grey">5.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mt-2">
+                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
+                                                            <strike class="color-grey mx-2"><small>600Tk</small>
+                                                            </strike>
+                                                            <small class="color-green">50%</small>
                                                         </div>
                                                         <div class="text-end mt-2">
                                                             <small class="color-grey">290 Sales</small>
@@ -497,7 +702,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg booksCard">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -515,20 +720,12 @@
                                         <div class="card-body card-body-height">
                                             <h5 class="fw-bold">The Henry</h5>
                                             <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
+                                                <div class="">
+                                                    <div class="d-flex justify-content-between">
                                                         <div>
                                                             <small>Don Anthony</small>
                                                         </div>
-                                                        <div class="d-flex align-items-center mt-2">
-                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
-                                                            <strike class="color-grey  mx-2"><small>600Tk</small>
-                                                            </strike>
-                                                            <small class="color-green">50%</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fs10">
-                                                        <div class="d-flex align-items-center mt-1">
+                                                        <div class="bookStar d-flex align-items-center mt-1">
                                                             <small class="me-1 color-yellow">
                                                                 <i class="fas fa-star "></i>
                                                                 <i class="fas fa-star"></i>
@@ -537,6 +734,14 @@
                                                                 <i class="fas fa-star"></i>
                                                             </small>
                                                             <small class="color-grey">5.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mt-2">
+                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
+                                                            <strike class="color-grey mx-2"><small>600Tk</small>
+                                                            </strike>
+                                                            <small class="color-green">50%</small>
                                                         </div>
                                                         <div class="text-end mt-2">
                                                             <small class="color-grey">290 Sales</small>
@@ -549,7 +754,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg booksCard">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -567,20 +772,12 @@
                                         <div class="card-body card-body-height">
                                             <h5 class="fw-bold">The Henry</h5>
                                             <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
+                                                <div class="">
+                                                    <div class="d-flex justify-content-between">
                                                         <div>
                                                             <small>Don Anthony</small>
                                                         </div>
-                                                        <div class="d-flex align-items-center mt-2">
-                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
-                                                            <strike class="color-grey  mx-2"><small>600Tk</small>
-                                                            </strike>
-                                                            <small class="color-green">50%</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fs10">
-                                                        <div class="d-flex align-items-center mt-1">
+                                                        <div class="bookStar d-flex align-items-center mt-1">
                                                             <small class="me-1 color-yellow">
                                                                 <i class="fas fa-star "></i>
                                                                 <i class="fas fa-star"></i>
@@ -589,6 +786,14 @@
                                                                 <i class="fas fa-star"></i>
                                                             </small>
                                                             <small class="color-grey">5.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mt-2">
+                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
+                                                            <strike class="color-grey mx-2"><small>600Tk</small>
+                                                            </strike>
+                                                            <small class="color-green">50%</small>
                                                         </div>
                                                         <div class="text-end mt-2">
                                                             <small class="color-grey">290 Sales</small>
@@ -601,7 +806,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg booksCard">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -619,20 +824,12 @@
                                         <div class="card-body card-body-height">
                                             <h5 class="fw-bold">The Henry</h5>
                                             <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
+                                                <div class="">
+                                                    <div class="d-flex justify-content-between">
                                                         <div>
                                                             <small>Don Anthony</small>
                                                         </div>
-                                                        <div class="d-flex align-items-center mt-2">
-                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
-                                                            <strike class="color-grey  mx-2"><small>600Tk</small>
-                                                            </strike>
-                                                            <small class="color-green">50%</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fs10">
-                                                        <div class="d-flex align-items-center mt-1">
+                                                        <div class="bookStar d-flex align-items-center mt-1">
                                                             <small class="me-1 color-yellow">
                                                                 <i class="fas fa-star "></i>
                                                                 <i class="fas fa-star"></i>
@@ -641,6 +838,14 @@
                                                                 <i class="fas fa-star"></i>
                                                             </small>
                                                             <small class="color-grey">5.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center mt-2">
+                                                            <h5 class="cl-pm m-0 fw-bold">300 Tk</h5>
+                                                            <strike class="color-grey mx-2"><small>600Tk</small>
+                                                            </strike>
+                                                            <small class="color-green">50%</small>
                                                         </div>
                                                         <div class="text-end mt-2">
                                                             <small class="color-grey">290 Sales</small>
@@ -663,18 +868,27 @@
 
 
     <!------------------------Subscribe----------------->
-    <section class="homeSubscribe">
+    <section class="homeSubscribe ">
         <div class="container">
             <div class="homeSubscribeImg">
-                <div class="homeSubscribePolygon">
+                <div class="homeSubscribePolygon homeSubscribe-hide">
                     <img class="homeSubscribePolygonImg" src="Assets/Images/HomeBody/Polygon1.png" alt="">
                 </div>
                 <img class="homeSubscribeBanner" src="Assets/Images/HomeBody/13footerBg.png" alt="">
                 <div class="homeSubscribeContent">
-                    <h5 class="text-center text-white mb-5">Subscribe our newsletter for newest <br> upcoming courses
+                    <h5 class="homeSubscribeContent-text text-center text-white mb-5">Subscribe our newsletter for
+                        newest <br> upcoming
+                        courses
                     </h5>
+
                     <div class="homeSubscribeContentButton">
                         <input class="input" type="text" placeholder="Tour your email here...">
+                        <button class="button" type="submit">Subscribe</button>
+                    </div>
+
+                    <div class="input-group mb-3 homeSubscribeContentButton2">
+                        <input type="text" class="form-control" placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <button class="button" type="submit">Subscribe</button>
                     </div>
                 </div>
@@ -793,7 +1007,7 @@
     <!----------Copy Right------------------->
     <footer class="CopyRight ">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class="copyRightContentLeft">
+            <div class="copyRightContentLeft w-50">
                 &copy; 2021 livetechltd. All rights Reserved
             </div>
             <div class="copyRightContentRight text-white">

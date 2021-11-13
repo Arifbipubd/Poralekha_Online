@@ -313,8 +313,10 @@
                             <button type="button" class="btn  btn1 cl-pm w-100 mb-2 bg-cl-grey3">Join as
                                 Tutor</button>
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn  btn2 mx-2 cl-pm" onclick="location.href='stdSignIn.html'">Sign in</button>
-                                <button type="button" class="btn  btn3 bg-cl-pm" onclick="location.href='stdSignUp.html'">Sign up</button>
+                                <button type="button" class="btn  btn2 mx-2 cl-pm"
+                                    onclick="location.href='stdSignIn.html'">Sign in</button>
+                                <button type="button" class="btn  btn3 bg-cl-pm"
+                                    onclick="location.href='stdSignUp.html'">Sign up</button>
                             </div>
                         </div>
                         <div class="nav-footer">
@@ -428,7 +430,8 @@
                                 McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
                                 the more obscure Latin words, consectetur
                             </small>
-                            <div class="middle-heading-border d-flex flex-wrap justify-content-between align-items-center">
+                            <div
+                                class="middle-heading-border d-flex flex-wrap justify-content-between align-items-center">
                                 <div class="d-flex align-items-center mt-3 mb-3">
                                     <div class="mh-img">
                                         <img src="Assets/Images/SingleCourse/2authorLogo.png" alt="">
@@ -447,11 +450,14 @@
                                     </div>
                                 </div>
                                 <div class="bookInStock mb-2">
-                                    <span class="badge bg-cl-green3 d-flex justify-content-end align-items-center py-2 rounded-3 mb-1">
+                                    <span
+                                        class="badge bg-cl-green3 d-flex justify-content-end align-items-center py-2 rounded-3 mb-1">
                                         <i class="flaticon-check me-1 cl-green2 fw-bold"></i>
-                                        <span class="me-2 cl-green2">In Stock <span class="px-2 cl-green2" style="border-left: 2px solid #c0e2d4;">250</span></span>
+                                        <span class="me-2 cl-green2">In Stock <span class="px-2 cl-green2"
+                                                style="border-left: 2px solid #c0e2d4;">250</span></span>
                                     </span>
-                                    <span class="badge bg-cl-pink d-flex justify-content-center align-items-center py-2 rounded-3">
+                                    <span
+                                        class="badge bg-cl-pink d-flex justify-content-center align-items-center py-2 rounded-3">
                                         <span class="cl-lpink">Out Of Stock</span>
                                     </span>
                                 </div>
@@ -465,30 +471,13 @@
                                     <small class="color-green mx-1 fw-bolder">50%</small>
                                 </div>
                                 <div class="bookWish d-flex align-items-center">
-                                    <div class="button-inDecrement mb-2">
+                                    <div class="button-inDecrement">
                                         <div>
-                                            <button id="sub">-</button>
-                                            <input type="text" id="qtyBox" value="0">
-                                            <button id="add">+</button>
+                                            <button class="sub"
+                                                onclick="cartValueChange('bookCount1', false)">-</button>
+                                            <input type="text" id="bookCount1" value="1" readonly>
+                                            <button class="add" onclick="cartValueChange('bookCount1', true)">+</button>
                                         </div>
-                                        <script type="text/javascript">
-                                            let addBtn = document.querySelector('#add');
-                                            let subBtn = document.querySelector('#sub');
-                                            let qty = document.querySelector('#qtyBox');
-
-                                            addBtn.addEventListener('click', () => {
-                                                qty.value = parseInt(qty.value) + 1;
-                                            });
-
-                                            subBtn.addEventListener('click', () => {
-                                                if (qty.value <= 0) {
-                                                    qty.value = 0;
-                                                }
-                                                else {
-                                                    qty.value = parseInt(qty.value) - 1;
-                                                }
-                                            });
-                                        </script>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <button type="button" class="btn  btn3 bg-cl-pm mx-3">Add to Cart</button>
@@ -544,10 +533,12 @@
                                         <tr class="table-setup">
                                             <td class="fs14 fw-bold">Tags</td>
                                             <td class="fs12" colspan="2">
-                                                <span class="badge rounded-pill cl-pm table-badge-bg mb-2">Biology</span>
+                                                <span
+                                                    class="badge rounded-pill cl-pm table-badge-bg mb-2">Biology</span>
                                                 <span class="badge rounded-pill cl-pm table-badge-bg mb-2">World</span>
                                                 <span class="badge rounded-pill cl-pm table-badge-bg mb-2">Nature</span>
-                                                <span class="badge rounded-pill cl-pm table-badge-bg mb-2">Humanity</span>
+                                                <span
+                                                    class="badge rounded-pill cl-pm table-badge-bg mb-2">Humanity</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -584,7 +575,10 @@
                                     </div>
                                     <div class="courseReviewbottom mt-3">
                                         <p>
-                                            Welcome to the Complete Network Fundamentals Course! In this course, you will learn the technologies that keep the world as you know today connected and running. We cover both the fundamentals of networking as well as the topics in the new Cisco CCNA 200-301 exam.
+                                            Welcome to the Complete Network Fundamentals Course! In this course, you
+                                            will learn the technologies that keep the world as you know today connected
+                                            and running. We cover both the fundamentals of networking as well as the
+                                            topics in the new Cisco CCNA 200-301 exam.
                                         </p>
                                     </div>
                                 </div>
@@ -616,7 +610,10 @@
                                     </div>
                                     <div class="courseReviewbottom mt-3">
                                         <p>
-                                            Welcome to the Complete Network Fundamentals Course! In this course, you will learn the technologies that keep the world as you know today connected and running. We cover both the fundamentals of networking as well as the topics in the new Cisco CCNA 200-301 exam.
+                                            Welcome to the Complete Network Fundamentals Course! In this course, you
+                                            will learn the technologies that keep the world as you know today connected
+                                            and running. We cover both the fundamentals of networking as well as the
+                                            topics in the new Cisco CCNA 200-301 exam.
                                         </p>
                                     </div>
                                 </div>
@@ -648,7 +645,10 @@
                                     </div>
                                     <div class="courseReviewbottom mt-3">
                                         <p>
-                                            Welcome to the Complete Network Fundamentals Course! In this course, you will learn the technologies that keep the world as you know today connected and running. We cover both the fundamentals of networking as well as the topics in the new Cisco CCNA 200-301 exam.
+                                            Welcome to the Complete Network Fundamentals Course! In this course, you
+                                            will learn the technologies that keep the world as you know today connected
+                                            and running. We cover both the fundamentals of networking as well as the
+                                            topics in the new Cisco CCNA 200-301 exam.
                                         </p>
                                     </div>
                                 </div>
@@ -1014,37 +1014,37 @@
         </Section>
     </div>
 
-        <!------------------------Subscribe----------------->
-        <section class="homeSubscribe ">
-            <div class="container">
-                <div class="homeSubscribeImg">
-                    <div class="homeSubscribePolygon homeSubscribe-hide">
-                        <img class="homeSubscribePolygonImg" src="Assets/Images/HomeBody/Polygon1.png" alt="">
+    <!------------------------Subscribe----------------->
+    <section class="homeSubscribe ">
+        <div class="container">
+            <div class="homeSubscribeImg">
+                <div class="homeSubscribePolygon homeSubscribe-hide">
+                    <img class="homeSubscribePolygonImg" src="Assets/Images/HomeBody/Polygon1.png" alt="">
+                </div>
+                <img class="homeSubscribeBanner" src="Assets/Images/HomeBody/13footerBg.png" alt="">
+                <div class="homeSubscribeContent">
+                    <h5 class="homeSubscribeContent-text text-center text-white mb-5">Subscribe our newsletter for
+                        newest <br> upcoming
+                        courses
+                    </h5>
+
+                    <div class="homeSubscribeContentButton">
+                        <input class="input" type="text" placeholder="Tour your email here...">
+                        <button class="button" type="submit">Subscribe</button>
                     </div>
-                    <img class="homeSubscribeBanner" src="Assets/Images/HomeBody/13footerBg.png" alt="">
-                    <div class="homeSubscribeContent">
-                        <h5 class="homeSubscribeContent-text text-center text-white mb-5">Subscribe our newsletter for
-                            newest <br> upcoming
-                            courses
-                        </h5>
-    
-                        <div class="homeSubscribeContentButton">
-                            <input class="input" type="text" placeholder="Tour your email here...">
-                            <button class="button" type="submit">Subscribe</button>
-                        </div>
-    
-                        <div class="input-group mb-3 homeSubscribeContentButton2">
-                            <input type="text" class="form-control" placeholder="Recipient's username"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <button class="button" type="submit">Subscribe</button>
-                        </div>
+
+                    <div class="input-group mb-3 homeSubscribeContentButton2">
+                        <input type="text" class="form-control" placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <button class="button" type="submit">Subscribe</button>
                     </div>
-                    <!-- <div class="homeSubscribePolygon homeSubscribe-hide polygon2">
+                </div>
+                <!-- <div class="homeSubscribePolygon homeSubscribe-hide polygon2">
                         <img class="homeSubscribePolygonImg polygon2Img" src="Assets/Images/HomeBody/Polygon1.png" alt="">
                     </div> -->
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- Bottom Section -->
     <!------------------------Footer------------------------------>

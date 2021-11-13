@@ -423,7 +423,7 @@ function submit_comment() {
     '<img src=\"Assets/Images/SingleCourse/2authorLogo.png\" alt=\"avatar\"/>' +
     '</div>' +
     '</div>' +
-    '<div class=\"result_comment col-md-11\">' +
+    '<div class=\"result_comment col-md-11 ms-3\">' +
     '<h4 class=\"tools_comment\">Anonimous <span aria-hidden=\"true\"> · </span><span>1m</span></h4>' +
     '<p>' + comment + '</p>' +
     '<div class=\"tools_comment\">' +
@@ -723,13 +723,13 @@ function startMcq() {
 //Teacher Profile help And Support FAQ
 
 function tchBtnCheck(check) {
-  if (check == "tchFaq") {
+  if (check == "tchFaqAccordian") {
     document.querySelector('.searchTopic-footer').style.display = "none";
-    document.querySelector('.tchFaq').style.display = "block";
+    document.querySelector('.tchFaqAccordian').style.display = "block";
   }
-  else if (check == "tchResource") {
+  else if (check == "searchTopic-footer") {
     document.querySelector('.searchTopic-footer').style.display = "block";
-    document.querySelector('.tchFaq').style.display = "none";
+    document.querySelector('.tchFaqAccordian').style.display = "none";
   }
   //Cart Coupon
   else if (check == "cartInput") {
@@ -748,7 +748,7 @@ window.onload = function(){
 }
 
 function calculateCourse() {
-
+ 
   //   Course Total Price Start
   const cartCoursePrice1 = document.getElementById('course-price1');
   const coursePrice1 = cartCoursePrice1.innerText;

@@ -311,9 +311,10 @@
     <!-- header end -->
     <!-- Middle Section -->
 
-    <!-- Student Profile Start -->
-    <section class="std-profile d-flex">
-        <div class="tchLeft p-3 bg-light-pink">
+    <!-- Teacher Profile Start -->
+    <section class="std-profile d-flex flex-wrap">
+        <!-- teacher profile desktop version start -->
+        <div class="tchLeft p-3 bg-light-pink desktopVersion">
             <div class="tchNavHeading d-flex flex-column justify-content-center align-items-center">
                 <div class="tchNavHeadingImg">
                     <img src="Assets/Images/Author/1Author.jpeg" alt="">
@@ -325,46 +326,137 @@
             </div>
             <!-- <nav class=""> -->
             <div class="nav flex-column nav-tabs">
+
                 <a class="nav-link  me-3" href="tchPdashbord.html">
                     <i class="fas fa-home me-1"></i>
-                    Dashboard</a>
+                    Dashboard
+                </a>
 
                 <a class="nav-link me-3" href="tchPprofile.html">
                     <i class="far fa-user me-1"></i>
-                    Profile</a>
+                    Profile
+                </a>
 
                 <a class="nav-link me-3" href="tchPaddCourse.html">
                     <i class="far fa-file-word me-1"></i>
-                    Add a Course</a>
+                    Add a Course
+                </a>
 
                 <a class="nav-link me-3 active" href="tchPmyCourse.html">
                     <i class="far fa-file-word me-1"></i>
-                    My Course</a>
+                    My Course
+                </a>
 
                 <a class="nav-link me-3 " href="tchPmyStd.html">
                     <i class="fas fa-user-graduate me-1"></i>
-                    My students</a>
+                    My students
+                </a>
+
+                <a class="nav-link me-3 " href="tchPsubAll.html">
+                    <i class="fas fa-user-graduate me-1"></i>
+                   Submission All
+                </a>
 
                 <a class="nav-link me-3 " href="tchPguideline.html">
                     <i class="far fa-credit-card me-1"></i>
-                    Guidelines</a>
+                    Guidelines
+                </a>
 
                 <a class="nav-link me-3 " href="tchPsupport.html">
                     <i class="fas fa-hands-helping me-1"></i>
-                    Help & Support</a>
+                    Help & Support
+                </a>
 
                 <a class="nav-link me-3 " href="tchPpayment.html">
                     <i class="fas fa-money-bill-wave me-1"></i>
-                    Payment</a>
+                    Payment
+                </a>
+
                 <a class="nav-link me-3 " href="tchPsetting.html">
                     <i class="fas fa-user-cog me-1"></i>
-                    Settings</a>
+                    Settings
+                </a>
+
                 <a class="nav-link me-3 " href="index.html">
                     <i class="fas fa-sign-out-alt me-1"></i>
-                    Logout</a>
+                    Logout
+                </a>
+
             </div>
             <!-- </nav> -->
         </div>
+        <!-- teacher profile desktop version end -->
+
+        <!-- teacher profile mobile version start -->
+        <div class="tchLeft mt-3 p-3 bg-light-pink mobileVersion">
+
+            <div class="nav flex-column nav-tabs">
+                <a class="nav-link w-100  active  navbar-toggler d-flex justify-content-between align-items-center"
+                    href="tchPmyCourse.html" type="button" data-bs-toggle="collapse" data-bs-target="#navContentMobile1"
+                    aria-controls="navContentMobile1" aria-expanded="false" aria-label="Toggle navigation">
+                    <div>
+                        <i class="far fa-file-word me-1"></i>
+                        My Course
+                    </div><i class="fas fa-chevron-down"></i>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navContentMobile1">
+
+                    <a class="nav-link me-3 " href="tchPdashbord.html">
+                        <i class="fas fa-home me-1"></i>
+                        Dashboard
+                    </a>
+
+                    <a class="nav-link me-3" href="tchPprofile.html">
+                        <i class="far fa-user me-1"></i>
+                        Profile
+                    </a>
+
+                    <a class="nav-link me-3" href="tchPaddCourse.html">
+                        <i class="far fa-file-word me-1"></i>
+                        Add a Course
+                    </a>
+
+                    <a class="nav-link me-3 " href="tchPmyStd.html">
+                        <i class="fas fa-user-graduate me-1"></i>
+                        My students
+                    </a>
+
+                    <a class="nav-link me-3 " href="tchPsubAll.html">
+                        <i class="fas fa-user-graduate me-1"></i>
+                       Submission All
+                    </a>
+
+                    <a class="nav-link me-3 " href="tchPguideline.html">
+                        <i class="far fa-credit-card me-1"></i>
+                        Guidelines
+                    </a>
+
+                    <a class="nav-link me-3 " href="tchPsupport.html">
+                        <i class="fas fa-hands-helping me-1"></i>
+                        Help & Support
+                    </a>
+
+                    <a class="nav-link me-3 " href="tchPpayment.html">
+                        <i class="fas fa-money-bill-wave me-1"></i>
+                        Payment
+                    </a>
+
+                    <a class="nav-link me-3 " href="tchPsetting.html">
+                        <i class="fas fa-user-cog me-1"></i>
+                        Settings
+                    </a>
+
+                    <a class="nav-link me-3 " href="index.html">
+                        <i class="fas fa-sign-out-alt me-1"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- teacher profile mobile version end -->
+        
         <div class="tchRight">
             <div class="tchCourse">
                 <div class="mt-3 mb-5">
@@ -384,7 +476,7 @@
 
                     <div class="row">
                         <h6 class="fw-bold mb-4">Course of this month</h6>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -413,7 +505,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -442,7 +534,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -471,7 +563,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -500,7 +592,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -529,7 +621,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -558,7 +650,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -587,7 +679,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 mb-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                             <div class="homeWhatsNewImg">
                                 <div class="card card-height">
                                     <div class="card-img d-flex  justify-content-end">
@@ -638,7 +730,7 @@
                             <div class="tab-pane fade show active" id="nav-tchCourse1" role="tabpanel"
                                 aria-labelledby="nav-tchCourse1-tab">
                                 <div class="row">
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -670,7 +762,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -702,7 +794,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -734,7 +826,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -766,7 +858,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -798,7 +890,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -830,7 +922,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -862,7 +954,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -900,7 +992,7 @@
                             <div class="tab-pane fade active" id="nav-tchCourse2" role="tabpanel"
                                 aria-labelledby="nav-tchCourse2-tab">
                                 <div class="row">
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -932,7 +1024,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
+                                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-3">
                                         <div class="homeWhatsNewImg">
                                             <div class="card card-height">
                                                 <div class="card-img d-flex  justify-content-end">
@@ -968,7 +1060,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

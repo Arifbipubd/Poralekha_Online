@@ -210,7 +210,7 @@
                     <div class="d-flex align-items-center">
 
                         <div class="header-image me-2">
-                            <img src="Assets/Images/Header/header-img.png" alt="">
+                            <img src="Assets/Images/Author/1Author.jpeg" alt="">
                         </div>
                         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -311,9 +311,10 @@
     <!-- header end -->
     <!-- Middle Section -->
 
-    <!-- Student Profile Start -->
-    <section class="std-profile d-flex">
-        <div class="tchLeft p-3 bg-light-pink">
+    <!-- Teacher Profile Start -->
+    <section class="std-profile d-flex flex-wrap">
+        <!-- teacher profile desktop version start -->
+        <div class="tchLeft p-3 bg-light-pink desktopVersion">
             <div class="tchNavHeading d-flex flex-column justify-content-center align-items-center">
                 <div class="tchNavHeadingImg">
                     <img src="Assets/Images/Author/1Author.jpeg" alt="">
@@ -324,48 +325,116 @@
                 </div>
             </div>
             <!-- <nav class=""> -->
-                <div class="nav flex-column nav-tabs">
-                    <a class="nav-link  me-3 active" href="tchPdashbord.html">
+            <div class="nav flex-column nav-tabs">
+                <a class="nav-link  me-3 active" href="tchPdashbord.html">
+                    <i class="fas fa-home me-1"></i>
+                    Dashboard</a>
+
+                <a class="nav-link me-3" href="tchPprofile.html">
+                    <i class="far fa-user me-1"></i>
+                    Profile</a>
+
+                <a class="nav-link me-3" href="tchPaddCourse.html">
+                    <i class="far fa-file-word me-1"></i>
+                    Add a Course</a>
+
+                <a class="nav-link me-3 " href="tchPmyCourse.html">
+                    <i class="far fa-file-word me-1"></i>
+                    My Course</a>
+
+                <a class="nav-link me-3 " href="tchPmyStd.html">
+                    <i class="fas fa-user-graduate me-1"></i>
+                    My students</a>
+
+                    <a class="nav-link me-3 " href="tchPsubAll.html">
+                        <i class="fas fa-user-graduate me-1"></i>
+                       Submission All
+                    </a>
+
+                <a class="nav-link me-3 " href="tchPguideline.html">
+                    <i class="far fa-credit-card me-1"></i>
+                    Guidelines</a>
+
+                <a class="nav-link me-3 " href="tchPsupport.html">
+                    <i class="fas fa-hands-helping me-1"></i>
+                    Help & Support</a>
+
+                <a class="nav-link me-3 " href="tchPpayment.html">
+                    <i class="fas fa-money-bill-wave me-1"></i>
+                    Payment</a>
+                <a class="nav-link me-3 " href="tchPsetting.html">
+                    <i class="fas fa-user-cog me-1"></i>
+                    Settings</a>
+                <a class="nav-link me-3 " href="index.html">
+                    <i class="fas fa-sign-out-alt me-1"></i>
+                    Logout</a>
+            </div>
+            <!-- </nav> -->
+        </div>
+        <!-- teacher profile desktop version end -->
+
+        <!-- teacher profile mobile version start -->
+        <div class="tchLeft mt-3 p-3 bg-light-pink mobileVersion">
+           
+            <div class="nav flex-column nav-tabs">
+                <a class="nav-link w-100  active  navbar-toggler d-flex justify-content-between align-items-center"
+                    href="tchPdashbord.html" type="button" data-bs-toggle="collapse" data-bs-target="#navContentMobile1"
+                    aria-controls="navContentMobile1" aria-expanded="false" aria-label="Toggle navigation">
+                    <div>
                         <i class="fas fa-home me-1"></i>
-                        Dashboard</a>
-    
+                        Dashboard
+                    </div><i class="fas fa-chevron-down"></i>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navContentMobile1">
+
                     <a class="nav-link me-3" href="tchPprofile.html">
                         <i class="far fa-user me-1"></i>
                         Profile</a>
-    
+
                     <a class="nav-link me-3" href="tchPaddCourse.html">
                         <i class="far fa-file-word me-1"></i>
                         Add a Course</a>
-    
+
                     <a class="nav-link me-3 " href="tchPmyCourse.html">
                         <i class="far fa-file-word me-1"></i>
                         My Course</a>
-    
+
                     <a class="nav-link me-3 " href="tchPmyStd.html">
                         <i class="fas fa-user-graduate me-1"></i>
                         My students</a>
-    
+
+                        <a class="nav-link me-3 " href="tchPsubAll.html">
+                            <i class="fas fa-user-graduate me-1"></i>
+                           Submission All
+                        </a>
+
                     <a class="nav-link me-3 " href="tchPguideline.html">
                         <i class="far fa-credit-card me-1"></i>
                         Guidelines</a>
-    
+
                     <a class="nav-link me-3 " href="tchPsupport.html">
                         <i class="fas fa-hands-helping me-1"></i>
                         Help & Support</a>
-    
+
                     <a class="nav-link me-3 " href="tchPpayment.html">
                         <i class="fas fa-money-bill-wave me-1"></i>
                         Payment</a>
+
                     <a class="nav-link me-3 " href="tchPsetting.html">
                         <i class="fas fa-user-cog me-1"></i>
                         Settings</a>
+
                     <a class="nav-link me-3 " href="index.html">
                         <i class="fas fa-sign-out-alt me-1"></i>
                         Logout</a>
                 </div>
-            <!-- </nav> -->
+            </div>
+
         </div>
-        <div class="tchRight">
+        <!-- teacher profile mobile version end -->
+
+        <div class="tchRight w-100">
             <!-- Dashboard -->
             <div class="mt-3 mb-5">
                 <div class="sc-breadcrump d-flex align-items-center bg-white">
@@ -383,8 +452,7 @@
                 </div>
                 <div class="row mb-5 me-4">
                     <div class="col-lg-3">
-                        <div
-                            class="tchCard tchCard1 p-3 d-flex flex-column justify-content-center rounded-3">
+                        <div class="tchCard tchCard1 p-3 d-flex flex-column justify-content-center rounded-3">
                             <div class="tchCardContent d-flex justify-content-between">
                                 <div class="tchCardContentLeft">
                                     <div
@@ -402,8 +470,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div
-                            class="tchCard tchCard2 p-3 d-flex flex-column justify-content-center rounded-3">
+                        <div class="tchCard tchCard2 p-3 d-flex flex-column justify-content-center rounded-3">
                             <div class="tchCardContent d-flex justify-content-between">
                                 <div class="tchCardContentLeft">
                                     <div
@@ -421,8 +488,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div
-                            class="tchCard tchCard3 p-3 d-flex flex-column justify-content-center rounded-3">
+                        <div class="tchCard tchCard3 p-3 d-flex flex-column justify-content-center rounded-3">
                             <div class="tchCardContent d-flex justify-content-between">
                                 <div class="tchCardContentLeft">
                                     <div
@@ -440,8 +506,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div
-                            class="tchCard tchCard4 p-3 d-flex flex-column justify-content-center rounded-3">
+                        <div class="tchCard tchCard4 p-3 d-flex flex-column justify-content-center rounded-3">
                             <div class="tchCardContent d-flex justify-content-between">
                                 <div class="tchCardContentLeft">
                                     <div
@@ -477,10 +542,10 @@
                                                 </div>
                                                 <a href="">
                                                     <div class="card-body card-body-height">
-                                                        <h5 class="fw-bold">Video Editing 2021</h5>
+                                                        <h5 class="fw-bold">Video Editing 2022</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between">
-                                                                <div class="">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
                                                                             Classes</small>
@@ -510,7 +575,7 @@
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
                                                             <div class="d-flex justify-content-between">
-                                                                <div class="">
+                                                                <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
                                                                             Classes</small>
@@ -540,7 +605,7 @@
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
                                                             <div class="d-flex justify-content-between">
-                                                                <div class="">
+                                                                <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
                                                                             Classes</small>
@@ -569,8 +634,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between">
-                                                                <div class="">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
                                                                             Classes</small>
@@ -599,8 +664,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between">
-                                                                <div class="">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
                                                                             Classes</small>
@@ -629,8 +694,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between">
-                                                                <div class="">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
                                                                             Classes</small>
@@ -659,8 +724,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between">
-                                                                <div class="">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
                                                                             Classes</small>
@@ -694,8 +759,7 @@
                                                 <td scope="col">Amount</td>
                                                 <td scope="col">Method</td>
                                                 <td scope="col">Status</td>
-                                                <td scope="col"
-                                                    class="tchTableLastChild d-flex justify-content-end">
+                                                <td scope="col" class="tchTableLastChild d-flex justify-content-end">
                                                     Action
                                                 </td>
                                             </tr>
@@ -713,8 +777,7 @@
                                                     </p>
                                                 </td>
                                                 <td class="tchTableLastChild">
-                                                    <div
-                                                        class="tchDashTableLastContent d-flex justify-content-end">
+                                                    <div class="tchDashTableLastContent d-flex justify-content-end">
                                                         <div class="tchDashTableLastContent1 me-2">
                                                             <a href=""
                                                                 class="bg-cl-light-green px-2 py-1 d-flex justify-content-center cl-green rounded-3">
@@ -748,8 +811,7 @@
                                                     </p>
                                                 </td>
                                                 <td class="tchTableLastChild">
-                                                    <div
-                                                        class="tchDashTableLastContent d-flex justify-content-end">
+                                                    <div class="tchDashTableLastContent d-flex justify-content-end">
                                                         <div class="tchDashTableLastContent1 me-2">
                                                             <a href=""
                                                                 class="bg-cl-light-green px-2 py-1 d-flex justify-content-center cl-green rounded-3">
@@ -783,8 +845,7 @@
                                                     </p>
                                                 </td>
                                                 <td class="tchTableLastChild">
-                                                    <div
-                                                        class="tchDashTableLastContent d-flex justify-content-end">
+                                                    <div class="tchDashTableLastContent d-flex justify-content-end">
                                                         <div class="tchDashTableLastContent1 me-2">
                                                             <a href=""
                                                                 class="bg-cl-light-green px-2 py-1 d-flex justify-content-center cl-green rounded-3">
@@ -818,8 +879,7 @@
                                                     </p>
                                                 </td>
                                                 <td class="tchTableLastChild">
-                                                    <div
-                                                        class="tchDashTableLastContent d-flex justify-content-end">
+                                                    <div class="tchDashTableLastContent d-flex justify-content-end">
                                                         <div class="tchDashTableLastContent1 me-2">
                                                             <a href=""
                                                                 class="bg-cl-light-green px-2 py-1 d-flex justify-content-center cl-green rounded-3">

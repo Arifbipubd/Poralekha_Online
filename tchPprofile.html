@@ -311,9 +311,10 @@
     <!-- header end -->
     <!-- Middle Section -->
 
-    <!-- Student Profile Start -->
-    <section class="std-profile d-flex">
-        <div class="tchLeft p-3 bg-light-pink">
+    <!-- Teacher Profile Start -->
+    <section class="std-profile d-flex flex-wrap">
+        <!-- teacher profile desktop version start -->
+        <div class="tchLeft p-3 bg-light-pink desktopVersion">
             <div class="tchNavHeading d-flex flex-column justify-content-center align-items-center">
                 <div class="tchNavHeadingImg">
                     <img src="Assets/Images/Author/1Author.jpeg" alt="">
@@ -324,47 +325,127 @@
                 </div>
             </div>
             <!-- <nav class=""> -->
-                <div class="nav flex-column nav-tabs">
-                    <a class="nav-link  me-3" href="tchPdashbord.html">
-                        <i class="fas fa-home me-1"></i>
-                        Dashboard</a>
-    
-                    <a class="nav-link me-3 active" href="tchPprofile.html">
+            <div class="nav flex-column nav-tabs">
+                <a class="nav-link  me-3" href="tchPdashbord.html">
+                    <i class="fas fa-home me-1"></i>
+                    Dashboard
+                </a>
+
+                <a class="nav-link me-3 active" href="tchPprofile.html">
+                    <i class="far fa-user me-1"></i>
+                    Profile
+                </a>
+
+                <a class="nav-link me-3" href="tchPaddCourse.html">
+                    <i class="far fa-file-word me-1"></i>
+                    Add a Course
+                </a>
+
+                <a class="nav-link me-3 " href="tchPmyCourse.html">
+                    <i class="far fa-file-word me-1"></i>
+                    My Course
+                </a>
+
+                <a class="nav-link me-3 " href="tchPmyStd.html">
+                    <i class="fas fa-user-graduate me-1"></i>
+                    My students
+                </a>
+
+                <a class="nav-link me-3 " href="tchPsubAll.html">
+                    <i class="fas fa-user-graduate me-1"></i>
+                   Submission All
+                </a>
+
+                <a class="nav-link me-3 " href="tchPguideline.html">
+                    <i class="far fa-credit-card me-1"></i>
+                    Guidelines
+                </a>
+
+                <a class="nav-link me-3 " href="tchPsupport.html">
+                    <i class="fas fa-hands-helping me-1"></i>
+                    Help & Support
+                </a>
+
+                <a class="nav-link me-3 " href="tchPpayment.html">
+                    <i class="fas fa-money-bill-wave me-1"></i>
+                    Payment
+                </a>
+
+                <a class="nav-link me-3 " href="tchPsetting.html">
+                    <i class="fas fa-user-cog me-1"></i>
+                    Settings
+                </a>
+
+                <a class="nav-link me-3 " href="index.html">
+                    <i class="fas fa-sign-out-alt me-1"></i>
+                    Logout
+                </a>
+            </div>
+            <!-- </nav> -->
+        </div>
+        <!-- teacher profile desktop version end -->
+
+        <!-- teacher profile mobile version start -->
+        <div class="tchLeft mt-3 p-3 bg-light-pink mobileVersion">
+
+            <div class="nav flex-column nav-tabs">
+                <a class="nav-link w-100  active  navbar-toggler d-flex justify-content-between align-items-center"
+                    href="tchPprofile.html" type="button" data-bs-toggle="collapse" data-bs-target="#navContentMobile1"
+                    aria-controls="navContentMobile1" aria-expanded="false" aria-label="Toggle navigation">
+                    <div>
                         <i class="far fa-user me-1"></i>
-                        Profile</a>
-    
+                        Profile
+                    </div><i class="fas fa-chevron-down"></i>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navContentMobile1">
+
+                    <a class="nav-link me-3" href="tchPdashbord.html">
+                        <i class="fas fa-home me-1"></i>
+                        Dashboard
+                    </a>
+                    
                     <a class="nav-link me-3" href="tchPaddCourse.html">
                         <i class="far fa-file-word me-1"></i>
                         Add a Course</a>
-    
-                    <a class="nav-link me-3" href="tchPmyCourse.html">
+
+                    <a class="nav-link me-3 " href="tchPmyCourse.html">
                         <i class="far fa-file-word me-1"></i>
                         My Course</a>
-    
-                    <a class="nav-link me-3" href="tchPmyStd.html">
+
+                    <a class="nav-link me-3 " href="tchPmyStd.html">
                         <i class="fas fa-user-graduate me-1"></i>
                         My students</a>
-    
-                    <a class="nav-link me-3" href="tchPguideline.html">
+
+                        <a class="nav-link me-3 " href="tchPsubAll.html">
+                            <i class="fas fa-user-graduate me-1"></i>
+                           Submission All
+                        </a>
+
+                    <a class="nav-link me-3 " href="tchPguideline.html">
                         <i class="far fa-credit-card me-1"></i>
                         Guidelines</a>
-    
-                    <a class="nav-link me-3" href="tchPsupport.html">
+
+                    <a class="nav-link me-3 " href="tchPsupport.html">
                         <i class="fas fa-hands-helping me-1"></i>
                         Help & Support</a>
-    
-                    <a class="nav-link me-3" href="tchPpayment.html">
+
+                    <a class="nav-link me-3 " href="tchPpayment.html">
                         <i class="fas fa-money-bill-wave me-1"></i>
                         Payment</a>
-                    <a class="nav-link me-3" href="tchPsetting.html">
+
+                    <a class="nav-link me-3 " href="tchPsetting.html">
                         <i class="fas fa-user-cog me-1"></i>
                         Settings</a>
-                    <a class="nav-link me-3" href="index.html">
+
+                    <a class="nav-link me-3 " href="index.html">
                         <i class="fas fa-sign-out-alt me-1"></i>
                         Logout</a>
                 </div>
-            <!-- </nav> -->
+            </div>
+
         </div>
+        <!-- teacher profile mobile version end -->
         <div class="tchRight">
             <!-- Teacher-Profile Profile -->
             <div class="tchProf-profile">
@@ -390,15 +471,15 @@
                     <h6 class="mb-5">Basic Information</h6>
 
                     <div class="row mb-4">
-                        <div class="col-md-2 profile-image mb-2">
+                        <div class="col-lg-2 col-md-2 profile-image mb-2">
                             <div class="">
                                 <img src="Assets/Images/TeacherProfile/Profile/teacher-profile.png" alt="">
                             </div>
                         </div>
                         <!-- ms-2 -->
-                        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-7 col-12 ">
-                            <div class="d-flex align-items-center justify-content-between ">
-                                <div class="">
+                        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10 col-12 ">
+                            <div class="tchEditBtn d-flex justify-content-between ">
+                                <div class="mb-2">
                                     <h5 class="cl-pm fw-bold">Kesava Vellette</h5>
                                     <small class="color-span">Dhaka,Bangladesh</small>
                                 </div>
@@ -412,19 +493,19 @@
                             </div>
                             <div class="">
                                 <div class="row mt-4">
-                                    <div class="col-lg-4 color-span mb-3">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 color-span mb-3">
                                         <small>
                                             <span class="fw-bold">Email</span> <br>
                                             elan@gmail.com
                                         </small>
                                     </div>
-                                    <div class="col-lg-4 color-span mb-3">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 color-span mb-3">
                                         <small>
                                             <span class="fw-bold">Contact</span> <br>
                                             +880-676044462
                                         </small>
                                     </div>
-                                    <div class="col-lg-4 color-span mb-3">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 color-span mb-3">
                                         <small>
                                             <span class="fw-bold">Education Level</span> <br>
                                             Bsc
@@ -503,7 +584,7 @@
                                 </div>
                             </div>
 
-                            <div class="tchProfile-edit col-xxl-2 col-xl-3 col-lg-6 col-md-7 col-12 ">
+                            <div class="tchProfile-edit col-xxl-2 col-xl-3 col-lg-6 col-md-7 col-12 mt-2   ">
                                 <div class="file-upload">
                                     <div class="image-upload-wrap">
                                         <input class="file-upload-input" type='file' onchange="readURL(this);"
