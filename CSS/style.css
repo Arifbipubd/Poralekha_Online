@@ -2882,6 +2882,10 @@ font-weight:550;
 
 /*************Teacher Profile Start*********/
 
+.tchMiddleHead{
+  box-shadow: 4px 3px 3px #f2f2f2;
+}
+
 /* leftbar */
 
 .tchFileUpload{
@@ -2897,8 +2901,8 @@ font-weight:550;
   flex-basis: 79%;
   height: 80vh;
   overflow-y: scroll;
-  /* overflow-x: hidden; */
-  margin: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
 /* Dashbord Start*/
@@ -2976,6 +2980,12 @@ font-weight:550;
 .tchDashTable .table>:not(caption)>*>* {
   border-bottom-width: 0;
 }
+
+#tchchart {
+  max-width: 650px;
+  margin: 35px auto;
+}
+
 
 /* my students start */
 
@@ -3147,6 +3157,7 @@ font-weight:550;
 
 /* Help & Support end*/
 
+
 /* Payment Start*/
 .tch-payment h5 {
   font-size: 18px;
@@ -3181,36 +3192,35 @@ font-weight:550;
   background-color: #717171;
   border-radius: 15px;
 }
-
 .tch-payment .list-inline{
   padding-left: 0;
   list-style: none;
   margin: 0;
 }
-.tch-payment .list-inline-item {
+.saved-payment .list-inline-item {
   display: inline-block;
 }
-.card-box a{
+.saved-payment a{
   display: block;
-  height: 61px;
-  width: 61px;
+  height: 25px;
+  width: 25px;
   text-align: center;
-  color: black;
-  background: #E9EDF3;
-  border-radius: 15%;
+  color: #98A6C0;
+  background: #B6F8B5;
+  border-radius: 50%;
   text-decoration: none;
 }
-
-.tch-payment i{
-  font-size: 25px;
-    line-height: 66px;
+.saved-payment i{
+  font-size: 13px;
+    line-height: 27px;
 }
 .w-170px {
-  width: 170px;
+  width: 200px;
+  height: 100px;
 }
-.net-banking .box2 {
+.w-170px .box2 {
   height: 92px;
-  width: 150px;
+  width: 200px;
   background-color: white;
   border-radius: 7px;
   box-shadow: 0 -6px 20px rgb(0 0 0 / 10%), 0 6px 6px rgb(0 0 0 / 10%);
@@ -3225,6 +3235,36 @@ font-weight:550;
   border-radius: 15%;
   text-decoration: none;
 }
+
+.tch-paymentHeight {
+  height: 180px;
+}
+.card-no {
+  font-size: 20px !important;
+}
+@media (min-width:1000px) and (max-width: 3500px){
+  .balance .w-30 {
+    width: 30%;
+  }
+  .balance .ms1 {
+    margin: 4px;
+  }
+  .balance .me5 {
+    margin-right: 16px;
+  }
+  .paymentHistoryInput {
+    width: 50%;
+  }
+}
+@media (min-width:355px) and (max-width:1000px){
+  .balance .w-30{
+    width: 100% !important;
+  }
+  .paymentHistoryInput {
+    width: 100%;
+  }
+}
+
 
 /* Profile start */
 .tchProf-profile .profileContent h6{

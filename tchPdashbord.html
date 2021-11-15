@@ -42,6 +42,8 @@
     <!-- Slick Slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-tdeme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- import plugin script -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
 </head>
 
 <body>
@@ -80,7 +82,7 @@
             </div>
         </div>
         <!-- Middle Header -->
-        <div class="middleHeader">
+        <div class="middleHeader tchMiddleHead">
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div class="middleHeader-img">
@@ -92,102 +94,6 @@
                         <button type="button" class="btn  btn3 bg-cl-pm">Sign up</button>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Bottom Header -->
-        <div class="bottomHeader">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light  ">
-                    <div class="container-fluid p-0">
-                        <div class="">
-                            <a class="navbar-brand tex dot" href="#" data-bs-toggle="dropdown"
-                                data-bs-auto-close="outside">
-                                <i class="fas fa-align-center cl-pm "><span class="ms-3 cl-pm">Category</span>
-                                </i>
-                            </a>
-                            <ul class="dropdown-menu shadow uldesk-font">
-                                <li><a class="dropdown-item color-grey" href="blog.html">Category-1</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li class="dropstart">
-                                    <a href="#" class="dropdown-item dropdown-toggle color-grey"
-                                        data-bs-toggle="dropdown">Category-2</a>
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item color-grey" href=""> Sub Cat-2</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item color-grey" href="">Sub Cat-3</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle color-grey"
-                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">Category-3</a>
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
-                                        <li class="dropend">
-                                            <a href="#" class="dropdown-item dropdown-toggle color-grey"
-                                                data-bs-toggle="dropdown" data-bs-auto-close="outside">Sub Cat-2</a>
-                                            <ul class="dropdown-menu dropdown-submenu shadow">
-                                                <li><a class="dropdown-item color-grey" href="">Sub sub Cat-1</a></li>
-                                                <li><a class="dropdown-item color-grey" href="">Sub sub Cat-2</a></li>
-                                                <li><a class="dropdown-item color-grey" href="">Sub sub Cat-3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item color-grey" href=""> Sub Cat-3</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="mr ">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item ">
-                                    <form class="d-flex ">
-                                        <input style="font-family:'Poppins'; " class="form-control border-0 me-1"
-                                            type="search" placeholder="&#61442 Search Subject" aria-label="Search">
-                                        <select id="inputState" class="form-select me-2 border-0">
-                                            <option selected>Category</option>
-                                            <option>Lorem ipsum dolor sit amet.</option>
-                                            <option>Lorem ipsum dolor sit amet.</option>
-                                            <option>Lorem ipsum dolor sit amet.</option>
-                                        </select>
-                                        <button class="btn  btn3 bg-cl-pm" type="submit">Search</button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                            <ul class="navbar-nav mb-2 mb-lg-0 ">
-                                <li class="nav-item mx-3">
-                                    <a class="nav-link " href="#">About</a>
-                                </li>
-                                <li class="nav-item mx-3 ">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item mx-3">
-                                    <a class="nav-link" href="#">FAQ</a>
-                                </li>
-                                <li class="nav-item nav-cart ">
-                                    <a class="nav-link pb-1" href="#"><img class="pb-1"
-                                            src="Assets/Images/Header/cart.png" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
             </div>
         </div>
         <!-- Middle Section -->
@@ -314,7 +220,7 @@
     <!-- Teacher Profile Start -->
     <section class="std-profile d-flex flex-wrap">
         <!-- teacher profile desktop version start -->
-        <div class="tchLeft p-3 bg-light-pink desktopVersion">
+        <div class="tchLeft p-3 bg-cl-grey3 desktopVersion">
             <div class="tchNavHeading d-flex flex-column justify-content-center align-items-center">
                 <div class="tchNavHeadingImg">
                     <img src="Assets/Images/Author/1Author.jpeg" alt="">
@@ -346,10 +252,10 @@
                     <i class="fas fa-user-graduate me-1"></i>
                     My students</a>
 
-                    <a class="nav-link me-3 " href="tchPsubAll.html">
-                        <i class="fas fa-user-graduate me-1"></i>
-                       Submission All
-                    </a>
+                <a class="nav-link me-3 " href="tchPsubAll.html">
+                    <i class="fas fa-user-graduate me-1"></i>
+                    Submission All
+                </a>
 
                 <a class="nav-link me-3 " href="tchPguideline.html">
                     <i class="far fa-credit-card me-1"></i>
@@ -374,8 +280,8 @@
         <!-- teacher profile desktop version end -->
 
         <!-- teacher profile mobile version start -->
-        <div class="tchLeft mt-3 p-3 bg-light-pink mobileVersion">
-           
+        <div class="tchLeft mt-3 p-3 bg-cl-grey3 mobileVersion">
+
             <div class="nav flex-column nav-tabs">
                 <a class="nav-link w-100  active  navbar-toggler d-flex justify-content-between align-items-center"
                     href="tchPdashbord.html" type="button" data-bs-toggle="collapse" data-bs-target="#navContentMobile1"
@@ -404,10 +310,10 @@
                         <i class="fas fa-user-graduate me-1"></i>
                         My students</a>
 
-                        <a class="nav-link me-3 " href="tchPsubAll.html">
-                            <i class="fas fa-user-graduate me-1"></i>
-                           Submission All
-                        </a>
+                    <a class="nav-link me-3 " href="tchPsubAll.html">
+                        <i class="fas fa-user-graduate me-1"></i>
+                        Submission All
+                    </a>
 
                     <a class="nav-link me-3 " href="tchPguideline.html">
                         <i class="far fa-credit-card me-1"></i>
@@ -450,8 +356,8 @@
                         </nav>
                     </div>
                 </div>
-                <div class="row mb-5 me-4">
-                    <div class="col-lg-3">
+                <div class="row mb-5">
+                    <div class=" col-lg-3 col-md-6 col-12 mb-2">
                         <div class="tchCard tchCard1 p-3 d-flex flex-column justify-content-center rounded-3">
                             <div class="tchCardContent d-flex justify-content-between">
                                 <div class="tchCardContentLeft">
@@ -469,7 +375,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class=" col-lg-3 col-md-6 col-12 mb-2">
                         <div class="tchCard tchCard2 p-3 d-flex flex-column justify-content-center rounded-3">
                             <div class="tchCardContent d-flex justify-content-between">
                                 <div class="tchCardContentLeft">
@@ -487,7 +393,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class=" col-lg-3 col-md-6 col-12 mb-2">
                         <div class="tchCard tchCard3 p-3 d-flex flex-column justify-content-center rounded-3">
                             <div class="tchCardContent d-flex justify-content-between">
                                 <div class="tchCardContentLeft">
@@ -505,7 +411,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class=" col-lg-3 col-md-6 col-12 mb-2">
                         <div class="tchCard tchCard4 p-3 d-flex flex-column justify-content-center rounded-3">
                             <div class="tchCardContent d-flex justify-content-between">
                                 <div class="tchCardContentLeft">
@@ -525,7 +431,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-xl-9 col-lg-8">
                         <div class="row">
                             <div class="col-lg-12">
                                 <Section class="homeWhatsNew mb-5">
@@ -544,7 +450,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2022</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between align-items-center">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
                                                                 <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
@@ -634,7 +541,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between align-items-center">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
                                                                 <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
@@ -664,7 +572,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between align-items-center">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
                                                                 <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
@@ -694,7 +603,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between align-items-center">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
                                                                 <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
@@ -724,7 +634,8 @@
                                                     <div class="card-body card-body-height">
                                                         <h5 class="fw-bold">Video Editing 2021</h5>
                                                         <div class="card-body-text">
-                                                            <div class="d-flex justify-content-between align-items-center">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
                                                                 <div class="fs10">
                                                                     <div>
                                                                         <small class="color-grey">20
@@ -747,10 +658,10 @@
                                 </Section>
                             </div>
                             <div class="col-lg-12">
-                                <div class="tchDashTable">
+                                <div class="tchDashTable table-responsive">
                                     <h6 class="fw-bold mb-4">Withdrawal History this month</h6>
                                     <table class="table">
-                                        <tbody class="">
+                                        <tbody class="color-grey">
                                             <tr class="bg-cl-ash text-white">
                                                 <td scope="col">#</td>
                                                 <td scope="col">Date</td>
@@ -779,20 +690,20 @@
                                                 <td class="tchTableLastChild">
                                                     <div class="tchDashTableLastContent d-flex justify-content-end">
                                                         <div class="tchDashTableLastContent1 me-2">
-                                                            <a href=""
+                                                            <p
                                                                 class="bg-cl-light-green px-2 py-1 d-flex justify-content-center cl-green rounded-3">
                                                                 <i
                                                                     class="far fa-eye d-flex align-items-center me-1"></i>
                                                                 View
-                                                            </a>
+                                                        </p>
                                                         </div>
                                                         <div class="tchDashTableLastContent2">
-                                                            <a href=""
+                                                            <p
                                                                 class="bg-cl-light-red px-2 py-1 d-flex justify-content-center color-red rounded-3">
                                                                 <i
                                                                     class="far fa-trash-alt d-flex align-items-center me-1"></i>
                                                                 Delete
-                                                            </a>
+                                                        </p>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -903,14 +814,29 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div style="width:90%;">
-                                    <canvas id="myChart" width="400" height="250"></canvas>
+                            <div class="col-lg-12 tchgraph">
+                                <div style="overflow-x: scroll;">
+                                    <canvas id="income" width="1100" height="400"></canvas>
                                 </div>
+                                <script>
+                                    var barData = {
+                                        labels: ["January", "February", "March", "April", "May", "June","July","Aug","Sep","Oct","Nov","Dec"],
+                                        datasets: [
+                                            {
+                                                fillColor: "#48A497",
+                                                data: [4056, 4079, 3024, 5069, 7002, 6000,10000,10500,7500,8000,10000,4500]
+                                            }
+                                        ]
+                                    }
+                                    // get bar chart canvas
+                                    var income = document.getElementById("income").getContext("2d");
+                                    // draw bar chart
+                                    new Chart(income).Bar(barData);
+                                </script>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4">
                         <h6 class="fw-bold px-4 mb-3">Reviews at a Glance</h6>
                         <div class="tchDashReview  px-4">
                             <div class="tchDashReviewCard p-2 d-flex">
@@ -1020,112 +946,6 @@
 
     <!-- Bottom Section -->
     <!------------------------Footer------------------------------>
-    <footer class="footer">
-        <div class="container">
-            <div class="footerContent d-flex justify-content-between">
-                <div class="footerContentOne me-5">
-                    <div class="footerContentOneLogo mb-4 mt-1">
-                        <img src="Assets/Images/Footer/1Logo.png" alt="">
-                    </div>
-                    <div class="footerContentOneContent footerContent">
-                        <p>House 15,Block-E,Road-07. <br>
-                            Sector-01,Uttara,Dhaka-1230.
-                        </p>
-                        <p>
-                            <a href="tellto:">+8801652563545</a>
-                        </p>
-                        <p>
-                            <a href="mailto:">info@livetechltd.com</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footerContentTwo  me-5 mt-3">
-                    <div class="footerContentTwoHeading footerHeading mb-4">
-                        <h5>Navigations</h5>
-                    </div>
-                    <div class="footerContentTwoContent footerContent">
-                        <p>
-                            <a href="">About Us</a>
-                        </p>
-                        <p>
-                            <a href=""> Checkout</a>
-
-                        </p>
-                        <p>
-                            <a href=""> Wishlist</a>
-                        </p>
-                        <p>
-                            <a href="">Contact</a>
-                        </p>
-                        <p>
-                            <a href=""> FAQ</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footerContenttdree me-5 mt-3">
-                    <div class="footerContenttdreeHeading footerHeading mb-4">
-                        <h5>Catagory Courses</h5>
-                    </div>
-                    <div class="footerContenttdreeContent footerContent">
-                        <p>
-                            <a href=""> Education</a>
-                        </p>
-                        <p>
-                            <a href="">Art & Music</a>
-                        </p>
-                        <p>
-                            <a href="">Homeconomics</a>
-                        </p>
-                        <p>
-                            <a href="">It & Software</a>
-                        </p>
-                        <p>
-                            <a href="">Business And Accounting</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footerContentFour me-5 mt-3">
-                    <div class="footerContentFourHeading footerHeading mb-4">
-                        <h5>Help & Support</h5>
-                    </div>
-                    <div class="footerContentFourContent footerContent">
-                        <p>
-                            <a href="">Account</a>
-                        </p>
-                        <p>
-                            <a href="">Privacy & policy</a>
-                        </p>
-                        <p>
-                            <a href="">Terms & Conditions</a>
-                        </p>
-                        <p>
-                            <a href="">Live Chat</a>
-                        </p>
-                        <p>
-                            <a href="">Documentation</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footerContentFive mt-3">
-                    <div class="footerContentFiveHeading footerHeading mb-4">
-                        <h5>Download App</h5>
-                    </div>
-                    <div class="footerContentFiveApp">
-                        <div class="downloadAppContentIcon footerAppContent d-flex">
-                            <a href="#" class="d-flex align-items-center ms-3"><i class="fas fa-play me-2"></i>
-                                <p class="mt-3">Google Play <br> <span>get it now</span></p>
-                            </a>
-                        </div>
-                        <div class="downloadAppContentIcon footerAppContent d-flex mt-2">
-                            <a href="#" class="d-flex align-items-center ms-3"><i class="fab fa-app-store-ios me-2"></i>
-                                <p class="mt-3">App store <br> <span>get it now</span></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     <!----------Copy Right------------------->
     <footer class="CopyRight ">
         <div class="container d-flex justify-content-between align-items-center">
@@ -1147,7 +967,6 @@
 
     <!----------------Js--------->
     <script src="JS/script.js"></script>
-    <script src="JS/chart.js"></script>
 </body>
 
 </html>
