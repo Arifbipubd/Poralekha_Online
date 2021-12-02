@@ -1,3 +1,13 @@
+
+// Bookmarks Color toggle
+const toggleBtns = document.querySelectorAll('.toggle-box');
+toggleBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('toggle-pressed');
+  });
+})
+
+
 /***What New Banner****/
 $(".homeWhatsNewcarousel").owlCarousel({
   margin: 20,
@@ -254,13 +264,7 @@ $('#carousel6').owlCarousel({
   }
 })
 
-// Bookmarks Color toggle
-const toggleBtns = document.querySelectorAll('.toggle-box');
-toggleBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    btn.classList.toggle('toggle-pressed');
-  });
-})
+
 
 // Otp-Verification
 function clickEvent(first, last) {
@@ -290,6 +294,13 @@ $(selector).on('click', function () {
   $(this).addClass('active');
 });
 
+var selector2 = '.cursor2';
+
+$(selector2).on('click', function () {
+  $(selector2).removeClass('active');
+  $(this).addClass('active');
+});
+
 //Course Playlist Accordian button click change
 
 function btnCheck(check) {
@@ -313,12 +324,52 @@ function btnCheck(check) {
   }
 }
 
-// Course play list file upload
+function btnCheck2(check2) {
+  if (check2 == "instruction") {
+    document.querySelector('.uploadVideo').style.display = "none";
+    document.querySelector('.assignment').style.display = "none";
+    document.querySelector('.quiz').style.display = "none";
+    document.querySelector('.instruction').style.display = "block";
+  }
+  else if (check2 == "quiz") {
+    document.querySelector('.uploadVideo').style.display = "none";
+    document.querySelector('.assignment').style.display = "none";
+    document.querySelector('.quiz').style.display = "block";
+    document.querySelector('.instruction').style.display = "none";
+  }
+  else if (check2 == "assignment") {
+    document.querySelector('.uploadVideo').style.display = "none";
+    document.querySelector('.assignment').style.display = "block";
+    document.querySelector('.quiz').style.display = "none";
+    document.querySelector('.instruction').style.display = "none";
+  }
+  else if (check2 == "uploadVideo") {
+    document.querySelector('.uploadVideo').style.display = "block";
+    document.querySelector('.assignment').style.display = "none";
+    document.querySelector('.quiz').style.display = "none";
+    document.querySelector('.instruction').style.display = "none";
+  }
 
-FilePond.create(
-  document.querySelector('.fileUpload input')
-);
+}
 
+// add a cource custom file upload
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function () {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function () {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
 
 //Student profile Replace Div
 
@@ -733,22 +784,22 @@ function tchBtnCheck(check) {
   }
   //Cart Coupon
   else if (check == "cartInput") {
-  document.querySelector('.cartCoupon').style.display = "none";
-  document.querySelector('.cartInput').style.display = "block";
-}
+    document.querySelector('.cartCoupon').style.display = "none";
+    document.querySelector('.cartInput').style.display = "block";
+  }
 }
 
 
 //Cart
 
-window.onload = function(){
+window.onload = function () {
   calculateCourse();
   cartValueChange();
   calculateTotal();
 }
 
 function calculateCourse() {
- 
+
   //   Course Total Price Start
   const cartCoursePrice1 = document.getElementById('course-price1');
   const coursePrice1 = cartCoursePrice1.innerText;
@@ -786,11 +837,11 @@ function calculateCourse() {
 
   // console.log(bookTotalPrice)
 
-  const totalPrice = courseTotalPrice +  bookTotalPrice;
+  const totalPrice = courseTotalPrice + bookTotalPrice;
 
   // console.log(totalPrice);
 
-  document.getElementById('totalPrice').innerText = totalPrice ;
+  document.getElementById('totalPrice').innerText = totalPrice;
 
 }
 
@@ -801,11 +852,11 @@ function cartValueChange(number, isIncrease, cart1, cart2) {
 
   let cartNewCount = cartCount;
   if (isIncrease == true) {
-     cartNewCount = cartCount + 1;
+    cartNewCount = cartCount + 1;
   }
 
   else if (isIncrease == false && cartCount > 1) {
-     cartNewCount = cartCount - 1;
+    cartNewCount = cartCount - 1;
   }
   cartValueCount.value = cartNewCount;
 

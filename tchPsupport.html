@@ -80,16 +80,46 @@
             </div>
         </div>
         <!-- Middle Header -->
-        <div class="middleHeader">
+        <div class="middleHeader tchMiddleHead">
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div class="middleHeader-img">
                         <img src="Assets/Images/Header/logo.png" alt="">
                     </div>
-                    <div class="middleHeader-content">
-                        <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
-                        <button type="button" class="btn  btn2 mx-2 cl-pm">Sign in</button>
-                        <button type="button" class="btn  btn3 bg-cl-pm">Sign up</button>
+                    <div class="middleHeader-content d-flex align-items-center">
+                        <div class="middleHeader-contentBtn me-4">
+                            <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
+                        </div>
+                        <div class="middleHeader-contentIcon d-flex">
+
+                            <div
+                                class="Icon hdDot bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3">
+                                <i class="fas fa-sms"></i>
+                            </div>
+                            <div
+                                class="Icon hdDot1 bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                        </div>
+                        <div class="middleHeader-contentDropdown d-flex ms-4">
+                            <div class="middleHeader-contentDropImg">
+                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                            </div>
+                            <div class="dropdown middleHeaderDropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Arif Bipu
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0"
+                                    aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My
+                                            Account</a></li>
+                                    <hr class="dropdown-divider color-span">
+                                    <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log
+                                            Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,7 +144,7 @@
                     <div class="d-flex align-items-center">
 
                         <div class="header-image me-2">
-                            <img src="Assets/Images/Header/header-img.png" alt="">
+                            <img src="Assets/Images/Author/1Author.jpeg" alt="">
                         </div>
                         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -171,14 +201,14 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="login-hide justify-content-center w-100 mb-4">
+                        <!-- <div class="login-hide justify-content-center w-100 mb-4">
                             <button type="button" class="btn  btn1 cl-pm w-100 mb-2 bg-cl-grey-gorib">Join as
                                 Tutor</button>
                             <div class="d-flex justify-content-center">
                                 <button type="button" class="btn  btn2 mx-2 cl-pm">Sign in</button>
                                 <button type="button" class="btn  btn3 bg-cl-pm">Sign up</button>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="nav-footer">
                             <small class="color-grey">Social :</small>
                             <div class="footer-icon mt-2">
@@ -256,7 +286,7 @@
                 </a>
 
                 <a class="nav-link me-3 " href="tchPsubAll.html">
-                    <i class="fas fa-user-graduate me-1"></i>
+                    <i class="fas fa-file-pdf me-1"></i>
                     Submission All
                 </a>
 
@@ -332,7 +362,7 @@
                     </a>
 
                     <a class="nav-link me-3 " href="tchPsubAll.html">
-                        <i class="fas fa-user-graduate me-1"></i>
+                        <i class="fas fa-file-pdf me-1"></i>
                         Submission All
                     </a>
 

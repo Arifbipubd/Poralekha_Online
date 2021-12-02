@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
-    <title>Teacher Profile | PoralekhaOnline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Profile Add Course | PoralekhaOnline</title>
     <link rel="icon" href="Assets/Images/Header/logo1.png" type="image/icon">
 
     <!-- bootstrap -->
@@ -36,12 +36,16 @@
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.tdeme.default.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
     <!-- Slick Slider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-tdeme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <!-- file upload filepond -->
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -260,6 +264,7 @@
             </div>
             <!-- <nav class=""> -->
             <div class="nav flex-column nav-tabs">
+
                 <a class="nav-link  me-3" href="tchPdashbord.html">
                     <i class="fas fa-home me-1"></i>
                     Dashboard
@@ -270,7 +275,7 @@
                     Profile
                 </a>
 
-                <a class="nav-link me-3" href="tchPaddCourse.html">
+                <a class="nav-link me-3 active" href="tchPaddCourse.html">
                     <i class="far fa-file-word me-1"></i>
                     Add a Course
                 </a>
@@ -284,7 +289,7 @@
                     <i class="fas fa-user-graduate me-1"></i>
                     My students
                 </a>
-                <a class="nav-link me-3 active" href="tchPsubAll.html">
+                <a class="nav-link me-3 " href="tchPsubAll.html">
                     <i class="fas fa-file-pdf me-1"></i>
                     Submission All
                 </a>
@@ -323,19 +328,18 @@
 
             <div class="nav flex-column nav-tabs">
                 <a class="nav-link w-100  active  navbar-toggler d-flex justify-content-between align-items-center"
-                    href="tchPsubAll.html" type="button" data-bs-toggle="collapse" data-bs-target="#navContentMobile1"
-                    aria-controls="navContentMobile1" aria-expanded="false" aria-label="Toggle navigation">
+                    href="tchPaddCourse.html" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navContentMobile1" aria-controls="navContentMobile1" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <div>
-                        <i class="fas fa-file-pdf me-1"></i>
-                        Submission All
-                    </div>
-                    <i class="fas fa-chevron-down"></i>
+                        <i class="far fa-file-word me-1"></i>
+                        Add a Course
+                    </div><i class="fas fa-chevron-down"></i>
                 </a>
 
                 <div class="collapse navbar-collapse" id="navContentMobile1">
 
-
-                    <a class="nav-link me-3 " href="tchPdashbord.html">
+                    <a class="nav-link me-3" href="tchPdashbord.html">
                         <i class="fas fa-home me-1"></i>
                         Dashboard
                     </a>
@@ -343,11 +347,6 @@
                     <a class="nav-link me-3" href="tchPprofile.html">
                         <i class="far fa-user me-1"></i>
                         Profile
-                    </a>
-
-                    <a class="nav-link me-3" href="tchPaddCourse.html">
-                        <i class="far fa-file-word me-1"></i>
-                        Add a Course
                     </a>
 
                     <a class="nav-link me-3 " href="tchPmyCourse.html">
@@ -358,6 +357,11 @@
                     <a class="nav-link me-3 " href="tchPmyStd.html">
                         <i class="fas fa-user-graduate me-1"></i>
                         My students
+                    </a>
+
+                    <a class="nav-link me-3 " href="tchPsubAll.html">
+                        <i class="fas fa-file-pdf me-1"></i>
+                        Submission All
                     </a>
 
                     <a class="nav-link me-3 " href="tchPguideline.html">
@@ -393,258 +397,188 @@
         <div class="tchRight">
             <div class="tchCourse">
                 <div class="mt-3 mb-5">
-                    <div class="sc-breadcrump d-flex align-items-center bg-white">
-                        <div class="mt-2">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a class="cl-pm text-decoration-none"
-                                            href="index.html">Home</a>
-                                    </li>
-                                    <li class="breadcrumb-item active fw-bold" aria-current="page">Submission All
-                                    </li>
-                                </ol>
-                            </nav>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="sc-breadcrump d-flex align-items-center bg-white">
+                            <div class="mt-2">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a class="cl-pm text-decoration-none"
+                                                href="index.html">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a class="cl-pm text-decoration-none"
+                                                href="tchPaddCourse1st.html">Add Course</a>
+                                        </li>
+                                        <li class="breadcrumb-item active fw-bold" aria-current="page">AWS Course
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="bg-cl-grey3 cl-pm fw-bold px-3 py-2 border-0 rounded-3 me-2">Save As
+                                Draft</button>
+                            <button
+                                class="bg-cl-green color-white fw-bold px-3 py-2 border-0 rounded-3">Publish</button>
                         </div>
                     </div>
+                    <section class="tchAddCourse mt-3">
+                        <form action="tchPaddCourse3.html">
+                            <div class="row">
 
-                    <div class="tchSubmission">
-                        <form action="index.html">
-                            <div class="tchSubForm d-flex">
-                                <div class="tchSubFormLeft d-flex mb-3">
-                                    <div class="tchSubFormDate me-3">
-                                        <h6 class="cl-pm fw-bold mt-1">Date</h6>
-                                        <input class="py-2 px-2 rounded-3" type="date" required>
-                                    </div>
-                                    <div class="form-check tchSubFormCheckbox d-flex align-items-center mt-4 me-3">
-                                        <input class="form-check-input me-2" type="checkbox" value=""
-                                            id="flexCheckDefault" required>
-                                        <label class="form-check-label cl-pm fw-bold mt-1" for="flexCheckDefault">
-                                            <h6 class="mt-2 fw-bold">All Students</h6>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="tchSubFormRight d-flex">
-                                    <div class="tchSubFormClass me-3">
-                                        <div class="">
-                                            <h6 class="cl-pm fw-bold mt-1">Select Class</h6>
-                                        </div>
-                                        <div class="">
-                                            <select class="form-select py-2 px-5" aria-label="Default select example">
-                                                <option selected>Class 09</option>
-                                                <option value="1">Class 08</option>
-                                                <option value="2">Class 07</option>
-                                                <option value="3">class 05</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="tchSubFormDepartment me-3">
-                                        <div class="">
-                                            <h6 class="cl-pm fw-bold mt-1">Select Department</h6>
-                                        </div>
-                                        <div class="">
-                                            <select class="form-select py-2 px-5\" aria-label="Default select example">
-                                                <option selected>Science</option>
-                                                <option value="1">Business</option>
-                                                <option value="2">General</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <button class="px-3 py-2 mt-2 border-0 bg-cl-pm color-white rounded-3" type="submit">Let's Go</button>
-                                </div>
-                                
-                            </div>
-                        </form>
-                        <!-- Submission Body Start -->
-                        <div class="myStds mt-5">
-                            <div class="tchSubTableHead d-flex ">
-                                <div class="tchSubTableHeadLeft cl-pm w-65 d-flex mb-3">
-                                    <div class="tchSubMidClass mb-3">
-                                        <small class="fw-bold me-2 mb-2">Submission of</small>
-                                        <small class="bg-cl-grey2 py-2 px-3 rounded-3 me-4">class-09</small>
-                                    </div>
-                                    <div class="tchSubMidDept mb-3">
-                                        <small class="fw-bold me-2 mb-2">Department</small>
-                                        <small class="bg-cl-grey2 py-2 px-3 rounded-3 me-4">Science</small>
-                                    </div>
-                                    <div class="tchSubMidDate mb-3">
-                                        <small class="fw-bold me-2 mb-2">Date</small>
-                                        <small class="bg-cl-grey2 py-2 px-3 rounded-3 me-4">13 jan 2021</small>
-                                    </div>
-                                </div>
-                                <div class="tchSubTableHeadRight d-flex w-35">
-                                    <select class="form-select tchSubformSelect me-3 w-25 mb-2" aria-label="Default select example">
-                                        <option selected>Sort by</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
+                                <!-- Course add option start -->
+                                <div class="col-xxl-7 col-xl-5 col-md-12 col-12">
 
-                                    <input type="text" class="form-control mb-2" id="formGroupExampleInput"
-                                        placeholder="Search here ....">
+                                    <!-- Add chaapter start -->
+                                    <div class="addChapter dnone">
+                                        <h6 class="fw-bold mb-4">Add Chapter</h6>
+                                        <div class="mb-3">
+                                            <label class="color-grey mb-2" for="Chapter Title">Chapter Title</label>
+                                            <input class="tchAddCourseTopRightinput bg-white px-2 py-3" type="text"
+                                                placeholder="Type Chapter Name">
+                                        </div>
+                                        <div>
+                                            <button class="bg-cl-pm color-white px-3 py-2 border-0 rounded-3"
+                                                type="submit"><i class="fas fa-check"></i> Save & Go</button>
+                                        </div>
+                                    </div>
+                                    <!-- Add chaapter end -->
+
+                                    <!-- Add lesson start -->
+                                    <div class="addLesson">
+                                        <h6 class="fw-bold mb-4">Add Chapter</h6>
+
+                                        <!-- Add lesson content start -->
+                                        <div class="addLessonContent">
+                                            <div class="mb-4">
+                                                <label class="cl-pm mb-2 fw-bold" for="Chapter Title">Chapter
+                                                    Title</label>
+                                                <input class="tchAddCourseTopRightinput bg-white px-2 py-3" type="text"
+                                                    placeholder="Type Chapter Name ">
+                                            </div>
+
+                                            <div class="referPage2">
+                                                <input class="bg-cl-pm color-white py-2 px-4" type="submit" value="Save & Go" >
+                                            </div>
+
+                                        </div>
+                                        <!-- Add lesson content end -->
+                                    </div>
+                                    <!-- Add lesson end -->
                                 </div>
-                            </div>
-                            <div class="table-responsive myStds-tbl myStds-tbl-sub mt-3">
-                                <table class="table table-borderless">
-                                    <thead>
-                                        <tr class="cl-pm">
-                                            <th scope="col" class="bdr1">#SL</th>
-                                            <th scope="col">Avatar</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Subject Name</th>
-                                            <th scope="col">Submitted File</th>
-                                            <th scope="col">Submitted Date</th>
-                                            <th scope="col">Obtained Marks</th>
-                                            <th scope="col">Remarks</th>
-                                            <th scope="col" class="bdr2">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="color-span">
-                                        <tr>
-                                            <td>01</td>
-                                            <td scope="row">
-                                                <div class="myStds-image">
-                                                    <img src="Assets/Images/TeacherProfile/Group 538.png" alt="">
-                                                </div>
-                                            </td>
-                                            <td>Shamitra Datta</td>
-                                            <td>AWS Manipulation</td>
-                                            <td>
-                                                <div class="tchSubTableAssignment d-flex">
-                                                    <div class="tchTableAssignmentCont me-2">
-                                                        assignmrnt.pdf
-                                                    </div>
-                                                    <div
-                                                        class="tchTableAssignmentIcon bg-cl-pm d-flex justify-content-center align-items-center">
-                                                        <a href="" class=""><i
-                                                                class="fas fa-download color-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>4.25pm, 13 jan 2021</td>
-                                            <td>
-                                                <span class="cl-green">50</span> out of <span class="cl-pm">100</span>
-                                            </td>
-                                            <td>
-                                                <span
-                                                    class="bg-cl-light-yellow color-yellow px-3 rounded-3">Average</span>
-                                            </td>
-                                            <td class="tchSubTableAct">
-                                                <a href="" class="px-3 rounded-3" data-bs-toggle="modal"
-                                                    data-bs-target="#popUp">
-                                                    Edit
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>02</td>
-                                            <td scope="row">
-                                                <div class="myStds-image">
-                                                    <img src="Assets/Images/TeacherProfile/Group 538.png" alt="">
-                                                </div>
-                                            </td>
-                                            <td>Shamitra Datta</td>
-                                            <td>AWS Manipulation</td>
-                                            <td>
-                                                <div class="tchSubTableAssignment d-flex">
-                                                    <div class="tchTableAssignmentCont me-2">
-                                                        assignmrnt.pdf
-                                                    </div>
-                                                    <div
-                                                        class="tchTableAssignmentIcon bg-cl-pm d-flex justify-content-center align-items-center">
-                                                        <a href="" class=""><i
-                                                                class="fas fa-download color-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>4.25pm, 13 jan 2021</td>
-                                            <td>
-                                                <span class="cl-green">50</span> out of <span class="cl-pm">100</span>
-                                            </td>
-                                            <td>
-                                                <span class="bg-cl-green2 color-green px-3 rounded-3">Good</span>
-                                            </td>
-                                            <td class="tchSubTableAct">
-                                                <a href="" class="px-3 rounded-3" data-bs-toggle="modal"
-                                                    data-bs-target="#popUp">
-                                                    Edit
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>03</td>
-                                            <td scope="row">
-                                                <div class="myStds-image">
-                                                    <img src="Assets/Images/TeacherProfile/Group 538.png" alt="">
-                                                </div>
-                                            </td>
-                                            <td>Shamitra Datta</td>
-                                            <td>AWS Manipulation</td>
-                                            <td>
-                                                <div class="tchSubTableAssignment d-flex">
-                                                    <div class="tchTableAssignmentCont me-2">
-                                                        assignmrnt.pdf
-                                                    </div>
-                                                    <div
-                                                        class="tchTableAssignmentIcon bg-cl-pm d-flex justify-content-center align-items-center">
-                                                        <a href="" class=""><i
-                                                                class="fas fa-download color-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>4.25pm, 13 jan 2021</td>
-                                            <td>
-                                                <span class="cl-green">50</span> out of <span class="cl-pm">100</span>
-                                            </td>
-                                            <td>
-                                                <span
-                                                    class="bg-cl-light-yellow color-yellow px-3 rounded-3">Average</span>
-                                            </td>
-                                            <td class="tchSubTableAct">
-                                                <a href="" class="px-3 rounded-3" data-bs-toggle="modal"
-                                                    data-bs-target="#popUp">
-                                                    Edit
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-------------------------Modal--------------------------->
-                                <div class="modal fade" id="popUp" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered ">
-                                        <div class="modal-content py-4 w-75">
-                                            <div
-                                                class="modal-body tchModalBody d-flex flex-column justify-content-start">
-                                                <div class="tchModalHeading d-flex align-items-center mb-3">
-                                                    <div class="tchModalImg me-3">
-                                                        <img src="Assets/Images/Author/1Author.jpeg" alt="">
-                                                    </div>
-                                                    <div class="tchModalName color-span">
-                                                        Arif Bipu
-                                                    </div>
-                                                </div>
-                                                <form action="">
-                                                    <div class="d-flex flex-column">
-                                                        <label class="mb-2">Total Mark</label>
-                                                        <input class="bd-pm rounded-3 mb-2 py-1 px-2" type="Number">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <label class="mb-2">Obtained Mark</label>
-                                                        <input class="bd-pm rounded-3 mb-3 py-1 px-2" type="Number">
-                                                    </div>
-                                                    <input class="btn btn3 bg-cl-pm w-100" type="submit" value="Save"
-                                                        data-bs-dismiss="modal">
-                                                </form>
+                                <!-- Course add option end -->
+
+                                <!-- Course dashbord start -->
+
+                                <div class="col-xxl-5 col-xl-7 col-md-12 col-12 px5 mt-3">
+                                    <!-- <div> -->
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="">
+                                                <h5 class="fw-bold mt-3">AWS Course</h5>
+                                            </div>
+                                            <div class="">
+                                                <button class="bg-cl-pm color-white px-3 py-2 border-0 rounded-3"
+                                                    type="button"><i class="fas fa-plus me-1"></i>Add Chapter</button>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="bg-cl-grey4 py-4 px5 mb-3 rounded-3">
+                                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                                <div>
+                                                    <div class="addLesson">
+                                                        <a  class="cl-pm fw-bold" href="tchPeditCourse.html">
+                                                            Chapter Name
+                                                            <i class="fas fa-pencil-alt mx-1"></i>
+                                                        </a>
+                                                    </div>
+                                                    <small class="color-grey"> <span>16</span> Lessons</small>
+                                                </div>
+                                                <div class="addLesson">
+                                                    <a  class="cl-pm" href="tchPaddCourse3.html">
+                                                        <i class="fas fa-plus me-1"></i>
+                                                        Add New Lesson
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="tchAddCourseChapterList">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center bg-white rounded-3 mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center px-3 py-2 bg-cl-pm color-white rounded-3 me-2">L1</span>
+                                                        <i
+                                                            class="tchAddCourseChapterListIcon fas fa-video me-2 cl-pm p-2"></i>
+                                                        <small class="color-grey fw-bold">Video 1: IntroDuction To
+                                                            AWS</small>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class="fas fa-trash-alt cursor me-3 cl-pm"></i>
+                                                        <a  class="cl-pm " href="tchPaddCourse3.html">
+                                                            <i class="fas fa-pencil-alt cursor me-3 cl-pm"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center bg-white rounded-3 mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center px-3 py-2 bg-cl-pm color-white rounded-3 me-2">L1</span>
+                                                        <i
+                                                            class="tchAddCourseChapterListIcon far fa-folder me-2 cl-pm p-2"></i>
+                                                        <small class="color-grey fw-bold">Instruction : How To Attend
+                                                            Quiz</small>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class="fas fa-trash-alt cursor me-3 cl-pm"></i>
+                                                        <a  class="cl-pm " href="tchPaddCourse3.html">
+                                                            <i class="fas fa-pencil-alt cursor me-3 cl-pm"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center bg-white rounded-3 mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center px-3 py-2 bg-cl-pm color-white rounded-3 me-2">L1</span>
+                                                        <i
+                                                            class="tchAddCourseChapterListIcon far fa-file-pdf me-2 cl-pm p-2"></i>
+                                                        <small class="color-grey fw-bold">Quiz: Video 1 Quiz</small>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class="fas fa-trash-alt cursor me-3 cl-pm"></i>
+                                                        <a  class="cl-pm " href="tchPaddCourse3.html">
+                                                            <i class="fas fa-pencil-alt cursor me-3 cl-pm"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center bg-white rounded-3 mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <span
+                                                            class="d-flex align-items-center px-3 py-2 bg-cl-pm color-white rounded-3 me-2">L1</span>
+                                                        <i
+                                                            class="tchAddCourseChapterListIcon far fa-address-book me-2 cl-pm p-2"></i>
+                                                        <small class="color-grey fw-bold">Assignment: Video 1
+                                                            Aiisgnment</small>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class="fas fa-trash-alt cursor me-3 cl-pm"></i>
+                                                        <a  class="cl-pm " href="tchPaddCourse3.html">
+                                                            <i class="fas fa-pencil-alt cursor me-3 cl-pm"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tchAddCourseNoChapter bg-cl-grey4 px-5 py-4 rounded-3">
+                                            <p class="cl-pm fw-bold my-auto">No Chapter yet!!</p>
+                                        </div>
+                                    <!-- </div> -->
                                 </div>
+
+                                <!-- Course dashbord end -->
                             </div>
-                        </div>
-                        <!-- Submission Body End -->
-                    </div>
+                        </form>
+                    </section>
                 </div>
             </div>
         </div>
@@ -668,14 +602,13 @@
         </div>
     </footer>
 
-    <!----------Chart Js---------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <!-- Load FilePond library -->
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
     <!-----Owl Carousal-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!----------------Js--------->
     <script src="JS/script.js"></script>
-    <script src="JS/chat.js"></script>
 </body>
 
 </html>
