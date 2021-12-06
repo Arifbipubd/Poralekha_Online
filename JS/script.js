@@ -874,3 +874,4 @@ function cartValueChange(number, isIncrease, cart1, cart2) {
 
   calculateCourse()
 }
+
