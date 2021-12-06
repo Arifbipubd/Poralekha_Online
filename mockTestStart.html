@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile | Continue Course | PoralekhaOnline</title>
+    <title>Profile | My Tests</title>
     <link rel="icon" href="Assets/Images/Header/logo1.png" type="image/icon">
 
     <!-- bootstrap -->
@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 </head>
 
-<body>
+<body onload="startMcq1()">
     <!-- Top section -->
     <!-- header start -->
     <!-- Desktop version start -->
@@ -97,44 +97,6 @@
             </div>
         </div>
         <!-----------User Middle Header-->
-        <!-- <section class="middleHeader">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="middleHeader-img">
-                        <img src="Assets/Images/Header/logo.png" alt="">
-                    </div>
-                    <div class="middleHeader-content d-flex align-items-center">
-                        <div class="middleHeader-contentBtn me-4">
-                            <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
-                        </div>
-                        <div class="middleHeader-contentIcon d-flex" >
-                            
-                            <div class="Icon hdDot bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3">
-                                <i class="fas fa-sms"></i>
-                            </div>
-                            <div class="Icon hdDot1 bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3">
-                                <i class="fas fa-bell"></i>
-                            </div>
-                        </div>
-                        <div class="middleHeader-contentDropdown d-flex ms-4">
-                            <div class="middleHeader-contentDropImg">
-                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
-                            </div>
-                            <div class="dropdown middleHeaderDropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Arif Bipu
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My Account</a></li>
-                                  <hr class="dropdown-divider color-span">
-                                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log Out</a></li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <!-- Bottom Header -->
         <div class="bottomHeader">
             <div class="container">
@@ -367,241 +329,116 @@
         </div>
     </div>
     <!--bread crump end -->
+    <!-- quiz content start -->
 
-    <!-- Student Profile Start -->
-    <section class="std-profile">
-        <div class="container">
-            <div class="row">
-                <!-- leftbar desktop version start-->
-                <div class="col-xl-3 col-lg-3 mt-5 mb-5 std-leftTab h-100  desktopVersion">
+    <div class="container quiz mt-5 mb-5 quiz-content-heading">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h4 class="cl-pm">MCQ Mock Test</h4>
+                <h6 class="color-span">Session 1</h6>
+            </div>
+            <div class="d-flex align-items-center">
+                <h4 class="cl-pm">
+                    <span  id='timer1' style="font-size:20px;"></span>
+                    <span class="cl-ash" style="font-size:12px;">Time Left</span>
+                </h4>
+            </div>
+        </div>
+        <form action="" class="quiz-form">
 
-                    <div class="nav flex-column nav-tabs">
-                        <a class="nav-link me-3" href="stdPprofile.html">
-                            <i class="far fa-user me-1"></i>
-                            Profile</a>
+            <!-- quiz-1 -->
+            <div class="quiz-contentBg  mb-2 bg-light-pink">
+                <div class="quiz-content p-4">
+                    <h5 class="cl-pm">Question 1</h5>
+                    <h6 class="cl-ash">What is Lorem Ipsum?</h6>
+                    <div class="quiz-qs">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group1" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Option A</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group1" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Option B</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group1" id="inlineRadio3"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio3">Option C</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group1" id="inlineRadio4"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio4">Option D</label>
+                        </div>
 
-                        <a class="nav-link me-3 active" href="stdPcc.html">
-                            <i class="fas fa-tv me-1"></i>
-                            Continue Courses</a>
-
-                        <a class="nav-link me-3" href="stdPmyBooks.html">
-                            <i class="fas fa-book me-1"></i>
-                            My books</a>
-
-                        <a class="nav-link me-3" href="stdPmyTest.html">
-                            <i class="fas fa-diagnoses me-1"></i>
-                            My Tests
-                        </a>
-
-                        <a class="nav-link me-3" href="stdPwishlist.html">
-                            <i class="far fa-heart me-1"></i>
-                            Wishlist</a>
-
-                        <a class="nav-link me-3" href="stdPaccSetting.html">
-                            <i class="fas fa-user-check me-1"></i>
-                            Account Settings</a>
-
-                        <a class="nav-link me-3" href="stdPpm.html">
-                            <i class="far fa-credit-card me-1"></i>
-                            Payment Method</a>
-
-                        <a class="nav-link me-3" href="stdPhlpDsk.html">
-                            <i class="fas fa-hands-helping me-1"></i>
-                            Help Desk</a>
-
-                        <a class="nav-link me-3" href="index.html">
-                            <i class="fas fa-sign-out-alt me-1"></i>
-                            Logout</a>
                     </div>
                 </div>
-                <!-- leftbar desktop version end-->
-
-                <!-- leftbar mobile version start-->
-                <div class="col-xl-3 mt-3 std-leftTab h-100 mobileVersion">
-                    <div class="nav flex-column nav-tabs">
-                        <a class="nav-link w-100  active  navbar-toggler d-flex justify-content-between align-items-center"
-                            href="stdPcc.html" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navContentMobile1" aria-controls="navContentMobile1" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <div>
-                                <i class="fas fa-tv me-1"></i>
-                                Continue Courses
-
-                            </div>
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-
-                        <div class="collapse navbar-collapse" id="navContentMobile1">
-                            <a class="nav-link me-3" href="stdPprofile.html">
-                                <i class="far fa-user me-1"></i>
-                                Profile
-                            </a>
-
-                            <a class="nav-link me-3" href="stdPmyBooks.html">
-                                <i class="fas fa-book me-1"></i>
-                                My books</a>
-
-                            <a class="nav-link me-3" href="stdPmyTest.html">
-                                <i class="fas fa-diagnoses me-1"></i>
-                                My Tests
-                            </a>
-
-                            <a class="nav-link me-3" href="stdPwishlist.html">
-                                <i class="far fa-heart me-1"></i>
-                                Wishlist</a>
-
-                            <a class="nav-link me-3" href="stdPaccSetting.html">
-                                <i class="fas fa-user-check me-1"></i>
-                                Account Settings</a>
-
-                            <a class="nav-link me-3" href="stdPpm.html">
-                                <i class="far fa-credit-card me-1"></i>
-                                Payment Method</a>
-
-                            <a class="nav-link me-3" href="stdPhlpDsk.html">
-                                <i class="fas fa-hands-helping me-1"></i>
-                                Help Desk</a>
-
-                            <a class="nav-link me-3" href="index.html">
-                                <i class="fas fa-sign-out-alt me-1"></i>
-                                Logout</a>
+            </div>
+            <!-- quiz-2 -->
+            <div class="quiz-contentBg  mb-2 bg-light-pink">
+                <div class="quiz-content p-4">
+                    <h5 class="cl-pm">Question 1</h5>
+                    <h6 class="cl-ash">What is Lorem Ipsum?</h6>
+                    <div class="quiz-qs">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group2" id="inlineRadio5"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio5">Option A</label>
                         </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group2" id="inlineRadio6"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio6">Option B</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group2" id="inlineRadio7"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio7">Option C</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group2" id="inlineRadio8"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio8">Option D</label>
+                        </div>
+
                     </div>
                 </div>
-                <!-- leftbar desktop version end-->
-
-                <!-- mt5 media query desktop version -->
-                <div class="col-xl-9 col-lg-9 mtResponsive mb-5 ">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6 mb-3">
-                            <div class="homeWhatsNewImg">
-                                <div class="card card-height">
-                                    <div class="card-img d-flex  justify-content-end">
-                                        <img class="card-img-top " src="Assets/Images/HomeBody/6firstCourse.png"
-                                            alt="Card image cap">
-                                    </div>
-                                    <a href="singleCourse.html">
-                                        <div class="card-body card-body-height">
-                                            <h6>The Complete Financial Analyst Course 202</h6>
-                                            <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
-                                                        <div class="d-flex mt-3 align-items-center">
-                                                            <i class="fas fa-book me-1 color-yellow"></i>
-                                                            <small class="color-grey "> Lessons 2 of 10</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-                                                        <div class="d-flex mt-3 align-items-center">
-                                                            <small class="color-grey">CCNA</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+            <!-- quiz-3 -->
+            <div class="quiz-contentBg  mb-2 bg-light-pink">
+                <div class="quiz-content p-4">
+                    <h5 class="cl-pm">Question 1</h5>
+                    <h6 class="cl-ash">What is Lorem Ipsum?</h6>
+                    <div class="quiz-qs">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group3" id="inlineRadio9"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio9">Option A</label>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 mb-3">
-                            <div class="homeWhatsNewImg">
-                                <div class="card card-height">
-                                    <div class="card-img d-flex  justify-content-end">
-                                        <img class="card-img-top " src="Assets/Images/HomeBody/6firstCourse.png"
-                                            alt="Card image cap">
-                                    </div>
-                                    <a href="singleCourse.html">
-                                        <div class="card-body card-body-height">
-                                            <h6>The Complete Financial Analyst Course 202</h6>
-                                            <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
-                                                        <div class="d-flex mt-3 align-items-center">
-                                                            <i class="fas fa-book me-1 color-yellow"></i>
-                                                            <small class="color-grey ">Lessons 2 of 10</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-                                                        <div class="d-flex mt-3 align-items-center">
-                                                            <small class="color-grey">CCNA</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group3" id="inlineRadio10"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio10">Option B</label>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 mb-3">
-                            <div class="homeWhatsNewImg">
-                                <div class="card card-height">
-                                    <div class="card-img d-flex  justify-content-end">
-                                        <img class="card-img-top " src="Assets/Images/HomeBody/6firstCourse.png"
-                                            alt="Card image cap">
-                                    </div>
-                                    <a href="singleCourse.html">
-                                        <div class="card-body card-body-height">
-                                            <h6>The Complete Financial Analyst Course 202</h6>
-                                            <div class="card-body-text">
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="">
-                                                        <div class="d-flex mt-3 align-items-center">
-                                                            <i class="fas fa-book me-1 color-yellow"></i>
-                                                            <small class="color-grey ">Lessons 2 of 10</small>
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-                                                        <div class="d-flex mt-3 align-items-center">
-                                                            <small class="color-grey">CCNA</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group3" id="inlineRadio11"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio11">Option C</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="group3" id="inlineRadio12"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio12">Option D</label>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Student Profile End -->
-    <!------------------------Subscribe----------------->
-    <section class="homeSubscribe ">
-        <div class="container">
-            <div class="homeSubscribeImg">
-                <div class="homeSubscribePolygon homeSubscribe-hide">
-                    <img class="homeSubscribePolygonImg" src="Assets/Images/HomeBody/Polygon1.png" alt="">
-                </div>
-                <img class="homeSubscribeBanner" src="Assets/Images/HomeBody/13footerBg.png" alt="">
-                <div class="homeSubscribeContent">
-                    <h5 class="homeSubscribeContent-text text-center text-white mb-5">Subscribe our newsletter for
-                        newest <br> upcoming
-                        courses
-                    </h5>
-
-                    <div class="homeSubscribeContentButton">
-                        <input class="input" type="text" placeholder="Tour your email here...">
-                        <button class="button" type="submit">Subscribe</button>
-                    </div>
-
-                    <div class="input-group mb-3 homeSubscribeContentButton2">
-                        <input type="text" class="form-control" placeholder="Recipient's username"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <button class="button" type="submit">Subscribe</button>
-                    </div>
-                </div>
-                <!-- <div class="homeSubscribePolygon homeSubscribe-hide polygon2">
-                    <img class="homeSubscribePolygonImg polygon2Img" src="Assets/Images/HomeBody/Polygon1.png" alt="">
-                </div> -->
-            </div>
-        </div>
-    </section>
-
+            <button type="button" class="btn  btn3 bg-cl-pm mt-4 quiz-contentBtn" id="contentBtn"
+                onclick="quizSubmitBtn()">View Result</button>
+        </form>
+    </div>
     <!-- Bottom Section -->
     <!------------------------Footer------------------------------>
     <footer class="footer">
@@ -729,6 +566,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!----------------Js--------->
     <script src="JS/script.js"></script>
+    <script src="JS/mockTest.js"></script>
 </body>
 
 </html>

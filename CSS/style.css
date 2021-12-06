@@ -3980,6 +3980,13 @@ font-weight:550;
   border-radius: 0 0 10px 10px;
 }
 
+/*******Mock Test Result Number*********/
+.mockTestAcheivemenNumber{
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+}
+
 
 /**************Mock Test End************/
 
@@ -3991,6 +3998,27 @@ font-weight:550;
   font-size: 9px;
   border-radius: 50%;
 }
+
+/* mock test start */
+
+.quiz-contentBg {
+  border-radius: 7px;
+}
+.quiz-contentBg .quiz-content h6 {
+  line-height: 25px;
+}
+.quiz-contentBtn {
+  border-radius: 7px;
+}
+.quiz-form .btn:focus {
+  box-shadow: none !important;
+}
+
+.quiz-content-heading h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
 
 
 
