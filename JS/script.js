@@ -6,7 +6,7 @@ toggleBtns.forEach((btn) => {
     btn.classList.toggle('toggle-pressed');
   });
 })
-function sakib() {
+function mockFilter() {
   var element = document.getElementById("collapseExample1");
   element.classList.toggle("d-block");
 }

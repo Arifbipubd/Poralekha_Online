@@ -4000,6 +4000,16 @@ font-weight:550;
   .mockTestViewRslt-titleLeft{
     width: 100% !important;
   }
+  .mockTest1stTopRight{
+    display: none !important;
+  }
+  .mockTest1stTopLeft{
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .mockTest1stTop::after{
+    display: none !important;
+  }
 }
 
 /**************Mock Test Responsive End************/
@@ -4048,6 +4058,8 @@ font-weight:550;
 .mockTestDesc .toggleBtn{
   width: 40px;
   border-radius: 17%;
+  margin-top: 22px;
+  height: 44px;
 }
 
 
