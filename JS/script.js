@@ -6,7 +6,10 @@ toggleBtns.forEach((btn) => {
     btn.classList.toggle('toggle-pressed');
   });
 })
-
+function sakib() {
+  var element = document.getElementById("collapseExample1");
+  element.classList.toggle("d-block");
+}
 
 /***What New Banner****/
 $(".homeWhatsNewcarousel").owlCarousel({

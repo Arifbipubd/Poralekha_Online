@@ -90,44 +90,6 @@
             </div>
         </div>
         <!-----------User Middle Header-->
-        <!-- <section class="middleHeader">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="middleHeader-img">
-                        <img src="Assets/Images/Header/logo.png" alt="">
-                    </div>
-                    <div class="middleHeader-content d-flex align-items-center">
-                        <div class="middleHeader-contentBtn me-4">
-                            <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
-                        </div>
-                        <div class="middleHeader-contentIcon d-flex" >
-                            
-                            <div class="Icon hdDot bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3">
-                                <i class="fas fa-sms"></i>
-                            </div>
-                            <div class="Icon hdDot1 bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3">
-                                <i class="fas fa-bell"></i>
-                            </div>
-                        </div>
-                        <div class="middleHeader-contentDropdown d-flex ms-4">
-                            <div class="middleHeader-contentDropImg">
-                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
-                            </div>
-                            <div class="dropdown middleHeaderDropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Arif Bipu
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My Account</a></li>
-                                  <hr class="dropdown-divider color-span">
-                                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log Out</a></li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <!-- Bottom Header -->
         <div class="bottomHeader">
             <div class="container">
@@ -363,7 +325,22 @@
     <section class="mockTestDesc my-4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="toggleBtn-dflex align-items-center" id="rightHeading-mobile">
+                    <div class="right-heading d-flex flex-wrap justify-content-between mt-2 mb-3">
+                        <div class="d-flex flex-column">
+                            <h5 class="fw-bold">06 Tests Found</h5>
+                        </div>
+                        <div class="mockTestAll-rheading">
+                            <input class="" type="search" placeholder="Search Test" aria-label="Search">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="border-0 bg-cl-grey4 toggleBtn" type="button" onclick="sakib()">
+                            <i class="fas fa-filter cl-pm p-2"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 mb-4" id="collapseExample1">
                     <form action="">
                         <div class="bg-light-pink p-5">
                             <div class="mb-4">
@@ -468,17 +445,21 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-xl-9 col-lg-8 ">
                     <!-- right heading -->
-                    <div class="right-heading d-flex flex-wrap justify-content-between mt-2 mb-3">
-                        <h5 class="fw-bold">06 Tests Found</h5>
-                        <div class="mockTestAll-rheading">
-                            <input class="" type="search" placeholder="Search Test" aria-label="Search">
+                    <div class="toggleBtn-dflex align-items-center" id="rightHeading-desktop">
+                        <div class="right-heading d-flex flex-wrap justify-content-between mt-2 mb-3">
+                            <div class="d-flex flex-column">
+                                <h5 class="fw-bold">06 Tests Found</h5>
+                            </div>
+                            <div class="mockTestAll-rheading">
+                                <input class="" type="search" placeholder="Search Test" aria-label="Search">
+                            </div>
                         </div>
                     </div>
                     <!-- right content -->
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5 col-sm-6 col-12  mb-4">
+                    <div class="row rightContent-card">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-7 col-12  mb-4">
                             <div class="right-content-bg rounded-3">
                                 <div class="p-3">
                                     <div class="right-content">
@@ -541,7 +522,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-5 col-sm-6 col-12 mb-4">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-7 col-12 mb-4">
                             <div class="right-content-bg rounded-3">
                                 <div class="p-3">
                                     <div class="right-content">
@@ -604,7 +585,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-5 col-sm-6 col-12 mb-4">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-7 col-12 mb-4">
                             <div class="right-content-bg rounded-3">
                                 <div class="p-3">
                                     <div class="right-content">
@@ -667,7 +648,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-5 col-sm-6 col-12 mb-4">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-7 col-12 mb-4">
                             <div class="right-content-bg rounded-3">
                                 <div class="p-3">
                                     <div class="right-content">

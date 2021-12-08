@@ -1,5 +1,5 @@
 function startMcq1() {
-  var c = 1000;
+  var c = 360;
   var t;
   $(document).ready(function () {
 

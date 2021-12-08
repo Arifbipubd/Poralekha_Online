@@ -55,11 +55,11 @@ small{
 }
 
 
-.w-80{
-  width: 80%;
-}
 .w-90{
   width: 90%;
+}
+.w-80{
+  width: 80%;
 }
 .w-65 {
   width: 65%;
@@ -67,14 +67,14 @@ small{
 .w-60 {
   width: 60%;
 }
-.w-35 {
-  width: 35%;
+.w-50 {
+  width: 50%;
 }
 .w-40 {
   width: 40%;
 }
-.w-50 {
-  width: 50%;
+.w-35 {
+  width: 35%;
 }
 .w-20{
   width: 20% !important;
@@ -85,6 +85,10 @@ small{
 .w-10{
   width: 10%;
 }
+
+
+
+
 /* display */
 
 .dnone {
@@ -3987,6 +3991,18 @@ font-weight:550;
   border-radius: 50%;
 }
 
+/**************Mock Test Responsive Start************/
+
+@media(max-width:999px){
+  .mockTestAcheivement{
+    width: 80% !important;
+  }
+  .mockTestViewRslt-titleLeft{
+    width: 100% !important;
+  }
+}
+
+/**************Mock Test Responsive End************/
 
 /**************Mock Test End************/
 
@@ -4020,5 +4036,63 @@ font-weight:550;
 }
 
 
+
+
+
+/* mock test home */
+.mockTest1stBottom .w50 {
+  width: 50%;
+}
+
+/* mock test all */
+.mockTestDesc .toggleBtn{
+  width: 40px;
+  border-radius: 17%;
+}
+
+
+@media (min-width:355px) and (max-width:768px){ 
+  .mockTestDesc .rightContent-card {
+    justify-content: center;
+  }
+}
+@media (min-width:355px) and (max-width:992px){ 
+  #collapseExample1 {
+    display: none;
+  }
+  .toggleBtn-dflex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .right-heading {
+    flex-direction: column;
+  }
+  #rightHeading-desktop {
+    display: none;
+  }
+}
+@media (min-width:355px) and (max-width:1000px){ 
+  .mockTest1stBottom .w50 {
+    width: 100%;
+  }
+}
+@media (min-width:992px) and (max-width:3500px){ 
+  .mockTestDesc .toggleBtn{
+    display: none;
+  }
+  #rightHeading-mobile {
+    display: none;
+  }
+}
+
+
+/* mocktestDesc.html  */
+
+/* stdPmyTestDes.html */
+@media (min-width:355px) and (max-width:500px){ 
+  .mockTestModal .modal-body {
+    flex-direction: column;
+  }
+}
 
 
