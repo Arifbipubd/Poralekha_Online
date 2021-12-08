@@ -3901,6 +3901,11 @@ font-weight:550;
   border-radius: 7px;
   outline: none;
 }
+.mockTestAll-rheading .input-group-text{
+  background-color: #380E86;
+  color: whitesmoke;
+  border: 1px solid #380E86;
+}
 .right-content .form-check-label i{
   font-size: 10px;
 }
@@ -4058,7 +4063,7 @@ font-weight:550;
 .mockTestDesc .toggleBtn{
   width: 40px;
   border-radius: 17%;
-  margin-top: 22px;
+  /* margin-top: 22px; */
   height: 44px;
 }
 
