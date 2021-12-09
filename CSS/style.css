@@ -813,6 +813,12 @@ input.check-toggle-round-flat+label:after {
 
 .middleHeader-img{
   cursor: pointer;
+  height: 42px;
+  width: 168px;
+}
+.middleHeader-img img{
+  width: 100%;
+  height: 100%;
 }
 
 .middleHeader-content .btn1 {
