@@ -24,16 +24,16 @@ $(".homeWhatsNewcarousel").owlCarousel({
       nav: false,
       // dots: false
     },
-    600: {
+    768: {
       items: 2,
       nav: false,
       // dots: false
     },
-    1000: {
+    1200: {
       items: 3,
       nav: false
     },
-    1100: {
+    1400: {
       items: 4,
       nav: false
     }
@@ -793,12 +793,13 @@ function tchBtnCheck(check) {
 }
 
 
+
 //Cart
 
-window.onload = function () {
+function onloadCartCount(){
   calculateCourse();
   cartValueChange();
-  calculateTotal();
+  // calculateTotal();
 }
 
 function calculateCourse() {
@@ -818,6 +819,23 @@ function calculateCourse() {
   // console.log(courseTotalPrice);
 
   //   Course Total Price end
+
+ //   quizTotal Price Start
+ const cartQuizPrice1 = document.getElementById('quiz-price1');
+ const quizPrice1 = cartQuizPrice1.innerText;
+ const quizNewPrice1 = parseInt(quizPrice1);
+ // console.log(quizNewPrice1);
+
+ const cartQuizPrice2 = document.getElementById('quiz-price2');
+ const quizPrice2 = cartQuizPrice2.innerText;
+ const quizNewPrice2 = parseInt(quizPrice2);
+ // console.log(quizNewPrice2);
+
+ const quizTotalPrice = quizNewPrice1 + quizNewPrice2;
+
+  console.log(quizTotalPrice);
+
+  //   quizTotal Price End
 
   //   Book Total Price start
 
@@ -840,7 +858,7 @@ function calculateCourse() {
 
   // console.log(bookTotalPrice)
 
-  const totalPrice = courseTotalPrice + bookTotalPrice;
+  const totalPrice = courseTotalPrice + bookTotalPrice + quizTotalPrice;
 
   // console.log(totalPrice);
 
@@ -877,4 +895,3 @@ function cartValueChange(number, isIncrease, cart1, cart2) {
 
   calculateCourse()
 }
-

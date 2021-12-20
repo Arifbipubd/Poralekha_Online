@@ -1,5 +1,5 @@
 function startMcq1() {
-  var c = 360;
+  var c = 2;
   var t;
   $(document).ready(function () {
 
@@ -19,10 +19,12 @@ function startMcq1() {
     $('#timer1').html(result);
     
     if (c < 0) {
+  
+      document.getElementById("quizModalBtn").click();
       // $(".quiz-contentBtn").attr('disabled', 'disabled');
-      quizTimeOut()
-      $(".quiz-contentBtn").attr('disabled', 'disabled');
+      document.getElementById('quizTimer').style.display='none';
       return false;
+
     }
 
 
@@ -32,19 +34,11 @@ function startMcq1() {
     }, 1000);
   }
   
-
 }
 function quizTimeOut(){
-  alert("Time Out\n Submit the quiz");
-  document.getElementById("contentBtn").click();
-  // location.href='mockTestViewRslt.html';
-  
+  document.getElementById("quizFormSubmit").click();
 }
-function quizSubmitBtn(){
-  console.log('done');
- quizSubmit();
-}
+
 function quizSubmit(){
-  alert("Press OK To Go\nNext Page");
   location.href='mockTestAcheivement.html';
 }

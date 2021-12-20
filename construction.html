@@ -30,62 +30,70 @@
 </head>
 
 <body>
-    <!-- Top section -->
-    <!-- header start -->
-    <!-- Desktop version start -->
-    <section class="desktopVersion">
-        <div class="topHeader bg-cl-pm">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                        <div class="mx-2 ">
-                            <img class="iconSize test" src="Assets/Images/Header/headphone.png" alt=""> Support
+    <section class="d-flex flex-column justify-content-between" style="height: 100vh;">
+        <!-- header start -->
+        <div class="desktopVersion">
+            <div class="topHeader bg-cl-pm">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <div class="mx-2 ">
+                                <img class="iconSize test" src="Assets/Images/Header/headphone.png" alt=""> Support
+                            </div>
+                            <div class="mx-2">
+                                <img class="iconSize" src="Assets/Images/Header/mail.png" alt=""> support@gmail.com
+                            </div>
                         </div>
-                        <div class="mx-2">
-                            <img class="iconSize" src="Assets/Images/Header/mail.png" alt=""> support@gmail.com
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="mx-2 br">
-                            Social:
-                            <a href=""><i class="fab fa-facebook-f iconSize mx-2 color-white"></i></a>
-                            <a href=""><i class="fab fa-twitter iconSize mx-2 color-white"></i></a>
-                            <a href=""><i class="fab fa-youtube iconSize me-5 color-white"></i></a>
-                        </div>
-                        <div class="mx-2 languageChange">
-                            <div class="change">
-                                <input id="engtoggle" class="engtoggle engtoggle-round-flat" type="checkbox">
-                                <label for="engtoggle"></label>
-                                <span class="off">En</span>
-                                <span class="on">Bn</span>
+                        <div class="d-flex">
+                            <div class="mx-2 br">
+                                Social:
+                                <a href=""><i class="fab fa-facebook-f iconSize mx-2 color-white"></i></a>
+                                <a href=""><i class="fab fa-twitter iconSize mx-2 color-white"></i></a>
+                                <a href=""><i class="fab fa-youtube iconSize me-5 color-white"></i></a>
+                            </div>
+                            <div class="mx-2 languageChange">
+                                <div class="change">
+                                    <input id="engtoggle" class="engtoggle engtoggle-round-flat" type="checkbox">
+                                    <label for="engtoggle"></label>
+                                    <span class="off">En</span>
+                                    <span class="on">Bn</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Middle Section -->
-    </section>
-    <!-- Desktop version end -->
+        <!-- header end -->
 
-
-    <!-- mobile version end -->
-    <!-- header end -->
-    <div class="container">
-        <div class="constructionPage d-flex justify-content-center align-items-center py-5">
+        <div class="container">
+            <div class="constructionPage d-flex justify-content-center align-items-center py-5">
                 <div>
                     <h1 class="cl-pm text-center">Patience!</h1>
                     <h4 class="cl-pm text-center">This site is under construction</h4>
                 </div>
-                <div class="constructionImg">
+                <div class="constructionImg ps-5">
                     <img src="Assets/Images/maintenance.png" alt="">
                 </div>
+            </div>
         </div>
-    </div>
-    <!-- Bottom Section -->
 
-    <!----------------Js--------->
-    <script src="JS/script.js"></script>
+        <!----------Copy Right------------------->
+        <div class="mobileVersion">
+            <footer class="CopyRight">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="copyRightContentLeft w-50">
+                        &copy; 2021 livetechltd. All rights Reserved
+                    </div>
+                    <div class="copyRightContentRight text-white">
+                        <a href=""><i class="fab fa-facebook-f me-3"></i></a>
+                        <a href=""> <i class="fab fa-twitter me-3"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
 </body>
 
 </html>

@@ -365,7 +365,7 @@
                                         <li class="nav-item ">
                                             <select id="inputState" class="form-select color-span">
                                                 <option selected>Sort</option>
-                                                <option>Lorem ipsum Lorem ipsum dolor sit amet.</option>
+                                                <option>Lorem ipsum</option>
                                                 <option>Lorem ipsum</option>
                                                 <option>Lorem ipsum</option>
                                             </select>
@@ -552,8 +552,8 @@
     <!-----------------------Single Catagory----------------------->
     <section class="singleCtagory">
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-xl-3 col-lg-4 filter d-flex flex-column mb-5">
+            <div class="row mt-5 mb-5">
+                <div class="col-xl-3 col-lg-4 filter d-flex flex-column">
                     <h4 class="color-span">Filter</h4>
                     <form action="">
                         <div class="singleCtagoryLeft1 mt-5 mb-4 d-flex justify-content-center align-items-center">
@@ -563,7 +563,7 @@
                         <div class="allCoursescheckbox mb-4 py-4 ps-3">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault" value="hello">
                                     IT & Software
                                 </label>
                             </div>
@@ -610,78 +610,23 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="singleCtagoryLeft2 py-3 px-4">
-                            <h6 class="fw-bold mb-4">Price</h6>
-                            <div id='id66' class="singleCtagoryLeft2Inputrange  ">
-                                <div id='id66b' class='singleCtagoryLeft2Inputrange__between'></div>
-                                <button id='id661' class="singleCtagoryLeft2Inputrange__button_1"></button>
-                                <button id='id662' class="singleCtagoryLeft2Inputrange__button_2"></button>
-                                <div class="singleCtagoryLeft2Input d-flex mt-4">
-                                    <input id='id66i1' class='singleCtagoryLeft2Inputrange_inpt1 me-2 ps-2 color-span'
-                                        type='number' min='0' max='5000'>
-                                    <input id='id66i2' class='singleCtagoryLeft2Inputrange_inpt2 ps-2 color-span'
-                                        type='number' min='0' max='5000'>
-                                </div>
+                        <div class="multiHandleRangeb">
+                            <div class="multiHandleInputb">
+                                <h6 class="fw-bold ms-2">Price</h6>
+                                <div class="RangeSliderb-track"></div>
+                                <input type="range" min="0" max="5000" value="2000" id="sliderb-1"
+                                    oninput="slideOne1()">
+                                <input type="range" min="0" max="5000" value="4000" id="sliderb-2"
+                                    oninput="slideTwo1()">
                             </div>
-                        </div>
-                        <div class="singleCtagoryLeft3 mt-4 py-4 ps-3 ">
-                            <h6 class="fw-bold mb-3">Rating</h6>
-                            <div class="singleCtagoryLeft3Radio">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label color-yellow" for="flexRadioDefault2">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label color-yellow" for="flexRadioDefault2">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label color-yellow" for="flexRadioDefault2">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label color-yellow" for="flexRadioDefault2">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label color-yellow" for="flexRadioDefault2">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </label>
-                                </div>
+                            <div class="multiHandleValuesb mb-4">
+                                <span id="multiHandleRangeb1">
+                                    1000
+                                </span>
+                                <span> &dash; </span>
+                                <span id="multiHandleRangeb2">
+                                    5000
+                                </span>
                             </div>
                         </div>
                         <div class="singleCtagoryLeft4 mt-4">
@@ -720,37 +665,37 @@
                                             </li>
                                         </div>
                                         <a href="singleCourse.html">
-                                            <div class="card-body card-body-height">
+                                            <div class="card-body card-body-height" onclick="location.href='singleCourse.html'">
                                                 <h6>The Complete Financial Analyst Course 202</h6>
                                                 <div class="card-body-text">
                                                     <div class="d-flex justify-content-between">
                                                         <div class="">
-                                                            <h5 class="color-yellow me-1">300 Tk</h5>
-                                                            <div class="d-flex align-items-center ">
+                                                            <h5 class="color-yellow fw-bold">300 Tk</h5>
+                                                            <div class="d-flex align-items-center mb-2">
                                                                 <strike class="color-grey">600Tk </strike>
                                                                 <small class="color-green mx-1">50%</small>
                                                             </div>
-                                                            <div class="d-flex mt-3 align-items-center">
+                                                            <div class="d-flex  align-items-center">
                                                                 <i class="far fa-eye mx-1 color-yellow"></i>
                                                                 <small class="color-grey ">5,455</small>
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <div class="d-flex align-items-center ">
+                                                            <div class="d-flex">
                                                                 <i class="fas fa-book me-1 color-yellow"></i>
-                                                                <small class="color-grey">16 lessons</small>
+                                                                <h5 class="color-grey">16 lessons</h5>
                                                             </div>
-                                                            <div class="d-flex align-items-center mt-3">
-                                                                <small class="me-1 color-yellow">
+                                                            <div class="d-flex m-0 align-items-center fs16 mb-2">
+                                                                <small class="me-1 color-yellow ">
                                                                     <i class="fas fa-star "></i>
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
                                                                 </small>
-                                                                <small class="color-grey">5.00</small>
+                                                                <small class="color-grey ">5.00</small>
                                                             </div>
-                                                            <div class="d-flex mt-3 align-items-center">
+                                                            <div class="d-flex align-items-center">
                                                                 <i class="far fa-clock me-1 color-yellow"></i>
                                                                 <small class="color-grey">1hr 30min</small>
                                                             </div>
@@ -773,37 +718,37 @@
                                             </li>
                                         </div>
                                         <a href="singleCourse.html">
-                                            <div class="card-body card-body-height">
+                                            <div class="card-body card-body-height" onclick="location.href='singleCourse.html'">
                                                 <h6>The Complete Financial Analyst Course 202</h6>
                                                 <div class="card-body-text">
                                                     <div class="d-flex justify-content-between">
                                                         <div class="">
-                                                            <h5 class="color-yellow me-1">300 Tk</h5>
-                                                            <div class="d-flex align-items-center ">
+                                                            <h5 class="color-yellow fw-bold">300 Tk</h5>
+                                                            <div class="d-flex align-items-center mb-2">
                                                                 <strike class="color-grey">600Tk </strike>
                                                                 <small class="color-green mx-1">50%</small>
                                                             </div>
-                                                            <div class="d-flex mt-3 align-items-center">
+                                                            <div class="d-flex  align-items-center">
                                                                 <i class="far fa-eye mx-1 color-yellow"></i>
                                                                 <small class="color-grey ">5,455</small>
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <div class="d-flex align-items-center ">
+                                                            <div class="d-flex">
                                                                 <i class="fas fa-book me-1 color-yellow"></i>
-                                                                <small class="color-grey">16 lessons</small>
+                                                                <h5 class="color-grey">16 lessons</h5>
                                                             </div>
-                                                            <div class="d-flex align-items-center mt-3">
-                                                                <small class="me-1 color-yellow">
+                                                            <div class="d-flex m-0 align-items-center fs16 mb-2">
+                                                                <small class="me-1 color-yellow ">
                                                                     <i class="fas fa-star "></i>
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
                                                                 </small>
-                                                                <small class="color-grey">5.00</small>
+                                                                <small class="color-grey ">5.00</small>
                                                             </div>
-                                                            <div class="d-flex mt-3 align-items-center">
+                                                            <div class="d-flex align-items-center">
                                                                 <i class="far fa-clock me-1 color-yellow"></i>
                                                                 <small class="color-grey">1hr 30min</small>
                                                             </div>
@@ -985,8 +930,9 @@
     <!-----Owl Carousal-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!----------------Js--------->
-    <script src="JS/script.js"></script>
     <script src="JS/multihandle.js"></script>
+    <script src="JS/script.js"></script>
+    <!-- <script src="JS/pagination.js"></script> -->
 </body>
 
 </html>
