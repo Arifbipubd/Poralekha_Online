@@ -1,5 +1,5 @@
 function startMcq1() {
-  var c = 2;
+  var c = 20;
   var t;
   $(document).ready(function () {
 

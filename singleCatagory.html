@@ -83,67 +83,14 @@
         <div class="middleHeader">
             <div class="container">
                 <div class="d-flex justify-content-between">
-                    <div class="middleHeader-img">
-                        <img src="Assets/Images/Header/logo.svg" alt="" onclick="window.location.href='index.html'">
+                    <div class="middleHeader-img" >
+                        <img src="Assets/Images/Header/logo.svg" onclick="window.location.href='index.html'" alt="" onclick="window.location.href='index.html'">
                     </div>
-                    <div class="middleHeader-content">
-                        <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
-                        <button type="button" class="btn  btn2 mx-2 cl-pm" onclick="location.href='stdSignIn.html'">Sign
-                            in</button>
-                        <button type="button" class="btn  btn3 bg-cl-pm" onclick="location.href='stdSignUp.html'">Sign
-                            up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-----------User Middle Header-->
-        <!-- <section class="middleHeader">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="middleHeader-img">
-                        <img src="Assets/Images/Header/logo.svg" alt="">
-                    </div>
-                    <div class="middleHeader-content d-flex align-items-center">
-                        <div class="middleHeader-contentBtn me-4">
-                            <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
-                        </div>
-                        <div class="middleHeader-contentIcon d-flex" >
-                            
-                            <div class="Icon hdDot bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3">
-                                <i class="fas fa-sms"></i>
-                            </div>
-                            <div class="Icon hdDot1 bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3">
-                                <i class="fas fa-bell"></i>
-                            </div>
-                        </div>
-                        <div class="middleHeader-contentDropdown d-flex ms-4">
-                            <div class="middleHeader-contentDropImg">
-                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
-                            </div>
-                            <div class="dropdown middleHeaderDropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Arif Bipu
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My Account</a></li>
-                                  <hr class="dropdown-divider color-span">
-                                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log Out</a></li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Bottom Header -->
-        <div class="bottomHeader">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light  ">
-                    <div class="container-fluid p-0">
+                    <div class="d-flex align-items-center">
                         <div class="">
-                            <a class="navbar-brand tex dot" href="#" data-bs-toggle="dropdown"
-                                data-bs-auto-close="outside">
-                                <i class="fas fa-align-center cl-pm "><span class="ms-3 cl-pm fw-400">All Category</span>
+                            <a class="navbar-brand tex" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                <span class="ms-3 cl-pm fw-400 dot me-2">Category</span><i
+                                    class="fas fa-sort-down cl-pm"></i>
                                 </i>
                             </a>
                             <ul class="dropdown-menu shadow uldesk-font">
@@ -188,47 +135,20 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="mr ">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item ">
-                                    <form class="d-flex ">
-                                        <input style="font-family:'Poppins'; " class="form-control border-0 me-1"
-                                            type="search" placeholder="Search Subject" aria-label="Search">
-                                        <select id="inputState" class="form-select me-2 border-0">
-                                            <option selected>Category</option>
-                                            <option>Lorem ipsum dolor sit amet.</option>
-                                            <option>Lorem ipsum dolor sit amet.</option>
-                                            <option>Lorem ipsum dolor sit amet.</option>
-                                        </select>
-                                        <button class="btn  btn3 bg-cl-pm" type="submit">Search</button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                            <ul class="navbar-nav mb-2 mb-lg-0 ">
-                                <li class="nav-item mx-3">
-                                    <a class="nav-link " href="#">About</a>
-                                </li>
-                                <li class="nav-item mx-3 ">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item mx-3">
-                                    <a class="nav-link" href="#">FAQ</a>
-                                </li>
-                                <li class="nav-item nav-cart ">
-                                    <a class="nav-link pb-1" href="#"><img class="pb-1"
-                                            src="Assets/Images/Header/cart.png" alt=""></a>
-                                </li>
-                            </ul>
+                        <div class="headerSearch">
+                            <input style="font-family:'Poppins'; " class="form-control border-0 me-1 rounded-3"
+                                type="search" placeholder="Search Subject" aria-label="Search">
                         </div>
                     </div>
-                </nav>
+                    <div class="middleHeader-content">
+                        <button type="button" class="btn  btn1 cl-pm"
+                            onclick="window.location.href='tchSignUp.html'">Join as Tutor</button>
+                        <button type="button" class="btn  btn2 mx-2 cl-pm" onclick="location.href='stdSignIn.html'">Sign
+                            in</button>
+                        <button type="button" class="btn  btn3 bg-cl-pm" onclick="location.href='stdSignUp.html'">Sign
+                            up</button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Middle Section -->
@@ -244,8 +164,8 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <div class="middleHeader-img">
-                            <img src="Assets/Images/Header/logo.svg" alt="">
+                        <div class="middleHeader-img" >
+                            <img src="Assets/Images/Header/logo.svg" onclick="window.location.href='index.html'" alt="">
                         </div>
                     </a>
                     <div class="d-flex align-items-center">
@@ -1221,7 +1141,7 @@
         <div class="container">
             <div class="footerContent d-flex justify-content-between">
                 <div class="footerContentOne me-5">
-                    <div class="footerContentOneLogo mb-4 mt-1">
+                    <div class="footerContentOneLogo cursor mb-4 mt-1" onclick="location.href='index.html'">
                         <img src="Assets/Images/Footer/1Logo.svg" alt="">
                     </div>
                     <div class="footerContentOneContent footerContent">

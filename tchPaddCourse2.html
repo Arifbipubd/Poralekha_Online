@@ -67,9 +67,9 @@
                     <div class="d-flex">
                         <div class="mx-2 br">
                             Social:
-                            <i class="fab fa-facebook-f iconSize mx-2"></i>
-                            <i class="fab fa-twitter iconSize mx-2"></i>
-                            <i class="fab fa-youtube iconSize me-5 "></i>
+                            <a href=""><i class="fab fa-facebook-f iconSize mx-2 color-white"></i></a>
+                            <a href=""><i class="fab fa-twitter iconSize mx-2 color-white"></i></a>
+                            <a href=""><i class="fab fa-youtube iconSize me-5 color-white"></i></a>
                         </div>
                         <div class="mx-2 languageChange">
                             <div class="change">
@@ -83,52 +83,106 @@
                 </div>
             </div>
         </div>
-        <!-- Middle Header -->
-        <div class="middleHeader tchMiddleHead">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="middleHeader-img">
-                        <img src="Assets/Images/Header/logo.svg" alt="">
-                    </div>
-                    <div class="middleHeader-content d-flex align-items-center">
-                        <div class="middleHeader-contentBtn me-4">
-                            <button type="button" class="btn  btn1 cl-pm">Join as Tutor</button>
-                        </div>
-                        <div class="middleHeader-contentIcon d-flex">
-
-                            <div
-                                class="Icon hdDot bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3">
-                                <i class="fas fa-sms"></i>
-                            </div>
-                            <div
-                                class="Icon hdDot1 bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3">
-                                <i class="fas fa-bell"></i>
-                            </div>
-                        </div>
-                        <div class="middleHeader-contentDropdown d-flex ms-4">
-                            <div class="middleHeader-contentDropImg">
-                                <img src="Assets/Images/Author/1Author.jpeg" alt="">
-                            </div>
-                            <div class="dropdown middleHeaderDropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Arif Bipu
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0"
-                                    aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My
-                                            Account</a></li>
-                                    <hr class="dropdown-divider color-span">
-                                    <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log
-                                            Out</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-----------User Middle Header-->
+        <div class="middleHeader ">
+                  <div class="container">
+                      <div class="d-flex justify-content-between">
+                          <div class="middleHeader-img" >
+                              <img src="Assets/Images/Header/logo.svg" onclick="window.location.href='index.html'" alt="">
+                          </div>
+                          <div class="d-flex align-items-center">
+                              <div class="">
+                                  <a class="navbar-brand tex" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                      <span class="ms-3 cl-pm fw-400 dot me-2">Category</span><i
+                                          class="fas fa-sort-down cl-pm"></i>
+                                      </i>
+                                  </a>
+                                  <ul class="dropdown-menu shadow uldesk-font">
+                                      <li><a class="dropdown-item color-grey" href="blog.html">Category-1</a></li>
+                                      <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li class="dropstart">
+                                          <a href="#" class="dropdown-item dropdown-toggle color-grey"
+                                              data-bs-toggle="dropdown">Category-2</a>
+                                          <ul class="dropdown-menu shadow">
+                                              <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
+                                              <li>
+                                                  <hr class="dropdown-divider">
+                                              </li>
+                                              <li><a class="dropdown-item color-grey" href=""> Sub Cat-2</a></li>
+                                              <li>
+                                                  <hr class="dropdown-divider">
+                                              </li>
+                                              <li><a class="dropdown-item color-grey" href="">Sub Cat-3</a></li>
+                                          </ul>
+                                      </li>
+                                      <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li class="dropend">
+                                          <a href="#" class="dropdown-item dropdown-toggle color-grey"
+                                              data-bs-toggle="dropdown" data-bs-auto-close="outside">Category-3</a>
+                                          <ul class="dropdown-menu shadow">
+                                              <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
+                                              <li class="dropend">
+                                                  <a href="#" class="dropdown-item dropdown-toggle color-grey"
+                                                      data-bs-toggle="dropdown" data-bs-auto-close="outside">Sub Cat-2</a>
+                                                  <ul class="dropdown-menu dropdown-submenu shadow">
+                                                      <li><a class="dropdown-item color-grey" href="">Sub sub Cat-1</a></li>
+                                                      <li><a class="dropdown-item color-grey" href="">Sub sub Cat-2</a></li>
+                                                      <li><a class="dropdown-item color-grey" href="">Sub sub Cat-3</a></li>
+                                                  </ul>
+                                              </li>
+                                              <li><a class="dropdown-item color-grey" href=""> Sub Cat-3</a></li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="headerSearch">
+                                  <input style="font-family:'Poppins'; " class="form-control border-0 me-1 rounded-3"
+                                      type="search" placeholder="Search Subject" aria-label="Search">
+                              </div>
+                          </div>
+                          <div class="middleHeader-content d-flex align-items-center">
+                              <div class="middleHeader-contentIcon d-flex me-3">
+        
+                                  <div
+                                      class="headerIcon cursor bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3">
+                                      <i class="fas fa-sms"></i> <span class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
+                                  </div>
+                                  <div
+                                      class="headerIcon cursor bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3 me-3">
+                                      <i class="fas fa-bell"></i> <span class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
+                                  </div>
+                                  <div
+                                      class="headerIcon cursor bg-cl-grey3 d-flex justify-content-center align-items-center p-2 rounded-3">
+                                      <img src="Assets/Images/Header/cart.png" alt=""> <span class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
+                                  </div>
+                              </div>
+                              <div class="middleHeader-contentDropdown d-flex ms-4">
+                                  <div class="middleHeader-contentDropImg">
+                                      <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                                  </div>
+                                  <div class="dropdown middleHeaderDropdown">
+                                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                          Arif Bipu
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0"
+                                          aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My
+                                                  Account</a></li>
+                                              <hr class="dropdown-divider color-span">
+                                          <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log
+                                                  Out</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
         </div>
-        <!-- Middle Section -->
     </section>
     <!-- Desktop version end -->
 
@@ -141,8 +195,8 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
-                        <div class="middleHeader-img">
-                            <img src="Assets/Images/Header/logo.svg" alt="">
+                        <div class="middleHeader-img" >
+                            <img src="Assets/Images/Header/logo.svg" onclick="window.location.href='index.html'" alt="">
                         </div>
                     </a>
                     <div class="d-flex align-items-center">
