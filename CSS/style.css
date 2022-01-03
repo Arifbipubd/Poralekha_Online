@@ -57,6 +57,10 @@ small{
   font-size: 20px;
 }
 
+.fw-400 {
+  font-weight: 400;
+}
+
 
 .w-90{
   width: 90%;
@@ -842,6 +846,41 @@ input.check-toggle-round-flat+label:after {
   background-color: #380E86;
   color: white;
 }
+
+.headerSearch{
+  border: 0.5px solid #380E86;
+  border-radius: 5px;
+}
+
+.middleHeader{
+  box-shadow: 4px 3px 3px #f2f2f2;
+}
+
+.headerCartIcon{
+  height: 31px;
+  width: 31px;
+}
+
+.headerCartIcon img{
+  height: 100%;
+  width: 100%;
+}
+
+.headerIcon{
+  position: relative;
+}
+
+.headerIcon span{
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  font-size: 9px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #FF543E;
+}
+
 /* Middle Header End*/
 
 /* Bottom Header Start */
@@ -854,8 +893,8 @@ input.check-toggle-round-flat+label:after {
 
 .tex {
   font-size: 20px;
-  padding: 9.5% 14%;
-  background-color: rgb(255, 255, 255);
+  padding: 9.5% 0%;
+  /* background-color: rgb(255, 255, 255); */
 }
 .mr {
   margin-left: 11em;
@@ -921,22 +960,6 @@ input.check-toggle-round-flat+label:after {
 .middleHeader-contentIcon{
   position: relative;
 }
-.middleHeader-contentIcon .Icon::after{
-  content: '7';
-  position: absolute;
-  background-color: #FF543E;
-  font-size: 7px;
-  border-radius: 50%;
-  padding: 2px 5px;
-  color: white;
-  bottom: 70%;
-}
-.hdDot::after{
-left: 30%;
-}
-.hdDot1::after{
-  right: -10%;
-  }
 
 
 /**********************************************
@@ -1548,11 +1571,13 @@ color: #858B9F;
 
 @media (min-width:1400px) and (max-width:3500px){
   .homeWhatsNewcarousel-lm{
-    left: 16%;
+    /* left: 16%; */
+    margin: 25px;
+    width: 97% !important;
   }
   .homeWhatsNewcarousel-lm .owl-dots{
-    justify-content: start;
-    margin-left: 30%;
+    justify-content: center;
+    /* margin-left: 30%; */
   }
 }
 
@@ -2839,7 +2864,7 @@ color: #858B9F;
 .quizMessage {
   background-color: #c8cacd;
   border-radius: 6px;
-  width: 28%;
+  width: 39%;
   text-align: center;
   padding: 5px;
   font-weight: bold;
@@ -2892,6 +2917,12 @@ font-weight:550;
     margin-top: 5%;
   }
 }
+@media (min-width:300px) and (max-width:1200px){
+  .courseAssignmentLeft {
+    height: 282px;
+    overflow-y: scroll;
+  }
+}
 @media (min-width:300px) and (max-width:989px){
   .courseAccordion{
     margin-top: 10%;
@@ -2907,6 +2938,7 @@ font-weight:550;
   #fbcomment{
     padding: 50px 10px;
   }
+  
 }
 
 /*****************Course Playlist Responsive End*********************/
