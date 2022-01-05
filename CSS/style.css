@@ -186,12 +186,23 @@ small {
 .color-red {
   color: #ca222e;
 }
+.color-red2 {
+  color: #fe3745;
+}
+
 .color-yellow {
   color: #fbc56d;
+}
+.color-yellow2 {
+  color: #fabe2c;
 }
 .color-grey {
   color: #a3adc0;
 }
+.color-grey2 {
+  color: #858b9f;
+}
+
 .color-green {
   color: #78c2a4;
 }
@@ -1573,8 +1584,8 @@ input:focus {
   .desktopVersion {
     display: none;
   }
-  .homeTopBannerContent{
-    padding: 0 10px;
+  .homeTopBannerContent {
+    padding: 0 15px;
   }
   .homeTopBanner h2 {
     margin-top: 30px;
@@ -4107,4 +4118,33 @@ tr {
   width: 150px;
   height: 45px;
   border-radius: 10px;
+}
+
+.middleHeader-content {
+  position: relative;
+}
+.notification {
+  display: none;
+  width: 250px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 20px #f2f2f2;
+  position: absolute;
+  top: 100%;
+  left: -56%;
+}
+.chat {
+  display: none;
+  width: 320px;
+  left: -93%;
+}
+
+.chatImg{
+  height: 30px;
+  width: 30px;
+}
+
+.chatImg img{
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 50%;
 }

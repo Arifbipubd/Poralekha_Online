@@ -11,6 +11,30 @@ function mockFilter() {
   element.classList.toggle("d-block");
 }
 
+
+///Header Notification and Chat
+
+let chatIcon = document.getElementById("chatIcon");
+let notiIcon = document.getElementById("notiIcon");
+let notification = document.querySelector('.notification');
+let chat = document.querySelector('.chat');
+
+chatIcon.addEventListener('click', () => {
+  if(chat.style.display === 'none'){
+    chat.style.display = 'block';
+  }else{
+    chat.style.display = 'none';
+  }
+});
+
+notiIcon.addEventListener('click', () => {
+  if(notification.style.display === 'none'){
+    notification.style.display = 'block';
+  }else{
+    notification.style.display = 'none';
+  }
+})
+
 /***What New Banner****/
 $(".homeWhatsNewcarousel").owlCarousel({
   margin: 20,
