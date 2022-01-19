@@ -1589,8 +1589,8 @@ input:focus {
 @media (min-width: 1400px) and (max-width: 3500px) {
   .homeWhatsNewcarousel-lm {
     /* left: 16%; */
-    margin: 25px;
-    width: 97% !important;
+    margin: 25px 0;
+    /* width: % !important; */
   }
   .homeWhatsNewcarousel-lm .owl-dots {
     justify-content: center;
@@ -3250,6 +3250,9 @@ tr {
 }
 
 .tchFaqAccordian {
+  display: none;
+}
+.searchTopic-footer2nd {
   display: none;
 }
 

@@ -6,12 +6,10 @@ toggleBtns.forEach((btn) => {
     btn.classList.toggle('toggle-pressed');
   });
 })
-function mockFilter() {
-  var element = document.getElementById("collapseExample1");
-  element.classList.toggle("d-block");
-}
-
-
+// function mockFilter() {
+//   var element = document.getElementById("collapseExample1");
+//   element.classList.toggle("d-block");
+// }
 
 /***What New Banner****/
 $(".homeWhatsNewcarousel").owlCarousel({
@@ -786,6 +784,16 @@ function tchBtnCheck(check) {
   else if (check == "searchTopic-footer") {
     document.querySelector('.searchTopic-footer').style.display = "block";
     document.querySelector('.tchFaqAccordian').style.display = "none";
+  }
+
+  //support Page article
+  else if (check == "searchTopic-footer2nd") {
+    document.querySelector('.searchTopic-footer2nd').style.display = "block";
+    document.querySelector('.supportContact').style.display = "none";
+  }
+  else if (check == "supportContact") {
+    document.querySelector('.searchTopic-footer2nd').style.display = "none";
+    // document.querySelector('.supportContact').style.display = "block";
   }
   //Cart Coupon
   else if (check == "cartInput") {
