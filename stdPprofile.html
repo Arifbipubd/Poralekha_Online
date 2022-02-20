@@ -140,12 +140,18 @@
           </div>
           <div class="middleHeader-content d-flex align-items-center">
             <div class="middleHeader-contentIcon d-flex me-3">
+
               <div class="dropdown">
                 <div
-                  class="headerIcon cursor bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3"
+                  class="headerIcon me-3"
                   id="chatIcon" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fas fa-sms"></i> <span
-                    class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
+                  <button type="button" class="btn bg-cl-grey3 position-relative">
+                    <i class="fas fa-sms"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                      <!-- <span class="visually-hidden">unread messages</span> -->
+                    </span>
+                  </button>
                 </div>
 
                 <div class="notification chat  bg-white px-3 py-4 dropdown-menu dropdown-menu-end"
@@ -192,9 +198,14 @@
 
               <div class="dropdown">
                 <div id="notiIcon" data-bs-toggle="dropdown" aria-expanded="false"
-                  class="headerIcon cursor bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3 me-3">
-                  <i class="fas fa-bell"></i> <span
-                    class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
+                  class="headerIcon me-3">
+                  <button type="button" class="btn bg-cl-grey3 position-relative">
+                    <i class="fas fa-bell"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                     0
+                      <!-- <span class="visually-hidden">unread messages</span> -->
+                    </span>
+                  </button>
                 </div>
 
                 <div class="notification bg-white px-3 py-4 dropdown-menu dropdown-menu-end" aria-labelledby="notiIcon">
@@ -219,9 +230,178 @@
                 </div>
               </div>
 
-              <div class="headerIcon cursor bg-cl-grey3 d-flex justify-content-center align-items-center p-2 rounded-3">
-                <img src="Assets/Images/Header/cart.png" alt=""> <span
-                  class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
+              <div class="dropdown">
+                <div id="cartIcon"
+                  class="headerIcon"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                 
+                <button type="button" class="btn bg-cl-grey3 position-relative">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <!-- <span class="visually-hidden">unread messages</span> -->
+                  </span>
+                </button>
+                </div>
+
+                <div class="notification2 bg-white px-3 py-4 dropdown-menu dropdown-menu-end"
+                  aria-labelledby="cartIcon">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="fw-bold d-flex align-items-center">
+                      <img style="height: 20px;" src="Assets/Images/Header/cart.png" alt=""> 
+                      <span class="bg-cl-light-blue color-white px-2 py-1 rounded-3 ms-2">6</span>
+                    </small>
+                    <div>
+                      <small>
+                        <span class="color-grey fs12">Total</span>
+                        <span class="cl-pm fs12">Tk <span class="cl-pm fs12">1500</span></span>
+                      </small>
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="allCourse mb-3">
+
+                    <div class="course mb-3">
+                      <h5 class="fw-bold fs12 mb-2">Course</h5>
+  
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Course title</h6>
+                            <small class="mb-1">Course Category</small>
+                            <small>Lecture <span class="cl-light-blue ms-1">24</span></small>
+                          </div>
+                        </div>
+                        <h6 class="fw-bold fs12 cl-pm text-end">
+                          Tk <span>200</span>.00
+                        </h6>
+                      </div>
+                      <hr />
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Course title</h6>
+                            <small class="mb-1">Course Category</small>
+                            <small>Lecture <span class="cl-light-blue ms-1">24</span></small>
+                          </div>
+                        </div>
+                        <h6 class="fw-bold fs12 cl-pm text-end">
+                          Tk <span>200</span>.00
+                        </h6>
+                      </div>
+  
+                    </div>
+  
+                    <div class="books mb-3">
+                      <h5 class="fw-bold fs12 mb-2">Books</h5>
+  
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Books title</h6>
+                            <small class="mb-1">Books Category</small>
+                            <small>Author<span class="cl-light-blue ms-2">Heraldsosn</span></small>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between text-end">
+                          <h6 class="fw-bold fs12 cl-pm">
+                            Tk <span>150</span>.00
+                          </h6>
+                          <small>Quantity  <span class="cl-light-blue ms-2">01</span></small>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Books title</h6>
+                            <small class="mb-1">Books Category</small>
+                            <small>Author<span class="cl-light-blue ms-2">Heraldsosn</span></small>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between text-end">
+                          <h6 class="fw-bold fs12 cl-pm">
+                            Tk <span>150</span>.00
+                          </h6>
+                          <small>Quantity  <span class="cl-light-blue ms-2">01</span></small>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="quiz mb-3">
+                      <h5 class="fw-bold fs12 mb-2">Quiz</h5>
+  
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Quiz title</h6>
+                            <small class="mb-1">Set 1</small>
+                            <small>Question<span class="cl-light-blue ms-2">500</span></small>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between text-end">
+                          <h6 class="fw-bold fs12 cl-pm">
+                            Tk <span>150</span>.00
+                          </h6>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Quiz title</h6>
+                            <small class="mb-1">Set 1</small>
+                            <small>Question<span class="cl-light-blue ms-2">500</span></small>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between text-end">
+                          <h6 class="fw-bold fs12 cl-pm">
+                            Tk <span>150</span>.00
+                          </h6>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <button class="bg-cl-pm py-2 border-0 color-white w-100">
+                    Checkout
+                  </button>
+
+                </div>
+
               </div>
 
             </div>
@@ -277,6 +457,7 @@
           <div class="collapse navbar-collapse mt-5 px-4" id="navbarSupportedContent">
 
             <div class="d-flex justify-content-between mb-3">
+
               <div class="dropdown">
                 <div
                   class="headerIcon cursor bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3"
@@ -284,9 +465,8 @@
                   Message<i class="fas fa-sms ms-2 cl-pm"></i> <span
                     class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
                 </div>
-  
-                <div class="notification chat  bg-white px-3 py-4 dropdown-menu"
-                  aria-labelledby="chatIcon">
+
+                <div class="notification chat  bg-white px-3 py-4 dropdown-menu" aria-labelledby="chatIcon">
                   <div class="d-flex justify-content-between mb-4">
                     <div><small class="cl-pm fw-bold">Message</small></div>
                     <div><small class="cl-pm cursor">Mark as Unread</small></div>
@@ -326,6 +506,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="dropdown">
                 <div id="notiIcon" data-bs-toggle="dropdown" aria-expanded="false"
                   class="headerIcon cursor bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3">
@@ -354,6 +535,7 @@
                   </div>
                 </div>
               </div>
+              
             </div>
 
             <form class="mb-3">
@@ -747,21 +929,31 @@
   <!------------------------Subscribe----------------->
   <section class="homeSubscribe">
     <div class="container">
+
       <div class="homeSubscribeImg">
-        <div class="homeSubscribePolygon homeSubscribe-hide">
-          <img class="homeSubscribePolygonImg" src="Assets/Images/HomeBody/Polygon1.png" alt="" />
-        </div>
-        <img class="homeSubscribeBanner" src="Assets/Images/HomeBody/13footerBg.png" alt="" />
         <div class="homeSubscribeContent">
           <h5 class="homeSubscribeContent-text text-center text-white mb-5">
             Subscribe our newsletter for newest <br />
             upcoming courses
           </h5>
-
-          <div class="homeSubscribeContentButton">
-            <input class="input" type="text" placeholder="Tour your email here..." />
+          <div class="input-group mb-3 homeSubscribeContentButton2">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+              aria-describedby="basic-addon2" />
             <button class="button" type="submit">Subscribe</button>
           </div>
+        </div>
+      </div>
+
+      <div class="bannerAbs homeSubscribe-hide ">
+        <div class="homeSubscribePolygon homeSubscribe-hide">
+          <img class="homeSubscribePolygonImg" src="Assets/Images/HomeBody/Polygon1.png" alt="" />
+        </div>
+        <img class="homeSubscribeBanner" src="Assets/Images/HomeBody/13footerBg.png" alt="" />
+        <div class="homeSubscribeBannerbg text-center">
+          <h5 class="homeSubscribeContent-text  text-white mb-5">
+            Subscribe our newsletter for newest <br />
+            upcoming courses
+          </h5>
 
           <div class="input-group mb-3 homeSubscribeContentButton2">
             <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
@@ -769,10 +961,8 @@
             <button class="button" type="submit">Subscribe</button>
           </div>
         </div>
-        <!-- <div class="homeSubscribePolygon homeSubscribe-hide polygon2">
-                    <img class="homeSubscribePolygonImg polygon2Img" src="Assets/Images/HomeBody/Polygon1.png" alt="">
-                </div> -->
       </div>
+      
     </div>
   </section>
 

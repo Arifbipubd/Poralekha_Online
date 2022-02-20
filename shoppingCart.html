@@ -1,852 +1,929 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart | PoralikhaOnline</title>
-    <link rel="icon" href="Assets/Images/Header/fav.svg" type="image/icon" />
 
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css" />
-    <!-- Animated CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Jquery -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Animation js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/animation.js"></script>
-    <!-----Bootstrap Bundle-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Owl Carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-    />
-    <!-- Slick Slider -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | PoralikhaOnline</title>
+  <link rel="icon" href="Assets/Images/Header/fav.svg" type="image/icon" />
 
-  <body onload="onloadCartCount()">
-    <!-- Top section -->
-    <!-- header start -->
-    <!-- Desktop version start -->
-    <section class="desktopVersion">
-      <div class="topHeader bg-cl-pm">
-          <div class="container">
-              <div class="d-flex justify-content-between">
-                  <div class="d-flex">
-                      <div class="mx-2 ">
-                          <img class="iconSize test" src="Assets/Images/Header/headphone.png" alt=""> Support
-                      </div>
-                      <div class="mx-2">
-                          <img class="iconSize" src="Assets/Images/Header/mail.png" alt=""> support@gmail.com
-                      </div>
-                  </div>
-                  <div class="d-flex">
-                      <div class="mx-2 br">
-                          Social:
-                          <a href=""><i class="fab fa-facebook-f iconSize mx-2 color-white"></i></a>
-                          <a href=""><i class="fab fa-twitter iconSize mx-2 color-white"></i></a>
-                          <a href=""><i class="fab fa-youtube iconSize me-5 color-white"></i></a>
-                      </div>
-                      <div class="mx-2 languageChange">
-                          <div class="change">
-                              <input id="engtoggle" class="engtoggle engtoggle-round-flat" type="checkbox">
-                              <label for="engtoggle"></label>
-                              <span class="off">En</span>
-                              <span class="on">Bn</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/style.css" />
+  <!-- Animated CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Jquery -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Animation js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="js/animation.js"></script>
+  <!-----Bootstrap Bundle-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+</head>
+
+<body onload="onloadCartCount()">
+  <!-- Top section -->
+  <!-- header start -->
+  <!-- Desktop version start -->
+  <section class="desktopVersion">
+    <div class="topHeader bg-cl-pm">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <div class="mx-2 ">
+              <img class="iconSize test" src="Assets/Images/Header/headphone.png" alt=""> Support
+            </div>
+            <div class="mx-2">
+              <img class="iconSize" src="Assets/Images/Header/mail.png" alt=""> support@gmail.com
+            </div>
           </div>
+          <div class="d-flex">
+            <div class="mx-2 br">
+              Social:
+              <a href=""><i class="fab fa-facebook-f iconSize mx-2 color-white"></i></a>
+              <a href=""><i class="fab fa-twitter iconSize mx-2 color-white"></i></a>
+              <a href=""><i class="fab fa-youtube iconSize me-5 color-white"></i></a>
+            </div>
+            <div class="mx-2 languageChange">
+              <div class="change">
+                <input id="engtoggle" class="engtoggle engtoggle-round-flat" type="checkbox">
+                <label for="engtoggle"></label>
+                <span class="off">En</span>
+                <span class="on">Bn</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
     <!-----------User Middle Header-->
-      <div class="middleHeader ">
-                <div class="container">
-                    <div class="d-flex justify-content-between">
-                        <div class="middleHeader-img" >
-                            <img src="Assets/Images/Header/logo.svg" onclick="window.location.href='index.html'" alt="">
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="">
-                                <a class="navbar-brand tex" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                    <span class="ms-3 cl-pm fw-400 dot me-2">Category</span><i
-                                        class="fas fa-sort-down cl-pm"></i>
-                                    </i>
-                                </a>
-                                <ul class="dropdown-menu shadow uldesk-font">
-                                    <li><a class="dropdown-item color-grey" href="blog.html">Category-1</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li class="dropstart">
-                                        <a href="#" class="dropdown-item dropdown-toggle color-grey"
-                                            data-bs-toggle="dropdown">Category-2</a>
-                                        <ul class="dropdown-menu shadow">
-                                            <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item color-grey" href=""> Sub Cat-2</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item color-grey" href="">Sub Cat-3</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li class="dropend">
-                                        <a href="#" class="dropdown-item dropdown-toggle color-grey"
-                                            data-bs-toggle="dropdown" data-bs-auto-close="outside">Category-3</a>
-                                        <ul class="dropdown-menu shadow">
-                                            <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
-                                            <li class="dropend">
-                                                <a href="#" class="dropdown-item dropdown-toggle color-grey"
-                                                    data-bs-toggle="dropdown" data-bs-auto-close="outside">Sub Cat-2</a>
-                                                <ul class="dropdown-menu dropdown-submenu shadow">
-                                                    <li><a class="dropdown-item color-grey" href="">Sub sub Cat-1</a></li>
-                                                    <li><a class="dropdown-item color-grey" href="">Sub sub Cat-2</a></li>
-                                                    <li><a class="dropdown-item color-grey" href="">Sub sub Cat-3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="dropdown-item color-grey" href=""> Sub Cat-3</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="headerSearch">
-                                <input style="font-family:'Poppins'; " class="form-control border-0 me-1 rounded-3"
-                                    type="search" placeholder="Search Subject" aria-label="Search">
-                            </div>
-                        </div>
-                        <div class="middleHeader-content d-flex align-items-center">
-                            <div class="middleHeader-contentIcon d-flex me-3">
-      
-                                <div
-                                    class="headerIcon cursor bg-cl-grey3 p-2 d-flex justify-content-center align-items-center rounded-3 me-3">
-                                    <i class="fas fa-sms"></i> <span class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
-                                </div>
-                                <div
-                                    class="headerIcon cursor bg-cl-grey3 p-2  d-flex justify-content-center align-items-center rounded-3 me-3">
-                                    <i class="fas fa-bell"></i> <span class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
-                                </div>
-                                <div
-                                    class="headerIcon cursor bg-cl-grey3 d-flex justify-content-center align-items-center p-2 rounded-3">
-                                    <img src="Assets/Images/Header/cart.png" alt=""> <span class="color-white d-flex justify-content-center align-items-center pt-1">7</span>
-                                </div>
-                            </div>
-                            <div class="middleHeader-contentDropdown d-flex ms-4">
-                                <div class="middleHeader-contentDropImg">
-                                    <img src="Assets/Images/Author/1Author.jpeg" alt="">
-                                </div>
-                                <div class="dropdown middleHeaderDropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Arif Bipu
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0"
-                                        aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My
-                                                Account</a></li>
-                                        <hr class="dropdown-divider color-span">
-                                        <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Join as Tutor</a></li>
-                                            <hr class="dropdown-divider color-span">
-                                        <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log
-                                                Out</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="middleHeader">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="middleHeader-img">
+            <img src="Assets/Images/Header/logo.svg" onclick="window.location.href='index.html'" alt="">
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="">
+              <a class="navbar-brand tex" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <span class="ms-3 cl-pm fw-400 dot me-2">Category</span><i class="fas fa-sort-down cl-pm"></i>
+                </i>
+              </a>
+              <ul class="dropdown-menu shadow uldesk-font">
+                <li><a class="dropdown-item color-grey" href="blog.html">Category-1</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropstart">
+                  <a href="#" class="dropdown-item dropdown-toggle color-grey" data-bs-toggle="dropdown">Category-2</a>
+                  <ul class="dropdown-menu shadow">
+                    <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item color-grey" href=""> Sub Cat-2</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item color-grey" href="">Sub Cat-3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropend">
+                  <a href="#" class="dropdown-item dropdown-toggle color-grey" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">Category-3</a>
+                  <ul class="dropdown-menu shadow">
+                    <li><a class="dropdown-item color-grey" href=""> Sub Cat-1</a></li>
+                    <li class="dropend">
+                      <a href="#" class="dropdown-item dropdown-toggle color-grey" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside">Sub Cat-2</a>
+                      <ul class="dropdown-menu dropdown-submenu shadow">
+                        <li><a class="dropdown-item color-grey" href="">Sub sub Cat-1</a></li>
+                        <li><a class="dropdown-item color-grey" href="">Sub sub Cat-2</a></li>
+                        <li><a class="dropdown-item color-grey" href="">Sub sub Cat-3</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item color-grey" href=""> Sub Cat-3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="headerSearch">
+              <input style="font-family:'Poppins'; " class="form-control border-0 me-1 rounded-3" type="search"
+                placeholder="Search Subject" aria-label="Search">
+            </div>
+          </div>
+          <div class="middleHeader-content d-flex align-items-center">
+            <div class="middleHeader-contentIcon d-flex me-3">
+
+              <div class="dropdown">
+                <div
+                  class="headerIcon me-3"
+                  id="chatIcon" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button type="button" class="btn bg-cl-grey3 position-relative">
+                    <i class="fas fa-sms"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      9
+                      <!-- <span class="visually-hidden">unread messages</span> -->
+                    </span>
+                  </button>
                 </div>
+
+                <div class="notification chat  bg-white px-3 py-4 dropdown-menu dropdown-menu-end"
+                  aria-labelledby="chatIcon">
+                  <div class="d-flex justify-content-between mb-4">
+                    <div><small class="cl-pm fw-bold">Message</small></div>
+                    <div><small class="cl-pm cursor">Mark as Unread</small></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center cursor mb-4">
+                    <div class="chatImg w-10">
+                      <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                    </div>
+                    <div class="flex-wrap w-60">
+                      <small class="color-grey2 fw-bold">Hi, How Are You? </small>
+                    </div>
+                    <div class="w-30">
+                      <small class="color-grey2 fw-bold">08.59 am</small>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center  cursor mb-4">
+                    <div class="chatImg w-10">
+                      <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                    </div>
+                    <div class="flex-wrap w-60">
+                      <small class="cl-pm fw-bold">Hi, How Are You? Lorem ipsum dolor sit amet. </small>
+                    </div>
+                    <div class="w-30">
+                      <small class="cl-pm fw-bold">08.59 am</small>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center  cursor mb-4">
+                    <div class="chatImg w-10">
+                      <img src="Assets/Images/Author/1Author.jpeg" alt="">
+                    </div>
+                    <div class="flex-wrap w-60">
+                      <small class="color-grey2 fw-bold">Hi, How Are You?</small>
+                    </div>
+                    <div class="w-30">
+                      <small class="cl-pm fw-bold">08.59 am</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <div id="notiIcon" data-bs-toggle="dropdown" aria-expanded="false"
+                  class="headerIcon me-3">
+                  <button type="button" class="btn bg-cl-grey3 position-relative">
+                    <i class="fas fa-bell"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      9
+                      <!-- <span class="visually-hidden">unread messages</span> -->
+                    </span>
+                  </button>
+                </div>
+
+                <div class="notification bg-white px-3 py-4 dropdown-menu dropdown-menu-end" aria-labelledby="notiIcon">
+                  <div class="mb-3">
+                    <small class="cl-pm fw-bold">Notifications</small>
+                  </div>
+                  <div class="mb-3">
+                    <small class="color-grey2">
+                      <span class="cl-green fw-bold">Success!</span> You have registered successfully
+                    </small>
+                  </div>
+                  <div class="mb-3">
+                    <small class="color-grey2">
+                      <span class="color-yellow2 fw-bold">Warning!</span> You have entered an invalid access
+                    </small>
+                  </div>
+                  <div class="mb-3">
+                    <small class="color-grey2">
+                      <span class="color-red2 fw-bold">Danger!</span> Your registration is incomplete
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <div id="cartIcon"
+                  class="headerIcon"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                 
+                <button type="button" class="btn bg-cl-grey3 position-relative">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    3
+                    <!-- <span class="visually-hidden">unread messages</span> -->
+                  </span>
+                </button>
+                </div>
+
+                <div class="notification2 bg-white px-3 py-4 dropdown-menu dropdown-menu-end"
+                  aria-labelledby="cartIcon">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="fw-bold d-flex align-items-center">
+                      <img style="height: 20px;" src="Assets/Images/Header/cart.png" alt=""> 
+                      <span class="bg-cl-light-blue color-white px-2 py-1 rounded-3 ms-2">6</span>
+                    </small>
+                    <div>
+                      <small>
+                        <span class="color-grey fs12">Total</span>
+                        <span class="cl-pm fs12">Tk <span class="cl-pm fs12">1500</span></span>
+                      </small>
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="allCourse mb-3">
+
+                    <div class="course mb-3">
+                      <h5 class="fw-bold fs12 mb-2">Course</h5>
+  
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Course title</h6>
+                            <small class="mb-1">Course Category</small>
+                            <small>Lecture <span class="cl-light-blue ms-1">24</span></small>
+                          </div>
+                        </div>
+                        <h6 class="fw-bold fs12 cl-pm text-end">
+                          Tk <span>200</span>.00
+                        </h6>
+                      </div>
+                      <hr />
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Course title</h6>
+                            <small class="mb-1">Course Category</small>
+                            <small>Lecture <span class="cl-light-blue ms-1">24</span></small>
+                          </div>
+                        </div>
+                        <h6 class="fw-bold fs12 cl-pm text-end">
+                          Tk <span>200</span>.00
+                        </h6>
+                      </div>
+  
+                    </div>
+  
+                    <div class="books mb-3">
+                      <h5 class="fw-bold fs12 mb-2">Books</h5>
+  
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Books title</h6>
+                            <small class="mb-1">Books Category</small>
+                            <small>Author<span class="cl-light-blue ms-2">Heraldsosn</span></small>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between text-end">
+                          <h6 class="fw-bold fs12 cl-pm">
+                            Tk <span>150</span>.00
+                          </h6>
+                          <small>Quantity  <span class="cl-light-blue ms-2">01</span></small>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Books title</h6>
+                            <small class="mb-1">Books Category</small>
+                            <small>Author<span class="cl-light-blue ms-2">Heraldsosn</span></small>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between text-end">
+                          <h6 class="fw-bold fs12 cl-pm">
+                            Tk <span>150</span>.00
+                          </h6>
+                          <small>Quantity  <span class="cl-light-blue ms-2">01</span></small>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="quiz mb-3">
+                      <h5 class="fw-bold fs12 mb-2">Quiz</h5>
+  
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Quiz title</h6>
+                            <small class="mb-1">Set 1</small>
+                            <small>Question<span class="cl-light-blue ms-2">500</span></small>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between text-end">
+                          <h6 class="fw-bold fs12 cl-pm">
+                            Tk <span>150</span>.00
+                          </h6>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="cartPopup d-flex justify-content-between ">
+                        <div class="d-flex">
+                          <div class="cartProductImg rounded-3 me-3">
+                            <img
+                              src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                              alt="" />
+                          </div>
+                          <div class="d-flex flex-column justify-content-between">
+                            <h6 class="cl-pm fw-bold fs12 mt-0 mb-1">Quiz title</h6>
+                            <small class="mb-1">Set 1</small>
+                            <small>Question<span class="cl-light-blue ms-2">500</span></small>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between text-end">
+                          <h6 class="fw-bold fs12 cl-pm">
+                            Tk <span>150</span>.00
+                          </h6>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <button class="bg-cl-pm py-2 border-0 color-white w-100">
+                    Checkout
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="middleHeader-contentDropdown d-flex ms-4">
+              <div class="middleHeader-contentDropImg">
+                <img src="Assets/Images/Author/1Author.jpeg" alt="">
+              </div>
+              <div class="dropdown middleHeaderDropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Arif Bipu
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end middleHeaderDropdownMenu mt-2 border-0"
+                  aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">My
+                      Account</a></li>
+                  <hr class="dropdown-divider color-span">
+                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Join as Tutor</a></li>
+                  <hr class="dropdown-divider color-span">
+                  <li><a class="dropdown-item d-flex justify-content-end color-span" href="#">Log
+                      Out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
   <!-- Desktop version end -->
 
-    <!-- mobile version start -->
-    <section class="mobileVersion">
-      <!-- main Header -->
-      <div class="mainHeader">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light"
-          style="background-color: white !important"
-        >
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <div class="middleHeader-img" >
-                <img src="Assets/Images/Header/logo.svg" onclick="window.location.href='index.html'" alt="" />
-              </div>
-            </a>
-            <div class="d-flex align-items-center">
-              <div class="header-image me-2">
-                <img src="Assets/Images/Header/header-img.png" alt="" />
-              </div>
-              <button
-                class="navbar-toggler border-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-align-center cl-pm"></i>
-              </button>
+  <!-- mobile version start -->
+  <section class="mobileVersion">
+    <!-- main Header -->
+    <div class="mainHeader">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <div class="middleHeader-img">
+              <img src="Assets/Images/Header/logo.svg" onclick="window.location.href='index.html'" alt="" />
             </div>
-            <div
-              class="collapse navbar-collapse mt-5 px-4"
-              id="navbarSupportedContent"
-            >
-              <form class="mb-3">
-                <input
-                  class="form-control mb-2 bg-cl-grey3"
-                  type="search"
-                  placeholder=" Search Subject"
-                  aria-label="Search"
-                />
-                <button class="btn btn3 bg-cl-pm w-100" type="submit">
-                  Search Subject
-                </button>
-              </form>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulmobile-font">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    style="color: #380e86"
-                  >
-                    All Category
-                  </a>
-                  <ul
-                    class="dropdown-menu border-0"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <li>
-                      <a class="dropdown-item grey-gorib" href="#">Cat 1</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item grey-gorib" href="#">Cat 2</a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item dropdown-toggle grey-gorib"
-                        id="navbarDropdown"
-                        role="button"
-                        data-bs-auto-close="outside"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        href="#"
-                      >
-                        Cat 3
-                      </a>
-                      <ul
-                        class="dropdown-menu border-0"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li>
-                          <a class="dropdown-item grey-gorib" href="#"
-                            >Sub Cat 1</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item grey-gorib" href="#"
-                            >Sub Cat 2</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">FAQ</a>
-                </li>
-                <!-- nav cart is used for new notification in red color(method after) -->
-                <li class="nav-item nav-cart" style="position: relative">
-                  <a
-                    class="
+          </a>
+          <div class="d-flex align-items-center">
+            <div class="header-image me-2">
+              <img src="Assets/Images/Header/header-img.png" alt="" />
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-align-center cl-pm"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse mt-5 px-4" id="navbarSupportedContent">
+            <form class="mb-3">
+              <input class="form-control mb-2 bg-cl-grey3" type="search" placeholder=" Search Subject"
+                aria-label="Search" />
+              <button class="btn btn3 bg-cl-pm w-100" type="submit">
+                Search Subject
+              </button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulmobile-font">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false" style="color: #380e86">
+                  All Category
+                </a>
+                <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item grey-gorib" href="#">Cat 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item grey-gorib" href="#">Cat 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-toggle grey-gorib" id="navbarDropdown" role="button"
+                      data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                      Cat 3
+                    </a>
+                    <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item grey-gorib" href="#">Sub Cat 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item grey-gorib" href="#">Sub Cat 2</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <!-- nav cart is used for new notification in red color(method after) -->
+              <li class="nav-item nav-cart" style="position: relative">
+                <a class="
                       nav-link
                       d-flex
                       justify-content-between
                       align-items-center
-                    "
-                    href="#"
-                  >
-                    <p class="mt-1">My Cart</p>
-                    <img
-                      class="px-2"
-                      src="Assets/Images/Header/cart.png"
-                      alt=""
-                    />
-                  </a>
-                </li>
-              </ul>
-              <div class="login-hide justify-content-center w-100 mb-4">
-                <button
-                  type="button"
-                  class="btn btn1 cl-pm w-100 mb-2 bg-cl-grey3"
-                >
-                  Join as Tutor
+                    " href="#">
+                  <p class="mt-1">My Cart</p>
+                  <img class="px-2" src="Assets/Images/Header/cart.png" alt="" />
+                </a>
+              </li>
+            </ul>
+            <div class="login-hide justify-content-center w-100 mb-4">
+              <button type="button" class="btn btn1 cl-pm w-100 mb-2 bg-cl-grey3">
+                Join as Tutor
+              </button>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn2 mx-2 cl-pm" onclick="location.href='stdSignIn.html'">
+                  Sign in
                 </button>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btn btn2 mx-2 cl-pm"
-                    onclick="location.href='stdSignIn.html'"
-                  >
-                    Sign in
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn3 bg-cl-pm"
-                    onclick="location.href='stdSignUp.html'"
-                  >
-                    Sign up
-                  </button>
-                </div>
+                <button type="button" class="btn btn3 bg-cl-pm" onclick="location.href='stdSignUp.html'">
+                  Sign up
+                </button>
               </div>
-              <div class="nav-footer">
-                <small class="color-grey">Social :</small>
-                <div class="footer-icon mt-2">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-facebook-f cl-pm"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-twitter cl-pm"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#"><i class="fab fa-youtube cl-pm"></i></a>
-                      </li>
-                    </ul>
-                    <div class="switch2">
-                      <div class="switch">
-                        <input
-                          id="language-toggle"
-                          class="check-toggle check-toggle-round-flat"
-                          type="checkbox"
-                        />
-                        <label for="language-toggle"></label>
-                        <span class="off">En</span>
-                        <span class="on">Bn</span>
-                      </div>
+            </div>
+            <div class="nav-footer">
+              <small class="color-grey">Social :</small>
+              <div class="footer-icon mt-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#"><i class="fab fa-facebook-f cl-pm"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#"><i class="fab fa-twitter cl-pm"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#"><i class="fab fa-youtube cl-pm"></i></a>
+                    </li>
+                  </ul>
+                  <div class="switch2">
+                    <div class="switch">
+                      <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
+                      <label for="language-toggle"></label>
+                      <span class="off">En</span>
+                      <span class="on">Bn</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </section>
-    <!-- mobile version end -->
-
-    <!-- header end -->
-
-    <!------------All Books Breadcrumb-------------------->
-    <div class="sc-breadcrump d-flex align-items-center">
-      <div class="container mt-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a class="cl-pm text-decoration-none" href="index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Cart</li>
-          </ol>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
+  </section>
+  <!-- mobile version end -->
 
-    <!-----------------------Shopping Cart Start----------------------->
+  <!-- header end -->
 
-    <section class="cart my-5">
-      <div class="container">
-        <div class="row">
-          <div class="cartLeft col-xl-9 col-lg-8">
-            <div class="text-end">
-              <a
-                href="#"
-                class="text-danger fw-bold"
-                data-bs-toggle="modal"
-                data-bs-target="#popUp"
-                >Delete All</a
-              >
-            </div>
-            <div class="cartLeftTop">
-              <div class="col-lg-12">
-                <div
-                  class="cartLeftTopHeading d-flex justify-content-between mb-4"
-                >
-                  <h5 class="fw-bold">Course</h5>
-                </div>
-                <div
-                  class="
+  <!------------All Books Breadcrumb-------------------->
+  <div class="sc-breadcrump d-flex align-items-center">
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="cl-pm text-decoration-none" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Cart</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-----------------------Shopping Cart Start----------------------->
+
+  <section class="cart my-5">
+    <div class="container">
+      <div class="row">
+        <div class="cartLeft col-xl-9 col-lg-8">
+          <div class="text-end">
+            <a href="#" class="text-danger fw-bold" data-bs-toggle="modal" data-bs-target="#popUp">Delete All</a>
+          </div>
+          <div class="cartLeftTop">
+            <div class="col-lg-12">
+              <div class="cartLeftTopHeading d-flex justify-content-between mb-4">
+                <h5 class="fw-bold">Course</h5>
+              </div>
+              <div class="
                     cartLeftTopProductHead
                     d-flex
                     justify-content-between
                     w-100
                     mb-3
-                  "
-                >
-                  <div class="cartProductIamge ms-2">
-                    <small class="fw-bold">Product Details</small>
-                  </div>
-                  <div class="cartProductDetails">
-                    <div>
-                      <small class="fw-bold mb-hd-1">Total</small>
-                    </div>
-                  </div>
+                  ">
+                <div class="cartProductIamge ms-2">
+                  <small class="fw-bold">Product Details</small>
                 </div>
-
-                <div class="cartLeftTopProduct d-flex justify-content-between">
-                  <div class="cartProductIamge mx-2">
-                    <div class="d-flex">
-                      <div class="cartProductImg rounded-3 me-4">
-                        <img
-                          src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
-                          alt=""
-                        />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
-                        <small class="color-grey mb-1"
-                          >Department Name Here</small
-                        >
-                        <small class="cl-pm">Edwin Carter</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="
-                      cartProductDetails
-                      justify-content-end
-                      align-items-center
-                    "
-                  >
-                    <div class="cartTotal d-flex align-items-center text-end">
-                      <h6 class="text-dark fw-bold mb-3">
-                        Tk <span id="course-price1">200</span>.00
-                      </h6>
-                    </div>
-                    <li class="bookmark d-flex justify-content-end ms-3">
-                      <p><i class="far fa-trash-alt color-red"></i></p>
-                    </li>
-                  </div>
-                </div>
-                <hr />
-                <div class="cartLeftTopProduct d-flex justify-content-between">
-                  <div class="cartProductIamge mx-2">
-                    <div class="d-flex">
-                      <div class="cartProductImg rounded-3 me-4">
-                        <img
-                          src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
-                          alt=""
-                        />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
-                        <small class="color-grey mb-1"
-                          >Department Name Here</small
-                        >
-                        <small class="cl-pm">Edwin Carter</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="
-                      cartProductDetails
-                      justify-content-end
-                      align-items-center
-                    "
-                  >
-                    <div class="cartTotal d-flex align-items-center">
-                      <h6 class="text-dark fw-bold mb-3">
-                        Tk <span id="course-price2">300</span>.00
-                      </h6>
-                    </div>
-                    <li class="bookmark d-flex justify-content-end ms-3">
-                      <p><i class="far fa-trash-alt color-red"></i></p>
-                    </li>
+                <div class="cartProductDetails">
+                  <div>
+                    <small class="fw-bold mb-hd-1">Total</small>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="cartLeftMiddle mt-5">
-              <div class="col-lg-12">
-                <div
-                  class="cartLeftTopHeading d-flex justify-content-between mb-4"
-                >
-                  <h5 class="fw-bold">Quiz</h5>
+              <div class="cartLeftTopProduct d-flex justify-content-between">
+                <div class="cartProductIamge mx-2">
+                  <div class="d-flex">
+                    <div class="cartProductImg rounded-3 me-4">
+                      <img
+                        src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                        alt="" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
+                      <small class="color-grey mb-1">Department Name Here</small>
+                      <small class="cl-pm">Edwin Carter</small>
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="
+                <div class="
+                      cartProductDetails
+                      justify-content-end
+                      align-items-center
+                    ">
+                  <div class="cartTotal d-flex align-items-center text-end">
+                    <h6 class="text-dark fw-bold mb-3">
+                      Tk <span id="course-price1">200</span>.00
+                    </h6>
+                  </div>
+                  <li class="bookmark d-flex justify-content-end ms-3">
+                    <p><i class="far fa-trash-alt color-red"></i></p>
+                  </li>
+                </div>
+              </div>
+              <hr />
+              <div class="cartLeftTopProduct d-flex justify-content-between">
+                <div class="cartProductIamge mx-2">
+                  <div class="d-flex">
+                    <div class="cartProductImg rounded-3 me-4">
+                      <img
+                        src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                        alt="" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
+                      <small class="color-grey mb-1">Department Name Here</small>
+                      <small class="cl-pm">Edwin Carter</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="
+                      cartProductDetails
+                      justify-content-end
+                      align-items-center
+                    ">
+                  <div class="cartTotal d-flex align-items-center">
+                    <h6 class="text-dark fw-bold mb-3">
+                      Tk <span id="course-price2">300</span>.00
+                    </h6>
+                  </div>
+                  <li class="bookmark d-flex justify-content-end ms-3">
+                    <p><i class="far fa-trash-alt color-red"></i></p>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartLeftMiddle mt-5">
+            <div class="col-lg-12">
+              <div class="cartLeftTopHeading d-flex justify-content-between mb-4">
+                <h5 class="fw-bold">Quiz</h5>
+              </div>
+              <div class="
                     cartLeftTopProductHead
                     d-flex
                     justify-content-between
                     w-100
                     mb-3
-                  "
-                >
-                  <div class="cartProductIamge ms-2">
-                    <small class="fw-bold">Product Details</small>
-                  </div>
-                  <div class="cartProductDetails">
-                    <div>
-                      <small class="fw-bold mb-hd-1">Total</small>
-                    </div>
-                  </div>
+                  ">
+                <div class="cartProductIamge ms-2">
+                  <small class="fw-bold">Product Details</small>
                 </div>
-
-                <div class="cartLeftTopProduct d-flex justify-content-between">
-                  <div class="cartProductIamge mx-2">
-                    <div class="d-flex">
-                      <div class="cartProductImg rounded-3 me-4">
-                        <img
-                          src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
-                          alt=""
-                        />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="cl-pm fw-bold">BCS PRELI</h6>
-                        <small class="color-grey mb-1">10 Set</small>
-                        <small class="cl-pm">500 qestions</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="
-                      cartProductDetails
-                      justify-content-end
-                      align-items-center
-                    "
-                  >
-                    <div class="cartTotal d-flex align-items-center text-end">
-                      <h6 class="text-dark fw-bold mb-3">
-                        Tk <span id="quiz-price1">10</span>.00
-                      </h6>
-                    </div>
-                    <li class="bookmark d-flex justify-content-end ms-3">
-                      <p><i class="far fa-trash-alt color-red"></i></p>
-                    </li>
-                  </div>
-                </div>
-                <hr />
-                <div class="cartLeftTopProduct d-flex justify-content-between">
-                  <div class="cartProductIamge mx-2">
-                    <div class="d-flex">
-                      <div class="cartProductImg rounded-3 me-4">
-                        <img
-                          src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
-                          alt=""
-                        />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="cl-pm fw-bold">HSC SCIENCE All Subject</h6>
-                        <small class="color-grey mb-1">12 set</small>
-                        <small class="cl-pm">600 question</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="
-                      cartProductDetails
-                      justify-content-end
-                      align-items-center
-                    "
-                  >
-                    <div class="cartTotal d-flex align-items-center">
-                      <h6 class="text-dark fw-bold mb-3">
-                        Tk <span id="quiz-price2">12</span>.00
-                      </h6>
-                    </div>
-                    <li class="bookmark d-flex justify-content-end ms-3">
-                      <p><i class="far fa-trash-alt color-red"></i></p>
-                    </li>
+                <div class="cartProductDetails">
+                  <div>
+                    <small class="fw-bold mb-hd-1">Total</small>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="cartLeftBottom mt-5">
-              <div class="col-lg-12">
-                <div
-                  class="
+              <div class="cartLeftTopProduct d-flex justify-content-between">
+                <div class="cartProductIamge mx-2">
+                  <div class="d-flex">
+                    <div class="cartProductImg rounded-3 me-4">
+                      <img
+                        src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                        alt="" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="cl-pm fw-bold">BCS PRELI</h6>
+                      <small class="color-grey mb-1">10 Set</small>
+                      <small class="cl-pm">500 qestions</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="
+                      cartProductDetails
+                      justify-content-end
+                      align-items-center
+                    ">
+                  <div class="cartTotal d-flex align-items-center text-end">
+                    <h6 class="text-dark fw-bold mb-3">
+                      Tk <span id="quiz-price1">10</span>.00
+                    </h6>
+                  </div>
+                  <li class="bookmark d-flex justify-content-end ms-3">
+                    <p><i class="far fa-trash-alt color-red"></i></p>
+                  </li>
+                </div>
+              </div>
+              <hr />
+              <div class="cartLeftTopProduct d-flex justify-content-between">
+                <div class="cartProductIamge mx-2">
+                  <div class="d-flex">
+                    <div class="cartProductImg rounded-3 me-4">
+                      <img
+                        src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                        alt="" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="cl-pm fw-bold">HSC SCIENCE All Subject</h6>
+                      <small class="color-grey mb-1">12 set</small>
+                      <small class="cl-pm">600 question</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="
+                      cartProductDetails
+                      justify-content-end
+                      align-items-center
+                    ">
+                  <div class="cartTotal d-flex align-items-center">
+                    <h6 class="text-dark fw-bold mb-3">
+                      Tk <span id="quiz-price2">12</span>.00
+                    </h6>
+                  </div>
+                  <li class="bookmark d-flex justify-content-end ms-3">
+                    <p><i class="far fa-trash-alt color-red"></i></p>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartLeftBottom mt-5">
+            <div class="col-lg-12">
+              <div class="
                     cartLeftBottomHeading
                     d-flex
                     justify-content-between
                     mb-4
-                  "
-                >
-                  <h5 class="fw-bold">Books</h5>
-                </div>
-                <div
-                  class="
+                  ">
+                <h5 class="fw-bold">Books</h5>
+              </div>
+              <div class="
                     cartLeftBottomProductHead
                     d-flex
                     justify-content-between
                     mb-3
-                  "
-                >
-                  <div class="cartProductIamge mx-2">
-                    <small class="fw-bold">Product Details</small>
+                  ">
+                <div class="cartProductIamge mx-2">
+                  <small class="fw-bold">Product Details</small>
+                </div>
+                <div class="">
+                  <div>
+                    <small class="mb-hd-1 fw-bold">Total Price</small>
                   </div>
-                  <div class="">
-                    <div>
-                      <small class="mb-hd-1 fw-bold">Total Price</small>
+                </div>
+              </div>
+              <div class="cartLeftBottomProduct d-flex justify-content-between">
+                <div class="cartProductIamge mx-2">
+                  <div class="d-flex">
+                    <div class="cartProductImg rounded-3 me-4">
+                      <img
+                        src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                        alt="" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
+                      <small class="color-grey mb-1">Department Name Here</small>
+                      <small class="cl-pm">Edwin Carter</small>
+                      <small class="fw-bold mt-1">Tk <span id="1cart1-total">130</span>.00</small>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="cartLeftBottomProduct d-flex justify-content-between"
-                >
-                  <div class="cartProductIamge mx-2">
-                    <div class="d-flex">
-                      <div class="cartProductImg rounded-3 me-4">
-                        <img
-                          src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
-                          alt=""
-                        />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
-                        <small class="color-grey mb-1"
-                          >Department Name Here</small
-                        >
-                        <small class="cl-pm">Edwin Carter</small>
-                        <small class="fw-bold mt-1"
-                          >Tk <span id="1cart1-total">130</span>.00</small
-                        >
-                      </div>
+                <div class="">
+                  <div class="cartProductDetails">
+                    <div class="cartTotal mb-3">
+                      <h6 class="d-flex fw-bold justify-content-end">
+                        <span class="fw-bold mb-hd-2 d-none me-2">Total</span>Tk <span id="1cart2-total">130</span>.00
+                      </h6>
                     </div>
-                  </div>
-                  <div class="">
-                    <div class="cartProductDetails">
-                      <div class="cartTotal mb-3">
-                        <h6 class="d-flex fw-bold justify-content-end">
-                          <span class="fw-bold mb-hd-2 d-none me-2">Total</span
-                          >Tk <span id="1cart2-total">130</span>.00
-                        </h6>
-                      </div>
-                      <div
-                        class="
+                    <div class="
                           bookWish
                           cartQuantity
                           d-flex
                           align-items-center
                           ms-2
                           mt-2
-                        "
-                      >
-                        <li class="bookmark me-2 align-items-center">
-                          <p><i class="far fa-trash-alt color-red"></i></p>
-                        </li>
-                        <div class="button-inDecrement mb-2">
-                          <div>
-                            <button
-                              class="sub"
-                              onclick="cartValueChange('count1', false ,'1cart1','1cart2')"
-                            >
-                              -
-                            </button>
-                            <input type="text" id="count1" value="1" readonly />
-                            <button
-                              class="add"
-                              onclick="cartValueChange('count1', true , '1cart1','1cart2')"
-                            >
-                              +
-                            </button>
-                          </div>
+                        ">
+                      <li class="bookmark me-2 align-items-center">
+                        <p><i class="far fa-trash-alt color-red"></i></p>
+                      </li>
+                      <div class="button-inDecrement mb-2">
+                        <div>
+                          <button class="sub" onclick="cartValueChange('count1', false ,'1cart1','1cart2')">
+                            -
+                          </button>
+                          <input type="text" id="count1" value="1" readonly />
+                          <button class="add" onclick="cartValueChange('count1', true , '1cart1','1cart2')">
+                            +
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <hr />
-                <div
-                  class="cartLeftBottomProduct d-flex justify-content-between"
-                >
-                  <div class="cartProductIamge mx-2">
-                    <div class="d-flex">
-                      <div class="cartProductImg rounded-3 me-4">
-                        <img
-                          src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
-                          alt=""
-                        />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
-                        <small class="color-grey mb-1"
-                          >Department Name Here</small
-                        >
-                        <small class="cl-pm">Edwin Carter</small>
-                        <small class="fw-bold mt-1"
-                          >Tk <span id="2cart1-total">160</span>.00</small
-                        >
-                      </div>
+              </div>
+              <hr />
+              <div class="cartLeftBottomProduct d-flex justify-content-between">
+                <div class="cartProductIamge mx-2">
+                  <div class="d-flex">
+                    <div class="cartProductImg rounded-3 me-4">
+                      <img
+                        src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                        alt="" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
+                      <small class="color-grey mb-1">Department Name Here</small>
+                      <small class="cl-pm">Edwin Carter</small>
+                      <small class="fw-bold mt-1">Tk <span id="2cart1-total">160</span>.00</small>
                     </div>
                   </div>
-                  <div class="">
-                    <div class="cartProductDetails">
-                      <div class="cartTotal mb-3">
-                        <h6 class="d-flex fw-bold justify-content-end">
-                          <span class="fw-bold mb-hd-2 d-none me-2">Total</span
-                          >Tk <span id="2cart2-total">190</span>.00
-                        </h6>
-                      </div>
-                      <div
-                        class="
+                </div>
+                <div class="">
+                  <div class="cartProductDetails">
+                    <div class="cartTotal mb-3">
+                      <h6 class="d-flex fw-bold justify-content-end">
+                        <span class="fw-bold mb-hd-2 d-none me-2">Total</span>Tk <span id="2cart2-total">190</span>.00
+                      </h6>
+                    </div>
+                    <div class="
                           bookWish
                           cartQuantity
                           d-flex
                           align-items-center
                           ms-2
                           mt-2
-                        "
-                      >
-                        <li class="bookmark me-2 align-items-center">
-                          <p><i class="far fa-trash-alt color-red"></i></p>
-                        </li>
-                        <div class="button-inDecrement mb-2">
-                          <div>
-                            <button
-                              class="sub"
-                              onclick="cartValueChange('count2', false ,'2cart1','2cart2')"
-                            >
-                              -
-                            </button>
-                            <input type="text" id="count2" value="1" readonly />
-                            <button
-                              class="add"
-                              onclick="cartValueChange('count2', true , '2cart1','2cart2')"
-                            >
-                              +
-                            </button>
-                          </div>
+                        ">
+                      <li class="bookmark me-2 align-items-center">
+                        <p><i class="far fa-trash-alt color-red"></i></p>
+                      </li>
+                      <div class="button-inDecrement mb-2">
+                        <div>
+                          <button class="sub" onclick="cartValueChange('count2', false ,'2cart1','2cart2')">
+                            -
+                          </button>
+                          <input type="text" id="count2" value="1" readonly />
+                          <button class="add" onclick="cartValueChange('count2', true , '2cart1','2cart2')">
+                            +
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <hr />
-                <div
-                  class="cartLeftBottomProduct d-flex justify-content-between"
-                >
-                  <div class="cartProductIamge mx-2">
-                    <div class="d-flex">
-                      <div class="cartProductImg rounded-3 me-4">
-                        <img
-                          src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
-                          alt=""
-                        />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
-                        <small class="color-grey mb-1"
-                          >Department Name Here</small
-                        >
-                        <small class="cl-pm">Edwin Carter</small>
-                        <small class="fw-bold mt-1"
-                          >Tk <span id="3cart1-total">190</span>.00</small
-                        >
-                      </div>
+              </div>
+              <hr />
+              <div class="cartLeftBottomProduct d-flex justify-content-between">
+                <div class="cartProductIamge mx-2">
+                  <div class="d-flex">
+                    <div class="cartProductImg rounded-3 me-4">
+                      <img
+                        src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80"
+                        alt="" />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="cl-pm fw-bold">Amazon Web Service 2022</h6>
+                      <small class="color-grey mb-1">Department Name Here</small>
+                      <small class="cl-pm">Edwin Carter</small>
+                      <small class="fw-bold mt-1">Tk <span id="3cart1-total">190</span>.00</small>
                     </div>
                   </div>
-                  <div class="">
-                    <div class="cartProductDetails">
-                      <div class="cartTotal mb-3">
-                        <h6 class="d-flex fw-bold justify-content-end">
-                          <span class="fw-bold mb-hd-2 d-none me-2">Total</span
-                          >Tk <span id="3cart2-total">190</span>.00
-                        </h6>
-                      </div>
-                      <div
-                        class="
+                </div>
+                <div class="">
+                  <div class="cartProductDetails">
+                    <div class="cartTotal mb-3">
+                      <h6 class="d-flex fw-bold justify-content-end">
+                        <span class="fw-bold mb-hd-2 d-none me-2">Total</span>Tk <span id="3cart2-total">190</span>.00
+                      </h6>
+                    </div>
+                    <div class="
                           bookWish
                           cartQuantity
                           d-flex
                           align-items-center
                           ms-2
                           mt-2
-                        "
-                      >
-                        <li class="bookmark me-2 align-items-center">
-                          <p><i class="far fa-trash-alt color-red"></i></p>
-                        </li>
-                        <div class="button-inDecrement mb-2">
-                          <div>
-                            <button
-                              class="sub"
-                              onclick="cartValueChange('count3', false ,'3cart1','3cart2')"
-                            >
-                              -
-                            </button>
-                            <input type="text" id="count3" value="1" readonly />
-                            <button
-                              class="add"
-                              onclick="cartValueChange('count3', true , '3cart1','3cart2')"
-                            >
-                              +
-                            </button>
-                          </div>
+                        ">
+                      <li class="bookmark me-2 align-items-center">
+                        <p><i class="far fa-trash-alt color-red"></i></p>
+                      </li>
+                      <div class="button-inDecrement mb-2">
+                        <div>
+                          <button class="sub" onclick="cartValueChange('count3', false ,'3cart1','3cart2')">
+                            -
+                          </button>
+                          <input type="text" id="count3" value="1" readonly />
+                          <button class="add" onclick="cartValueChange('count3', true , '3cart1','3cart2')">
+                            +
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -855,239 +932,209 @@
               </div>
             </div>
           </div>
-          <div class="cartRight col-xl-3 col-lg-4 mt-5">
-            <div class="bg-cl-grey4 p-4 rounded-3">
-              <form action="">
-                <div>
-                  <h6 class="fw-bold mb-4">Order Summery</h6>
-                </div>
-                <div class="cartItemCount d-flex justify-content-between">
-                  <small class="fw-bold"
-                    >Items
-                    <span
-                      class="
+        </div>
+        <div class="cartRight col-xl-3 col-lg-4 mt-5">
+          <div class="bg-cl-grey4 p-4 rounded-3">
+            <form action="">
+              <div>
+                <h6 class="fw-bold mb-4">Order Summery</h6>
+              </div>
+              <div class="cartItemCount d-flex justify-content-between">
+                <small class="fw-bold">Items
+                  <span class="
                         bg-cl-light-blue
                         color-white
                         px-2
                         py-1
                         rounded-3
                         ms-2
-                      "
-                      >5</span
-                    ></small
-                  >
-                  <h6>Tk <span id="totalPrice">1000</span>.00</h6>
-                </div>
-                <div class="cartCoupon my-3">
-                  <small
-                    class="cl-pm fw-bold"
-                    onclick="tchBtnCheck('cartInput')"
-                    >Apply Coupon</small
-                  ><span class="color-span">(optional)</span>
-                </div>
-                <div class="cartInput my-3">
-                  <div class="d-flex">
-                    <input
-                      class="border-0 p-2 rounded-3 me-2"
-                      type="text"
-                      placeholder="Coupon Code"
-                    />
-                    <button
-                      class="bg-cl-pm color-white px-3 border-0 rounded-3"
-                    >
-                      Apply
-                    </button>
-                  </div>
-                </div>
-                <div class="cartButton d-flex">
-                  <button class="bg-cl-pm py-2 border-0 color-white">
-                    Checkout
+                      ">5</span></small>
+                <h6>Tk <span id="totalPrice">1000</span>.00</h6>
+              </div>
+              <div class="cartCoupon my-3">
+                <small class="cl-pm fw-bold" onclick="tchBtnCheck('cartInput')">Apply Coupon</small><span
+                  class="color-span">(optional)</span>
+              </div>
+              <div class="cartInput my-3">
+                <div class="d-flex">
+                  <input class="border-0 p-2 rounded-3 me-2" type="text" placeholder="Coupon Code" />
+                  <button class="bg-cl-pm color-white px-3 border-0 rounded-3">
+                    Apply
                   </button>
-                  <span
-                    class="
+                </div>
+              </div>
+              <div class="cartButton d-flex">
+                <button class="bg-cl-pm py-2 border-0 color-white">
+                  Checkout
+                </button>
+                <span class="
                       bg-cl-green
                       color-white
                       d-flex
                       justify-content-center
                       align-items-center
-                    "
-                    >Tk 700</span
-                  >
-                </div>
-              </form>
-            </div>
+                    ">Tk 700</span>
+              </div>
+            </form>
           </div>
+        </div>
 
-          <!-----------------------Modal------------------>
-          <div
-            class="modal fade"
-            id="popUp"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content py-4">
-                <div class="modal-body d-flex justify-content-center">
-                  Are you sure to delete this?
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    class="btnModalYes px-5 me-2 color-white"
-                    data-bs-dismiss="modal"
-                  >
-                    Yes
-                  </button>
-                  <button type="button" class="btnModalNo px-5 color-white">
-                    No
-                  </button>
-                </div>
+        <!-----------------------Modal------------------>
+        <div class="modal fade" id="popUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-4">
+              <div class="modal-body d-flex justify-content-center">
+                Are you sure to delete this?
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btnModalYes px-5 me-2 color-white" data-bs-dismiss="modal">
+                  Yes
+                </button>
+                <button type="button" class="btnModalNo px-5 color-white">
+                  No
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-----------------------Shopping Cart End----------------------->
+  <!-----------------------Shopping Cart End----------------------->
 
-    <!-- Bottom Section -->
-    <!------------------------Footer------------------------------>
-    <footer class="footer">
-      <div class="container">
-        <div class="footerContent d-flex justify-content-between">
-          <div class="footerContentOne me-5">
-            <div
-              class="footerContentOneLogo cursor mb-4 mt-1"
-              onclick="location.href='index.html'"
-            >
-              <img src="Assets/Images/Footer/1Logo.svg" alt="" />
-            </div>
-            <div class="footerContentOneContent footerContent">
-              <p>
-                House 15,Block-E,Road-07. <br />
-                Sector-01,Uttara,Dhaka-1230.
-              </p>
-              <p>
-                <a href="tellto:">+8801652563545</a>
-              </p>
-              <p>
-                <a href="mailto:">info@livetechltd.com</a>
-              </p>
-            </div>
+  <!-- Bottom Section -->
+  <!------------------------Footer------------------------------>
+  <footer class="footer">
+    <div class="container">
+      <div class="footerContent d-flex justify-content-between">
+        <div class="footerContentOne me-5">
+          <div class="footerContentOneLogo cursor mb-4 mt-1" onclick="location.href='index.html'">
+            <img src="Assets/Images/Footer/1Logo.svg" alt="" />
           </div>
-          <div class="footerContentTwo me-5 mt-3">
-            <div class="footerContentTwoHeading footerHeading mb-4">
-              <h5>Navigations</h5>
-            </div>
-            <div class="footerContentTwoContent footerContent">
-              <p>
-                <a href="">About Us</a>
-              </p>
-              <p>
-                <a href=""> Checkout</a>
-              </p>
-              <p>
-                <a href=""> Wishlist</a>
-              </p>
-              <p>
-                <a href="">Contact</a>
-              </p>
-              <p>
-                <a href=""> FAQ</a>
-              </p>
-            </div>
+          <div class="footerContentOneContent footerContent">
+            <p>
+              House 15,Block-E,Road-07. <br />
+              Sector-01,Uttara,Dhaka-1230.
+            </p>
+            <p>
+              <a href="tellto:">+8801652563545</a>
+            </p>
+            <p>
+              <a href="mailto:">info@livetechltd.com</a>
+            </p>
           </div>
-          <div class="footerContentThree me-5 mt-3">
-            <div class="footerContentThreeHeading footerHeading mb-4">
-              <h5>Catagory Courses</h5>
-            </div>
-            <div class="footerContentThreeContent footerContent">
-              <p>
-                <a href=""> Education</a>
-              </p>
-              <p>
-                <a href="">Art & Music</a>
-              </p>
-              <p>
-                <a href="">Homeconomics</a>
-              </p>
-              <p>
-                <a href="">It & Software</a>
-              </p>
-              <p>
-                <a href="">Business And Accounting</a>
-              </p>
-            </div>
+        </div>
+        <div class="footerContentTwo me-5 mt-3">
+          <div class="footerContentTwoHeading footerHeading mb-4">
+            <h5>Navigations</h5>
           </div>
-          <div class="footerContentFour me-5 mt-3">
-            <div class="footerContentFourHeading footerHeading mb-4">
-              <h5>Help & Support</h5>
-            </div>
-            <div class="footerContentFourContent footerContent">
-              <p>
-                <a href="">Account</a>
-              </p>
-              <p>
-                <a href="">Privacy & policy</a>
-              </p>
-              <p>
-                <a href="">Terms & Conditions</a>
-              </p>
-              <p>
-                <a href="">Live Chat</a>
-              </p>
-              <p>
-                <a href="">Documentation</a>
-              </p>
-            </div>
+          <div class="footerContentTwoContent footerContent">
+            <p>
+              <a href="">About Us</a>
+            </p>
+            <p>
+              <a href=""> Checkout</a>
+            </p>
+            <p>
+              <a href=""> Wishlist</a>
+            </p>
+            <p>
+              <a href="">Contact</a>
+            </p>
+            <p>
+              <a href=""> FAQ</a>
+            </p>
           </div>
-          <div class="footerContentFive mt-3">
-            <div class="footerContentFiveHeading footerHeading mb-4">
-              <h5>Download App</h5>
+        </div>
+        <div class="footerContentThree me-5 mt-3">
+          <div class="footerContentThreeHeading footerHeading mb-4">
+            <h5>Catagory Courses</h5>
+          </div>
+          <div class="footerContentThreeContent footerContent">
+            <p>
+              <a href=""> Education</a>
+            </p>
+            <p>
+              <a href="">Art & Music</a>
+            </p>
+            <p>
+              <a href="">Homeconomics</a>
+            </p>
+            <p>
+              <a href="">It & Software</a>
+            </p>
+            <p>
+              <a href="">Business And Accounting</a>
+            </p>
+          </div>
+        </div>
+        <div class="footerContentFour me-5 mt-3">
+          <div class="footerContentFourHeading footerHeading mb-4">
+            <h5>Help & Support</h5>
+          </div>
+          <div class="footerContentFourContent footerContent">
+            <p>
+              <a href="">Account</a>
+            </p>
+            <p>
+              <a href="">Privacy & policy</a>
+            </p>
+            <p>
+              <a href="">Terms & Conditions</a>
+            </p>
+            <p>
+              <a href="">Live Chat</a>
+            </p>
+            <p>
+              <a href="">Documentation</a>
+            </p>
+          </div>
+        </div>
+        <div class="footerContentFive mt-3">
+          <div class="footerContentFiveHeading footerHeading mb-4">
+            <h5>Download App</h5>
+          </div>
+          <div class="footerContentFiveApp">
+            <div class="downloadAppContentIcon footerAppContent d-flex">
+              <a href="#" class="d-flex align-items-center ms-3"><i class="fas fa-play me-2"></i>
+                <p class="mt-3">
+                  Google Play <br />
+                  <span>get it now</span>
+                </p>
+              </a>
             </div>
-            <div class="footerContentFiveApp">
-              <div class="downloadAppContentIcon footerAppContent d-flex">
-                <a href="#" class="d-flex align-items-center ms-3"
-                  ><i class="fas fa-play me-2"></i>
-                  <p class="mt-3">
-                    Google Play <br />
-                    <span>get it now</span>
-                  </p>
-                </a>
-              </div>
-              <div class="downloadAppContentIcon footerAppContent d-flex mt-2">
-                <a href="#" class="d-flex align-items-center ms-3"
-                  ><i class="fab fa-app-store-ios me-2"></i>
-                  <p class="mt-3">
-                    App store <br />
-                    <span>get it now</span>
-                  </p>
-                </a>
-              </div>
+            <div class="downloadAppContentIcon footerAppContent d-flex mt-2">
+              <a href="#" class="d-flex align-items-center ms-3"><i class="fab fa-app-store-ios me-2"></i>
+                <p class="mt-3">
+                  App store <br />
+                  <span>get it now</span>
+                </p>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!----------Copy Right------------------->
-    <footer class="CopyRight">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="copyRightContentLeft w-50">
-          &copy; 2021 livetechltd. All rights Reserved
-        </div>
-        <div class="copyRightContentRight text-white">
-          <a href=""><i class="fab fa-facebook-f me-3"></i></a>
-          <a href=""> <i class="fab fa-twitter me-3"></i></a>
-          <a href=""><i class="fab fa-youtube"></i></a>
-        </div>
+    </div>
+  </footer>
+  <!----------Copy Right------------------->
+  <footer class="CopyRight">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="copyRightContentLeft w-50">
+        &copy; 2021 livetechltd. All rights Reserved
       </div>
-    </footer>
+      <div class="copyRightContentRight text-white">
+        <a href=""><i class="fab fa-facebook-f me-3"></i></a>
+        <a href=""> <i class="fab fa-twitter me-3"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    <!-----Owl Carousal-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!----------------Js--------->
-    <script src="JS/script.js"></script>
-  </body>
+  <!-----Owl Carousal-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!----------------Js--------->
+  <script src="JS/script.js"></script>
+</body>
+
 </html>

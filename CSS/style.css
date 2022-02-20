@@ -270,6 +270,15 @@ small {
   margin: 10px;
 }
 
+/***********Global Button Hover Effect Start********/
+  .buttonHover button:hover{
+    background-color: transparent;
+    color: #380e86;
+    border: 1px solid #380e86;
+    transition: 0.6s ease-in-out;
+  }
+
+/***********Global Button Hover Effect End********/
 /****************************************
 =============BreadCrumb================
 ***************************************/
@@ -598,8 +607,38 @@ small {
 /******************************
       index/homepage start
 ******************************/
+/*Back To Top*/
+
+.to-top {
+  background: #380e86;
+  position: fixed;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
 /* header start */
 /*Top Header Start*/
+
+.sticky {
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+}
 
 .topHeader {
   color: white;
@@ -862,20 +901,16 @@ input.check-toggle-round-flat + label:after {
   width: 100%;
 }
 
-.headerIcon {
-  position: relative;
+.headerIcon .btn{
+  padding: .2em .5em;
+}
+.headerIcon .btn:focus{
+  box-shadow: none;
+}
+.headerIcon .badge{
+  padding: .2em .3em;
 }
 
-.headerIcon span {
-  position: absolute;
-  top: -20%;
-  right: -20%;
-  font-size: 9px;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background-color: #ff543e;
-}
 
 .notification {
   width: 250px;
@@ -1060,12 +1095,14 @@ input.check-toggle-round-flat + label:after {
   box-shadow: 0px 3px 10px #e9edf3;
   border-radius: 7px;
   cursor: pointer;
-  /* transition: 7.5s ease; */
+  transition: .5s ease;
 }
 
 .homePopularCatagoryContent:hover {
   outline: 0.5px solid #8db3df;
   box-sizing: border-box;
+  margin-top: -7px;
+  transition: .5s ease;
 }
 
 /* Popular Catagory end */
@@ -1096,8 +1133,14 @@ input.check-toggle-round-flat + label:after {
   height: 100%;
   width: 100%;
 }
-.card-body-height {
-  border: 1px solid rgba(0, 0, 0, 0.125);
+.card-border {
+  border: 0.5px solid rgba(0, 0, 0, 0.125) !important;
+}
+.card {
+  border: none;
+}
+.box-shadow {
+  box-shadow: 0px 3px 10px #e9edf3;
 }
 
 /* Popular Courses End  */
@@ -1107,6 +1150,11 @@ input.check-toggle-round-flat + label:after {
 .homeFeaturedCard {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  transition: .3s ease-in-out;
+}
+.homeFeaturedCard:hover{
+  margin-top: -15px;
+  transition: .3s ease-in-out;
 }
 
 .homeFeaturedBooksHeadingRight a {
@@ -1256,6 +1304,12 @@ input.check-toggle-round-flat + label:after {
   color: white;
   border: none;
   border-radius: 5px;
+}
+.homeRegisterTodayContent button:hover{
+  background-color: transparent;
+  color: #ffd00d;
+  border: 1px solid #ffd00d;
+  transition: 0.6s ease-in-out;
 }
 
 /* Register today end*/
@@ -1490,7 +1544,8 @@ input:focus {
   width: 150px;
   height: 150px;
   position: absolute;
-  margin: -5% 0 10% -3%;
+  top: -23%;
+  left: -4%;
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
   animation: spin 4s linear infinite;
@@ -1559,8 +1614,19 @@ input:focus {
 /******************** 
             home page mobile version start==========>>>>> 
 *********************/
-@media (min-width: 1000px) and (max-width: 3500px) {
+@media (min-width: 992px) and (max-width: 3500px) {
   .mobileVersion {
+    display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 991px) {
+  .desktopVersion {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 3500px) {
+  .homeSubscribeContent {
     display: none;
   }
   .homeRegisterToday {
@@ -1576,30 +1642,19 @@ input:focus {
     position: absolute;
     top: 25%;
   }
-  .homeSubscribeContent {
-    position: absolute;
-    top: 30%;
-    left: 35%;
-  }
-  .homeSubscribeContentButton2 {
-    display: none;
-  }
 }
 
 @media (min-width: 1400px) and (max-width: 3500px) {
   .homeWhatsNewcarousel-lm {
-    /* left: 16%; */
     margin: 25px 0;
-    /* width: % !important; */
   }
   .homeWhatsNewcarousel-lm .owl-dots {
     justify-content: center;
-    /* margin-left: 30%; */
   }
 }
 
 @media (min-width: 300px) and (max-width: 999px) {
-  .desktopVersion {
+  .bannerDesktop{
     display: none;
   }
   .homeTopBannerContent {
@@ -1652,7 +1707,7 @@ input:focus {
     width: 340px;
     background-color: white !important;
   }
-  /* polygon  */
+
   .homeSubscribe-hide {
     display: none;
   }
@@ -1683,14 +1738,14 @@ input:focus {
     width: 20px;
   }
 
-  /*Middle Header icon*/
+  /* Middle Header icon
   .headerIcon {
     background-color: white !important;
   }
   .headerIcon span {
     top: 0;
     right: 0;
-  }
+  } */
 }
 .mainHeader .navbar-light .navbar-toggler {
   color: #380e86;
@@ -1959,6 +2014,13 @@ input:focus {
   box-sizing: border-box;
   border-radius: 10px;
 }
+.homeWhatsNewImg{
+  transition: .5s ease-in-out;
+}
+.homeWhatsNewImg:hover{
+  margin-top: -15px;
+  transition: .5s ease-in-out;
+}
 
 /*****Responsive All Course*****/
 @media (min-width: 300px) and (max-width: 999px) {
@@ -2153,7 +2215,7 @@ input:focus {
 /***************Author Start*************/
 .authorCard {
   border: none;
-  box-shadow: 0px 0px 8px #dadfe7;
+  box-shadow: 0px 3px 10px #e9edf3;
   border-radius: 20px;
 }
 .authorCardImg {
@@ -3933,6 +3995,11 @@ tr {
 }
 .right-content-bg {
   background-color: #e9edf3;
+  transition: .5s ease-in-out;
+}
+.right-content-bg:hover{
+  margin-top: -15px;
+  transition: .5s ease-in-out;
 }
 .right-content .progress {
   background-color: white;
@@ -4148,4 +4215,100 @@ tr {
   width: 150px;
   height: 45px;
   border-radius: 10px;
+}
+
+
+
+
+.fs12{
+  font-size: 12px;
+}
+.notification2 {
+  width: 300px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 20px #f2f2f2;
+}
+.cartPopup .cartProductImg {
+  width: 56px;
+  height: 56px;
+}
+.cartPopup .cartProductImg img{
+  width: 100%;
+  height: 100%;
+}
+.cartPopup small {
+  font-size: 10px;
+  font-weight: 400;
+  color: #95A0B0;
+}
+.allCourse {
+  height: 280px;
+  overflow-y: scroll;
+}
+.notification2 button {
+  height: 45px;
+  border-radius: 10px;
+}
+
+
+.bannerDesktop {
+  position: relative;
+  height: 265px;
+  margin: auto;
+}
+.bannerDesktop .homeSubscribeBanner{
+  width: 100%;
+  height: 100%;
+}
+.homeSubscribeBannerbg {
+  position: absolute;
+  top: 21%;
+}
+@media (min-width: 1300px) and (max-width: 7000px) {
+  .homeSubscribeBannerbg {
+    left: 36%;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .homeSubscribeBannerbg {
+    left: 33%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .homeSubscribeBannerbg {
+    left: 32%;
+  }
+}
+
+
+/* homeSubscribeContent */
+
+/* .homeSubscribeContent {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+} */
+/* desktop mobile version media */
+/* homeSubscribePolygonImg */
+
+.text-justify {
+  text-align: justify;
+}
+/* .mockArticle .articleImg {
+  width: 300px;
+  height: 300px;
+ } */
+.mockArticle .articleImg img{
+ width: 100%;
+}
+.mockArticle .articleAdd img{
+ width: 100%;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.cl-gold{
+  color: #FED843;
 }

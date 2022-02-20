@@ -1,4 +1,26 @@
+//Stickey Navbar
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+//Back To top
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
 // Bookmarks Color toggle
 const toggleBtns = document.querySelectorAll('.toggle-box');
 toggleBtns.forEach((btn) => {
@@ -55,22 +77,17 @@ $('#carousel0').owlCarousel({
       dots: false,
       // nav: false
     },
-    600: {
+    540: {
       items: 2,
       dots: false,
       // nav: false
     },
-    1000: {
+    992: {
       items: 3,
       dots: false,
       // nav: true
     },
-    1100: {
-      items: 3,
-      dots: false,
-      // nav: true
-    },
-    1700: {
+    1200: {
       items: 4,
       dots: false,
       // nav: true
